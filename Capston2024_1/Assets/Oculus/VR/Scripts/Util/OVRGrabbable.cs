@@ -1,3 +1,13 @@
+// 분류 : UI > Inventory (하지만 Script for UI에 없고 Oculus folder에 있는걸 수정 -> 이유: OVRgrabber등 다른 기본 스크립트와 연관있어서)
+// 위치 : Assets > Oculus > VR > Script > Util
+// 이름 : OVRGrabbable
+// 설명 : 인벤토리에 넣을 3D 물건들 상호작용(잡기)에 내용 추가 (Oculus SDK에서 제공하는 상호작용 스크립트 사용)
+// 비고 : GrabBegin() 함수에 내용 추가
+
+
+
+
+
 /*
  * Copyright (c) Meta Platforms, Inc. and affiliates.
  * All rights reserved.
@@ -126,6 +136,24 @@ public class OVRGrabbable : MonoBehaviour
         m_grabbedBy = hand;
         m_grabbedCollider = grabPoint;
         gameObject.GetComponent<Rigidbody>().isKinematic = true;
+
+        //*********inventory를 위해 추가된 내용**********
+        // 아이템을 잡을 때를 Slot 안에 이미 있는 아이템인지 아닌지 판단하기 위한 내용.
+        //-------------------------------------
+        // 아이템이 slot안에 없을 경우 
+        if (gameObject.GetComponent<Item>() == null) return;
+
+        // 아이템이 slot안에 있을 경우 
+        if (gameObject.GetComponent<Item>().inSlot)
+        {
+            gameObject.GetComponentInParent<Slot>().ItemInSlot = null;  //Slot안에 아이템 상태 == null로 변경
+            gameObject.transform.parent = null;
+            gameObject.GetComponent<Item>().inSlot = false;             //
+            gameObject.GetComponent<Item>().currentSlot.ResetColor();   //최근 Slot 빈상태의 색상으로 변경
+            gameObject.GetComponent<Item>().currentSlot = null;         //최근 Slot 빈상태로 변경
+        }
+        //*************************************************
+
     }
 
     /// <summary>
