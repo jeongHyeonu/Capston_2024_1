@@ -11,17 +11,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 31309ef169da20446bf26054ce744527,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 25.714285
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 31309ef169da20446bf26054ce744527,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 17.14228
+      value: 13.332885
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 31309ef169da20446bf26054ce744527,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.40289217
+      value: 0.31336057
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 31309ef169da20446bf26054ce744527,
         type: 3}
@@ -154,8 +154,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.019009667, y: 0.0131097725, z: 0.013109772}
-  m_Center: {x: 0, y: 0, z: -0.00000023841858}
+  m_Size: {x: 0.019009667, y: 0.013109773, z: 0.050657745}
+  m_Center: {x: 0, y: 4.1684878e-19, z: -0.0052375593}
 --- !u!54 &3613470110592359444
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -179,7 +179,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -261,6 +261,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 3613470110592359444}
+        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
+        m_MethodName: set_isKinematic
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
   _whenInteractorViewAdded:
     m_PersistentCalls:
