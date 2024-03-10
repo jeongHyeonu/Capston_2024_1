@@ -20,16 +20,18 @@ public class FingerPrintBrush : MonoBehaviour
     // 철가루를 붓에 묻힐 경우
     private void IronPowder_equip()
     {
-        ironPowder.gameObject.SetActive(true);
+        ironPowder.SetActive(true);
         ironParticle.Play();
+        SoundManager.Instance.PlaySFX(SoundManager.SFX_list.BRUSH); // 사운드
         p_type = FingerPrintPowder.powderType.ironPowder;
     }
 
     // 형광가루를 붓에 묻힐 경우
     private void FluorescencePowder_equip()
     {
-        fluorescencePowder.gameObject.SetActive(true);
+        fluorescencePowder.SetActive(true);
         fluorescenceParticle.Play();
+        SoundManager.Instance.PlaySFX(SoundManager.SFX_list.BRUSH); // 사운드
         p_type = FingerPrintPowder.powderType.fluorescencePowder;
     }
 
@@ -37,6 +39,8 @@ public class FingerPrintBrush : MonoBehaviour
     // 컨트롤러 Trigger 버튼 누르면 수행
     public void EquipOrEmitPowder()
     {
+        
+
         if (!isEquiped) // 가루 안 묻혀져있으면 장착
         {
             if (p_type == FingerPrintPowder.powderType.none) return;
@@ -53,7 +57,7 @@ public class FingerPrintBrush : MonoBehaviour
             }
         }
 
-        else // 가루 묻혀져있으면 발사
+        else // 가루 묻혀져있으면 방출
         {
             isEquiped = false;
 
@@ -61,10 +65,12 @@ public class FingerPrintBrush : MonoBehaviour
             {
                 case FingerPrintPowder.powderType.ironPowder:
                     ironPowder.SetActive(false);
+                    SoundManager.Instance.PlaySFX(SoundManager.SFX_list.BRUSH); // 사운드
                     ironParticle.Play();
                     break;
                 case FingerPrintPowder.powderType.fluorescencePowder:
                     fluorescencePowder.SetActive(false);
+                    SoundManager.Instance.PlaySFX(SoundManager.SFX_list.BRUSH); // 사운드
                     fluorescenceParticle.Play();
                     break;
             }
