@@ -12,10 +12,15 @@ public class FingerPrintBrush : MonoBehaviour
 
     // [SerializeField] private GameObject soju_powder; // 소주병 파우더 묻혀야될 위치
     [SerializeField] private GameObject soju_fingerPrint; // 소주병에 남은 철가루 지문
-    [SerializeField] GameObject originPos; // 원래 물체 존재했던 위치
+    [SerializeField] Vector3 originPos; // 원래 물체 존재했던 위치
 
     public bool isEquiped; // 이미 파우더 입혀진 경우
     public FingerPrintPowder.powderType p_type; // 파우더 타입
+
+    private void Start() // 원래 물체 존재했던 위치 기억
+    {
+        originPos = transform.position;
+    }
 
     // 철가루를 붓에 묻힐 경우
     private void IronPowder_equip()
@@ -39,8 +44,6 @@ public class FingerPrintBrush : MonoBehaviour
     // 컨트롤러 Trigger 버튼 누르면 수행
     public void EquipOrEmitPowder()
     {
-        
-
         if (!isEquiped) // 가루 안 묻혀져있으면 장착
         {
             if (p_type == FingerPrintPowder.powderType.none) return;
@@ -89,7 +92,7 @@ public class FingerPrintBrush : MonoBehaviour
     // 원래 위치로 이동
     public void MoveOriginPos()
     {
-        this.transform.position = originPos.transform.position;
+        this.transform.position = originPos;
         this.transform.rotation = Quaternion.Euler(Vector3.zero);
     }
 }

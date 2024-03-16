@@ -15,10 +15,17 @@ public class FingerPrintTape : MonoBehaviour
     [SerializeField] GameObject leftHand; // 왼손위치
 
     [SerializeField] GameObject indicatorHand; // ux, 지문에 손 갖다댈 경우 표시자
-    [SerializeField] GameObject originPos; // 원래 물체 존재했던 위치
+    [SerializeField] Vector3 originPos; // 원래 물체 존재했던 위치
 
+    [SerializeField] FingerPrintPaper fp_paper; // 전사지
+    
     bool isTapeOnSoju = false;
     bool isTapeOnKnife = false;
+
+    private void Start() // 원래 물체 존재했던 위치 기억
+    {
+        originPos = transform.position;
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -84,9 +91,10 @@ public class FingerPrintTape : MonoBehaviour
         if (Vector3.Distance(indicatorHand.transform.position,leftHand.transform.position)<.08f) // 왼손과 표시자 손이 가까이 있는가 검사
         {
             isTapeOnSoju = false;
-            Instantiate(fingerPrintTape_soju, this.transform.position,Quaternion.Euler(new Vector3(0, 0, 0)));
+            fp_paper.fingerPrintTape_soju = Instantiate(fingerPrintTape_soju, this.transform.position,Quaternion.Euler(new Vector3(0, 0, 0)));
             fingerPrintOnSoju.SetActive(false);
             SoundManager.Instance.PlaySFX(SoundManager.SFX_list.TAPE); // 사운드
+            TutorialUX.Instance.NextHologram(4);
 
             //ux
             indicatorHand.SetActive(false);
@@ -110,9 +118,10 @@ public class FingerPrintTape : MonoBehaviour
         if (Vector3.Distance(indicatorHand.transform.position, leftHand.transform.position) < .08f) // 왼손과 표시자 손이 가까이 있는가 검사
         {
             isTapeOnKnife = false;
-            Instantiate(fingerPrintTape_knife, this.transform.position, Quaternion.Euler(new Vector3(0,0,0)));
+            fp_paper.fingerPrintTape_knife = Instantiate(fingerPrintTape_knife, this.transform.position, Quaternion.Euler(new Vector3(0,0,0)));
             fingerPrintOnKnife.SetActive(false);
             SoundManager.Instance.PlaySFX(SoundManager.SFX_list.TAPE); // 사운드
+            TutorialUX.Instance.NextHologram(3);
 
             //ux
             indicatorHand.SetActive(false);
@@ -125,7 +134,7 @@ public class FingerPrintTape : MonoBehaviour
     // 원래 위치로 이동
     public void MoveOriginPos()
     {
-        this.transform.position = originPos.transform.position;
+        this.transform.position = originPos;
         this.transform.rotation = Quaternion.Euler(Vector3.zero);
 
         indicatorHand.SetActive(false);
