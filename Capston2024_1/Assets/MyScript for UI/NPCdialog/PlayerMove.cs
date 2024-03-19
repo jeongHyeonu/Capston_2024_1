@@ -5,10 +5,10 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
     // Start is called before the first frame update
-    // 오른쪽 컨트롤러 A버튼 눌렀을 때 -> 
+    // 오른쪽 컨트롤러 B버튼 눌렀을 때 -> 
     void PressButtonA()
     {
-        if (OVRInput.GetUp(OVRInput.RawButton.A))   //A버튼이 눌렸을 때
+        if (OVRInput.GetUp(OVRInput.RawButton.B))   //B버튼이 눌렸을 때
         {
             // DialogUI ui = GetComponent<DialogUI>();
             //

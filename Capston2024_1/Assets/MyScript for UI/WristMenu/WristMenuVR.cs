@@ -5,28 +5,52 @@ using UnityEngine.UI;
 
 public class WristMenuVR : MonoBehaviour
 {
-
+    //손목 메뉴 관련
     public GameObject WristMenu;
-    public GameObject Anchor;
-    bool WristMenuUIActive;
+    public GameObject WristMenuAnchor;
+    public static bool WristMenuUIActive;
+
+    // 손목UI 활성화
+    public void WristMenuActive()
+    {
+        WristMenuUIActive = true;
+        WristMenu.SetActive(WristMenuUIActive);
+    }
+
+    // 손목UI 비활성화
+    public void WristMenuUnActive()
+    {
+        WristMenuUIActive = false;
+        WristMenu.SetActive(WristMenuUIActive);
+    }
 
     private void Start()
     {
-        WristMenu.SetActive(false);
-        WristMenuUIActive = false;
+        WristMenuUnActive();
     }
 
     private void Update()
     {
-        if (OVRInput.GetDown(OVRInput.RawButton.B))
+        //컨트롤러 X버튼 누르면 WristUI 활성/비활성
+        if (OVRInput.GetDown(OVRInput.RawButton.X))
         {
             WristMenuUIActive = !WristMenuUIActive;
             WristMenu.SetActive(WristMenuUIActive);
         }
+        //WristUI가 활성화 상태일 경우
         if (WristMenuUIActive)
         {
-            WristMenu.transform.position = Anchor.transform.position;
-            WristMenu.transform.eulerAngles = new Vector3(Anchor.transform.eulerAngles.x + 15, Anchor.transform.eulerAngles.y, 0);
+            WristMenu.transform.position = WristMenuAnchor.transform.position;
+            WristMenu.transform.eulerAngles = new Vector3(WristMenuAnchor.transform.eulerAngles.x + 15, WristMenuAnchor.transform.eulerAngles.y, 0);
+
         }
+
+        //SettingUI,GalleryUI가 활성화 상태인 경우 -> WristUI 끄기
+        if(BtnSettingClicked.SettingUIActive == true || BtnGalleryClicked.GalleryUIActive == true)
+        {
+            WristMenuUIActive = false;
+            WristMenu.SetActive(WristMenuUIActive);
+        }
+
     }
 }
