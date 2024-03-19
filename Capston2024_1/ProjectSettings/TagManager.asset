@@ -7,6 +7,7 @@ TagManager:
   - Hand
   - Slot
   - NPC1
+  - RIGHTHAND
   layers:
   - Default
   - TransparentFX
