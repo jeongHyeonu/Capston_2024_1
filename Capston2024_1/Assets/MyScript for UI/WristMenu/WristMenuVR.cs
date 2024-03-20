@@ -32,7 +32,7 @@ public class WristMenuVR : MonoBehaviour
     private void Update()
     {
         //컨트롤러 X버튼 누르면 WristUI 활성/비활성
-        if (OVRInput.GetDown(OVRInput.RawButton.X))
+        if (OVRInput.GetDown(OVRInput.Button.Three))
         {
             WristMenuUIActive = !WristMenuUIActive;
             WristMenu.SetActive(WristMenuUIActive);

@@ -8,7 +8,7 @@ public class BtnGalleryClicked : MonoBehaviour
     public GameObject GalleryUI;
     public Button backBtn;
     //public GameObject GalleryUIAnchor;
-    public static bool GalleryUIActive;
+    public static bool GalleryUIActive;     //GalleryUI 활성 상태 유무
 
     //Setting UI 활성
     public void GalleryActive()
@@ -35,11 +35,11 @@ public class BtnGalleryClicked : MonoBehaviour
 
     private void Start()
     {
-        GalleryUnActive();
+        GalleryUnActive();  //GalleryUI Actvie
     }
 
     void Update()
     {
-        backBtn.onClick.AddListener(BackBtnOnClick);
+        backBtn.onClick.AddListener(BackBtnOnClick);    //GalleryUI unActvie
     }
 }

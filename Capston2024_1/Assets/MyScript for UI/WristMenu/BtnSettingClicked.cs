@@ -5,20 +5,19 @@ using UnityEngine.UI;
 
 public class BtnSettingClicked : MonoBehaviour
 {
-
+    //SettingUI 객체
     public GameObject SettingUI;
     public Button backBtn;
     //public GameObject SettingUIAnchor;
 
-    public static bool SettingUIActive;
-
-    public int clickCount = 0;
+    public static bool SettingUIActive; //SettingUI 활성 상태 유무
 
     //Setting UI 활성
     public void SettingActive() 
     {
         SettingUIActive = true;
         SettingUI.SetActive(SettingUIActive);
+        WristMenuVR.WristMenuUIActive = false;
     }
 
     //Setting UI 비활성
@@ -38,11 +37,11 @@ public class BtnSettingClicked : MonoBehaviour
 
     private void Start()
     {
-        SettingUnActive();
+        SettingUnActive();  //SettingUI Actvie
     }
 
     void Update()
     {
-        backBtn.onClick.AddListener(BackBtnOnClick);
+        backBtn.onClick.AddListener(BackBtnOnClick);    //SettingUI UnActvie
     }
 }
