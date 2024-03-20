@@ -11,6 +11,7 @@ public class CheckCamera : MonoBehaviour
     public TextMeshProUGUI Check; // 그냥 체크용으로 넣어둔 것이라 나중에 지울 예정
     public GameObject Player; // OVRPlayerContoroller
     public GameObject Cam; // 카메라 프리팹
+    public GameObject RightHand; // 카메라 프리팹
     void Update()
     {
         if (OVRInput.GetDown(OVRInput.Button.Three)) //X버튼을 누를 경우
@@ -27,7 +28,7 @@ public class CheckCamera : MonoBehaviour
                     //카메라와 객체 사이에 무언가 부딪힐 경우
                 {
                     //인식하고자 하는 객체와 카메라, 플레이어 오브젝트가 가리는 것은 제외
-                    if (hit.collider.gameObject != cameraToCheck.gameObject && hit.collider.gameObject != gameObject&& hit.collider.gameObject !=Player && hit.collider.gameObject != gameObject && hit.collider.gameObject != Cam)
+                    if (hit.collider.gameObject != cameraToCheck.gameObject && hit.collider.gameObject != gameObject&& hit.collider.gameObject !=Player && hit.collider.gameObject != gameObject && hit.collider.gameObject != Cam && hit.collider.gameObject != RightHand)
                     {
                     // 다른 객체로 가려져 있으면 "False" 출력
                     Check.text = "False1";
@@ -41,8 +42,11 @@ public class CheckCamera : MonoBehaviour
 
                 // 만약 Cube가 Camera의 시야 안에 있으면 "True" 출력
                 //아래 값은 임의로 작성된 값이며 수정이 가능하다.
-                if (viewportPoint.x > 0.25 && viewportPoint.x < 0.75 &&
-                    viewportPoint.y > 0.25 && viewportPoint.y < 0.75 && viewportPoint.z > 0)
+                /* if (viewportPoint.x > 0.25 && viewportPoint.x < 0.75 &&
+                     viewportPoint.y > 0.25 && viewportPoint.y < 0.75 && viewportPoint.z > 0)*/
+                //수치 간격이 좁을수록 정확한 위치에 맞춰야 한다.
+                if (viewportPoint.x > 0.35 && viewportPoint.x < 0.65&
+                     viewportPoint.y > 0.35 && viewportPoint.y < 0.65 && viewportPoint.z > 0)
                 {
                     Check.text = "True";
                     Debug.Log("True");

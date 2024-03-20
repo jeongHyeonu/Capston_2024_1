@@ -161,7 +161,8 @@ public class ScreenTexture_VR : MonoBehaviour
             Parent.transform.SetParent(eye);
 
             // a로부터 z축으로 3만큼 떨어진 곳으로 이동
-            Parent.position = eye.transform.position + new Vector3(7.8f, 0.5f, 3f);
+            Parent.transform.localPosition = new Vector3(7.8f, 0.0f, 3f);
+            Parent.transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
 
             pull = true;
         }
