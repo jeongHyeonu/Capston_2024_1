@@ -9,6 +9,7 @@ TagManager:
   - NPC1
   - RIGHTHAND
   - NPC
+  - TransparentObject
   layers:
   - Default
   - TransparentFX
