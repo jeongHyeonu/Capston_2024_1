@@ -11,6 +11,7 @@ TagManager:
   - NPC
   - TransparentObject
   - Liquid
+  - Paper
   layers:
   - Default
   - TransparentFX

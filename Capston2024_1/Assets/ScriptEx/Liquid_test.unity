@@ -667,11 +667,10 @@ Transform:
   m_GameObject: {fileID: 485024996}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: -1.02, y: 0.135, z: 7.102}
+  m_LocalPosition: {x: -3.5, y: 0.135, z: 7.102}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1308748184}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
 --- !u!114 &815246985
@@ -782,7 +781,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1043272339
 Transform:
   m_ObjectHideFlags: 0
@@ -5638,9 +5637,9 @@ GameObject:
   - component: {fileID: 1111632372}
   - component: {fileID: 1111632371}
   - component: {fileID: 1111632370}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Liquid
-  m_TagString: Untagged
+  m_TagString: Liquid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5725,7 +5724,7 @@ Transform:
   m_GameObject: {fileID: 1111632369}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.21, y: 0.02, z: 14.36}
+  m_LocalPosition: {x: -0.21, y: 0.02, z: 14.33}
   m_LocalScale: {x: 10, y: 0.5, z: 8}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5743,12 +5742,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc6393d1397a284fa1794e714e7bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &1308748184 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8838187153994395460, guid: 7e470b2ea69afaa44afbbdd94cc89091,
-    type: 3}
-  m_PrefabInstance: {fileID: 5374822114196815223}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1349510318
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5779,11 +5772,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.889
+      value: -8
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.858
+      value: 4.13
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6066,6 +6059,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Deodorant
       objectReference: {fileID: 0}
+    - target: {fileID: 191300, guid: 30506e06c40703349b3b014b826e1a01, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 469398, guid: 30506e06c40703349b3b014b826e1a01, type: 3}
       propertyPath: m_LocalScale.x
       value: 10
@@ -6226,9 +6223,9 @@ GameObject:
   - component: {fileID: 1830106598}
   - component: {fileID: 1830106597}
   - component: {fileID: 1830106596}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: paper (1)
-  m_TagString: Untagged
+  m_TagString: Paper
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6353,8 +6350,8 @@ Transform:
   m_GameObject: {fileID: 1830106595}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.27, y: 0.706, z: 6.92}
-  m_LocalScale: {x: 4, y: 0.001, z: 6}
+  m_LocalPosition: {x: -2.3, y: 1.92, z: 6.92}
+  m_LocalScale: {x: 4, y: 0.1, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -6458,7 +6455,7 @@ Transform:
   m_GameObject: {fileID: 1987067081}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.152, y: 2.78, z: 7.137}
+  m_LocalPosition: {x: -1.88, y: 2.78, z: 7.137}
   m_LocalScale: {x: 2.3, y: 0.5, z: 1.4}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6494,7 +6491,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -0.5580001, z: -0.025208335}
-  m_LocalScale: {x: 1, y: 0.2, z: 0.9285713}
+  m_LocalScale: {x: 1, y: 0.5, z: 0.9285713}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1987067085}
@@ -6576,7 +6573,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 485024999}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 8209038266376254974, guid: 7e470b2ea69afaa44afbbdd94cc89091,
         type: 3}
@@ -6601,17 +6598,17 @@ PrefabInstance:
     - target: {fileID: 8838187153994395460, guid: 7e470b2ea69afaa44afbbdd94cc89091,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.16
+      value: -1.87
       objectReference: {fileID: 0}
     - target: {fileID: 8838187153994395460, guid: 7e470b2ea69afaa44afbbdd94cc89091,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.109
+      value: -0.18
       objectReference: {fileID: 0}
     - target: {fileID: 8838187153994395460, guid: 7e470b2ea69afaa44afbbdd94cc89091,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.28
+      value: 7.03
       objectReference: {fileID: 0}
     - target: {fileID: 8838187153994395460, guid: 7e470b2ea69afaa44afbbdd94cc89091,
         type: 3}
@@ -6621,17 +6618,17 @@ PrefabInstance:
     - target: {fileID: 8838187153994395460, guid: 7e470b2ea69afaa44afbbdd94cc89091,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.7071068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8838187153994395460, guid: 7e470b2ea69afaa44afbbdd94cc89091,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 8838187153994395460, guid: 7e470b2ea69afaa44afbbdd94cc89091,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8838187153994395460, guid: 7e470b2ea69afaa44afbbdd94cc89091,
         type: 3}
@@ -6875,3 +6872,4 @@ SceneRoots:
   - {fileID: 1987067085}
   - {fileID: 485024999}
   - {fileID: 1830106601}
+  - {fileID: 5374822114196815223}

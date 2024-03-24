@@ -12,7 +12,7 @@ public class FingerPrintLiquid : MonoBehaviour
     // Paper와 Iron_Liquid의 충돌을 감지하는 메서드
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.layer == LayerMask.NameToLayer("Paper"))
+        if (other.gameObject.CompareTag("Paper"))
         {
             paperTriggered = true; // Paper와의 충돌이 발생했음을 표시
         }
@@ -20,7 +20,7 @@ public class FingerPrintLiquid : MonoBehaviour
         {
             ironLiquidTriggered = true; // Iron_Liquid와의 충돌이 발생했음을 표시
         }
-        else if (other.gameObject.layer == LayerMask.NameToLayer("Liquid"))
+        else if (other.gameObject.CompareTag("Liquid"))
         {
             liquidTriggered = true; // Liquid와의 충돌이 발생했음을 표시
         }
