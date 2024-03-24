@@ -38,7 +38,7 @@ public class WristMenuVR : MonoBehaviour
             WristMenu.SetActive(WristMenuUIActive);
         }
         //WristUI가 활성화 상태일 경우
-        if (WristMenuUIActive)
+        if (WristMenuUIActive == true)
         {
             WristMenu.transform.position = WristMenuAnchor.transform.position;
             WristMenu.transform.eulerAngles = new Vector3(WristMenuAnchor.transform.eulerAngles.x + 15, WristMenuAnchor.transform.eulerAngles.y, 0);
@@ -48,9 +48,12 @@ public class WristMenuVR : MonoBehaviour
         //SettingUI,GalleryUI가 활성화 상태인 경우 -> WristUI 끄기
         if(BtnSettingClicked.SettingUIActive == true || BtnGalleryClicked.GalleryUIActive == true)
         {
-            WristMenuUIActive = false;
-            WristMenu.SetActive(WristMenuUIActive);
+            WristMenuUnActive();
         }
 
+        if (BtnCameraClicked.CameraActive == true)
+        {
+            WristMenuUnActive();
+        }
     }
 }

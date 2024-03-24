@@ -16,6 +16,7 @@ public class BtnCameraClicked : MonoBehaviour
     public void InTransCamera()
     {
         Camera.transform.position = CameraPos.transform.position;
+        Camera.transform.rotation = CameraPos.transform.rotation;
         CameraActive = true;
     }
 
@@ -31,12 +32,12 @@ public class BtnCameraClicked : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InTransCamera();
+        OutTransCamera();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+       
     }
 }
