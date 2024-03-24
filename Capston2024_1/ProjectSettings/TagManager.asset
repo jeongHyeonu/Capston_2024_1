@@ -10,6 +10,7 @@ TagManager:
   - RIGHTHAND
   - NPC
   - TransparentObject
+  - Liquid
   layers:
   - Default
   - TransparentFX
@@ -20,9 +21,9 @@ TagManager:
   - 
   - UV_Light
   - 
-  - Iron_Liquid
-  - 
-  - 
+  - Iron
+  - Liquid
+  - Paper
   - 
   - 
   - 

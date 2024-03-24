@@ -5,24 +5,43 @@ using UnityEngine;
 
 public class FingerPrintLiquid : MonoBehaviour
 {
-    private bool isTriggered = false; // 트리거가 발생했는지 여부를 추적하기 위한 변수
+    private bool paperTriggered = false; // Paper와의 충돌을 추적하기 위한 변수
+    private bool ironLiquidTriggered = false; // Iron_Liquid와의 충돌을 추적하기 위한 변수
+    private bool liquidTriggered = false; // Liquid와의 충돌을 추적하기 위한 변수
 
+    // Paper와 Iron_Liquid의 충돌을 감지하는 메서드
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.layer == LayerMask.NameToLayer("Iron_Liquid") && !isTriggered)
+        if (other.gameObject.layer == LayerMask.NameToLayer("Paper"))
         {
-            isTriggered = true; //트리거가 발생했음을 표시
+            paperTriggered = true; // Paper와의 충돌이 발생했음을 표시
+        }
+        else if (other.gameObject.layer == LayerMask.NameToLayer("Iron"))
+        {
+            ironLiquidTriggered = true; // Iron_Liquid와의 충돌이 발생했음을 표시
+        }
+        else if (other.gameObject.layer == LayerMask.NameToLayer("Liquid"))
+        {
+            liquidTriggered = true; // Liquid와의 충돌이 발생했음을 표시
+        }
 
+        CheckTriggered(); // 충돌을 체크하여 실행 여부 결정
+    }
 
-            StartCoroutine(TriggerEffect());  // 지연 실행을 위한 코루틴 시작
+    // Paper와 Iron_Liquid 모두 충돌했는지 확인하여 실행 여부 결정하는 메서드
+    private void CheckTriggered()
+    {
+        // Paper와 Iron_Liquid 모두 충돌한 경우
+        if (paperTriggered && ironLiquidTriggered && liquidTriggered)
+        {
+            StartCoroutine(TriggerEffect()); // 지연 실행을 위한 코루틴 시작
         }
     }
 
+    // 페이드 인 효과를 적용하는 코루틴 메서드
     private IEnumerator TriggerEffect()
     {
-
-        yield return new WaitForSeconds(5f); // 0.4초 대기
-
+        yield return new WaitForSeconds(5f);
         this.transform.gameObject.GetComponent<MeshRenderer>().materials[0].DOFade(1f, 0.4f); // 페이드 인 효과를 적용
     }
 }
