@@ -5,7 +5,6 @@ using UnityEngine;
 public class SnapLoaction : MonoBehaviour
 
 {
-
     private bool isGrabbed;
     private bool insideSlot;
     public bool Snapped;
