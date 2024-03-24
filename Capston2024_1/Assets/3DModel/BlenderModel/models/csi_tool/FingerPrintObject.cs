@@ -13,6 +13,9 @@ public class FingerPrintObject : MonoBehaviour
 {
     public bool isVisible = false;
     [SerializeField] private ObjectType object_type;
+    [SerializeField] private TutorialCamera tutoCam;
+
+
 
     enum ObjectType
     {
@@ -31,7 +34,7 @@ public class FingerPrintObject : MonoBehaviour
             {
                 this.gameObject.GetComponent<MeshRenderer>().material.DOFade(1f, 2f);
                 isVisible = true; // 나중에 테이프로 채취시, 지문이 드러났는지 여부가 true일때 채취 가능
-                TutorialUX.Instance.NextHologram(2);
+                tutoCam?.secondStep_ON();
                 TutorialUX.Instance.SojuHologramOFF();
             }
 

@@ -315,6 +315,8 @@ MonoBehaviour:
     audio: {fileID: 8300000, guid: f6be91fbec3e07c47813f5bf4835aa8c, type: 3}
   - sfx_name: 2
     audio: {fileID: 8300000, guid: 469ae3d2807aa064fb4c0bcb54b824f9, type: 3}
+  - sfx_name: 3
+    audio: {fileID: 8300000, guid: 68895421572d81949b1f88c8fc5fe791, type: 3}
   BGM_Object: {fileID: 6559933909489678465}
   SFX_Object: {fileID: 4853145513621287346}
 --- !u!81 &3802133407266454903

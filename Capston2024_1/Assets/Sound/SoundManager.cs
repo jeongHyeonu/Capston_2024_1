@@ -50,6 +50,7 @@ public class SoundManager : Singleton<SoundManager>
         GLASS,
         BRUSH,
         TAPE,
+        CAMERA,
     }
 
     // 배경음 목록
