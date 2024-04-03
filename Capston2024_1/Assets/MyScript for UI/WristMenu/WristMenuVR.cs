@@ -51,9 +51,11 @@ public class WristMenuVR : MonoBehaviour
             WristMenuUnActive();
         }
 
-        if (BtnCameraClicked.CameraActive == true)
+        
+        if (BtnCameraClicked.CameraActive == true || BtnFlashLightClicked.FlashLightActive == true )
         {
             WristMenuUnActive();
         }
+        
     }
 }

@@ -37,9 +37,13 @@ public class SnapLoaction : MonoBehaviour
         {
             SlotItem.gameObject.transform.position = transform.position;
             SlotItem.gameObject.transform.rotation = SlotRotation.transform.rotation;
+            SlotItem.gameObject.transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
             Snapped = true;
+        }else
+        {
+            SlotItem.gameObject.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
         }
-
+        
     }
 
     void Update()

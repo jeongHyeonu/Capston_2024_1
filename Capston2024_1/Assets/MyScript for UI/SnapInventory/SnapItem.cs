@@ -5,7 +5,7 @@ using UnityEngine;
 public class SnapItem : MonoBehaviour
 {
     public GameObject SnapPos;
-    public GameObject Inventory;
+    public GameObject Slot;
     public bool isSnapped;
     private bool isItemSnapped;
 
@@ -16,18 +16,20 @@ public class SnapItem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // item을 잡았는지 확인
         isGrabbed = GetComponent<OVRGrabbable>().isGrabbed;
 
+        // item을 인벤토리에 넣었는지 확인
         isItemSnapped = SnapPos.GetComponent<SnapLoaction>().Snapped;
 
-        if(isItemSnapped == true)
+        if(isItemSnapped == true)   // item을 Slot에 넣었을 경우
         {
             GetComponent<Rigidbody>().isKinematic = true;
-            transform.SetParent(Inventory.transform);
+            transform.SetParent(Slot.transform);
             isSnapped = true;
         }
 
-        if(isItemSnapped == false && isGrabbed == false)
+        if(isItemSnapped == false && isGrabbed == false)    // item을 Slot에 안 넣은 상태+손에서 놓았을 때
         {
             GetComponent<Rigidbody>().isKinematic = false;
         }
