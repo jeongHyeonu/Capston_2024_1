@@ -58,8 +58,9 @@ public class ScreenTexture_VR_image : MonoBehaviour
 
     IEnumerator CheckCamera()
     {
-        if (OVRInput.GetDown(OVRInput.Button.One) && pull == false && GrabCamera.onCamera == true)
-        {//카메라를 손에 쥐고 있고 A 버튼을 누를 경우 실행
+        //if (OVRInput.GetDown(OVRInput.Button.One) && pull == false && GrabCamera.onCamera == true)
+        if (OVRInput.GetDown(OVRInput.Button.One) && GrabCamera.onCamera == true)
+            {//카메라를 손에 쥐고 있고 A 버튼을 누를 경우 실행
             ClickScreenShot();
             Create3();
         }

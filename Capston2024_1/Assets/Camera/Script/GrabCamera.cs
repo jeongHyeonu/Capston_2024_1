@@ -41,7 +41,7 @@ public class GrabCamera : MonoBehaviour
         {
                 GrabOnHand();
         }*/
-        if (other.CompareTag("RIGHTHAND"))//0308 코루틴 전용 오른손과 충돌이 일어날 경우
+        if (other.CompareTag("Hand"))//0308 코루틴 전용 오른손과 충돌이 일어날 경우
         {
             StartCoroutine(HandCheckCoroutine());
             grab = true;
@@ -64,9 +64,9 @@ public class GrabCamera : MonoBehaviour
         }
     }*/
 
-    private void OnTriggerExit(Collider other) //0308 코루틴 전용 오른손과 충돌을 끝낼 경우
+    private void OnTriggerExit(Collider other) //0308 코루틴 전용 손과 충돌을 끝낼 경우
     {
-        if (other.CompareTag("RIGHTHAND"))
+        if (other.CompareTag("Hand"))
         {
             // 코루틴 중단
             StopCoroutine(HandCheckCoroutine());
@@ -75,7 +75,7 @@ public class GrabCamera : MonoBehaviour
         }
     }
 
-    // 시간 손이 있는지 체크하는 코루틴 0308
+    // 손이 있는지 체크하는 코루틴 0308
     IEnumerator HandCheckCoroutine()
     {
         if (OVRInput.GetDown(OVRInput.Button.SecondaryHandTrigger)&&grab==true)
@@ -87,7 +87,7 @@ public class GrabCamera : MonoBehaviour
         {
 
             PutDownCamera();
-            //grab = false;
+            onCamera = false;
         }
         yield return new WaitForSeconds(0); 
         if (grab == true)
@@ -103,14 +103,14 @@ public class GrabCamera : MonoBehaviour
     {
         onCamera = true;
         Debug.Log("잡았다.");
-        Camera.transform.SetParent(RightHand);
-        Camera.transform.position = RightHand.transform.position;
-        Camera.transform.rotation = RightHand.transform.rotation;
+        //Camera.transform.SetParent(RightHand);
+        //Camera.transform.position = RightHand.transform.position;
+        //Camera.transform.rotation = RightHand.transform.rotation;
     }
     private void PutDownCamera()//카메라와 오른손의 자식관계를 해제한다.
     {
         onCamera = false;
         Debug.Log("놓았다.") ;
-        Camera.transform.SetParent(null);
+        //Camera.transform.SetParent(null);
     }
 }
