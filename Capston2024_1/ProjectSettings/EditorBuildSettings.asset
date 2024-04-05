@@ -6,19 +6,19 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/prototype/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/3DModel/JP_Apartment/Scenes/Apartment.unity
+    path: Assets/3DModel/Map/JP_Apartment/Scenes/Apartment.unity
     guid: 80d478da8e2658d4eb769f806029f900
   - enabled: 1
-    path: Assets/3DModel/JP_Apartment/Scenes/Scene2.unity
+    path: Assets/3DModel/Map/JP_Apartment/Scenes/Scene2.unity
     guid: b4115d71a64421b40b43957771cf20de
   - enabled: 1
-    path: Assets/Scenes/Opening.unity
+    path: Assets/prototype/Opening.unity
     guid: 77021125aa37808439895652e2986712
   - enabled: 1
-    path: Assets/Scenes/FingerPrint_test2.unity
+    path: Assets/prototype/FingerPrint_test2.unity
     guid: 531b06692c5a005458b3a41a3761a60c
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 8b3bff07114b49d48b6cc1e1d1dc9b7f,
