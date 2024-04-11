@@ -6,14 +6,15 @@ using UnityEngine.SceneManagement;
 
 public class SceneChange : MonoBehaviour
 {
-    bool sChange = false;
+    //bool sChange = false;
     public GameObject CenterEyeObj;  // 오큘러스 CameraRig의 CenterEyeObj 연결
     OVRScreenFade OFade;
     // Start is called before the first frame update
     void Start()
     {
-        OFade = CenterEyeObj.transform.GetComponent<OVRScreenFade>();
+
     }
+    /*
     private void OnTriggerEnter(Collider other)
     {
 
@@ -64,5 +65,18 @@ public class SceneChange : MonoBehaviour
 
             SceneManager.LoadScene("Scene2");
         }
+    }*/
+
+    public void SceneFade() {
+        Debug.Log("씬 이동 시작");
+        OFade = CenterEyeObj.transform.GetComponent<OVRScreenFade>();
+        StartCoroutine(SceneFadeCoroutine());
+    }
+    IEnumerator SceneFadeCoroutine() {
+        OFade.FadeOut();
+
+        yield return new WaitForSeconds(OFade.fadeTime);
+
+        SceneManager.LoadScene("Crime_test");
     }
 }

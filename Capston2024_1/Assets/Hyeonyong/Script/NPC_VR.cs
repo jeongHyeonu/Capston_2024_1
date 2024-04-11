@@ -6,12 +6,15 @@ using static OVRPlugin;
 
 public class NPC_VR : MonoBehaviour
 {
+
+    // 튜토리얼에서는 NPC와의 충돌로 생기는 것이 아닌 튜토리얼이 끝나자마자 바로 눈 앞에 나타나도록 할 예정
+
     public string playerTag = "NPC"; 
     private bool npc = false; //npc와 충돌했는지
     public TextMeshProUGUI npc1; //npc1에 대한 텍스트
     private static int ScriptNum = 0; //대화 순서 번호
 
-
+    public GameObject Button;
 
     public Transform TextPos; //텍스트 위치
     public Transform Canvas; //텍스트 캔버스
@@ -94,7 +97,9 @@ public class NPC_VR : MonoBehaviour
                 else if (ScriptNum == 4)
                 {
                     npc1.text = "" + ScriptNum;
-                    Canvas.transform.position = Canvas.transform.position + new Vector3(100f, 0f, 0f);
+                    //Canvas.transform.position = Canvas.transform.position + new Vector3(100f, 0f, 0f);
+                    Button.SetActive(true);
+                    
                 }
 
                 ScriptNum++;

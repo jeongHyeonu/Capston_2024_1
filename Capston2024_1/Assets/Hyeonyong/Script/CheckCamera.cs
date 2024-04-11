@@ -8,8 +8,10 @@ public class CheckCamera : MonoBehaviour
     // 이 코드는 카메라에 원하는 객체를 인식시키기 위해 사용하는 코드이다. 현재 간단한 프로토타입만 제작됨
     // 추가 예정 : 카메라를 촬영할 때만 사용
     public Camera cameraToCheck; // Camera 오브젝트의 레퍼런스를 받을 변수
-    public TextMeshProUGUI Check; // 그냥 체크용으로 넣어둔 것이라 나중에 지울 예정
-    public TextMeshProUGUI Score; // 그냥 체크용으로 넣어둔 것이라 나중에 지울 예정
+      //public TextMeshProUGUI Check; // 그냥 체크용으로 넣어둔 것이라 나중에 지울 예정
+     // public TextMeshProUGUI Score; // 그냥 체크용으로 넣어둔 것이라 나중에 지울 예정
+    public TextMeshPro Score; // 그냥 체크용으로 넣어둔 것이라 나중에 지울 예정
+    public TextMeshPro Score2; // 그냥 체크용으로 넣어둔 것이라 나중에 지울 예정
     public GameObject Player; // OVRPlayerContoroller
     public GameObject Cam; // 카메라 프리팹
     public GameObject RightHand; // 카메라 프리팹
@@ -73,29 +75,31 @@ public class CheckCamera : MonoBehaviour
                     //0402자 수정 사진을 정상적으로 찍었는지 체크하는 예외처리
                     if (fingerprintobject.isVisible == false&& first_check!=true) // 분말법을 하기 전 사진을 찍었을 경우
                     {
-                        first_score++;
+                        first_score+=15;
                         first_check = true;
                         Debug.Log("분말법을 하기 전 사진을 찍었다.");
 
-                        Check.text = "first";
+                        //Check.text = "first";
                     }
 
                     if (fingerprintobject.isVisible == true && second_check != true) // 분말법을 한 후 사진을 찍었을 경우
                     {
-                        second_score++;
+                        second_score+=15;
                         second_check = true;
                         Debug.Log("분말법을 한 후 사진을 찍었다.");
-                        Check.text = "Succeed";
+                        //Check.text = "Succeed";
                     }
 
                     if (first_check == false && second_check == true)
                     {
                         Debug.Log("분말법을 하기 전 사진을 찍지 않았다.");
-                        Check.text = "OnlySecond";
+                        //Check.text = "OnlySecond";
                     }
 
 
-                    Score.text = "F=" + first_score + " S=" + second_score;
+                    //Score.text = "F=" + first_score + " S=" + second_score;
+                    Score.text = ""+first_score;
+                    Score2.text = ""+second_score;
                     //Check.text = "True";
                     Debug.Log("True");
                 }
