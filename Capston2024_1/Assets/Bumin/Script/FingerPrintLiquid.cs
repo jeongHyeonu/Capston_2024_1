@@ -43,5 +43,6 @@ public class FingerPrintLiquid : MonoBehaviour
     {
         yield return new WaitForSeconds(5f);
         this.transform.gameObject.GetComponent<MeshRenderer>().materials[0].DOFade(1f, 0.4f); // 페이드 인 효과를 적용
+        Debug.Log("Finger Liquid Clear NPC Set"); // 페이드 인 효과가 적용되었음을 로그로 출력
     }
 }
