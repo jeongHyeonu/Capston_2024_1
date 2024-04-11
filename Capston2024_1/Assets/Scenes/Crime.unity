@@ -3146,6 +3146,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6139aae07a5c58b44b688df6add27085, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
+  m_materialColorField: 
+  isDistanceGrabbed: 0
   Snapped: 0
   SlotItem: {fileID: 0}
   SlotRotation: {fileID: 284322247}
@@ -16764,6 +16771,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
+      propertyPath: _trackingOriginType
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -18196,6 +18207,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6139aae07a5c58b44b688df6add27085, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
+  m_materialColorField: 
+  isDistanceGrabbed: 0
   Snapped: 0
   SlotItem: {fileID: 0}
   SlotRotation: {fileID: 1431270129}
@@ -20379,6 +20397,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6139aae07a5c58b44b688df6add27085, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
+  m_materialColorField: 
+  isDistanceGrabbed: 0
   Snapped: 0
   SlotItem: {fileID: 0}
   SlotRotation: {fileID: 1575516559}
