@@ -17,7 +17,6 @@ public class BtnSettingClicked : MonoBehaviour
     {
         SettingUIActive = true;
         SettingUI.SetActive(SettingUIActive);
-        WristMenuVR.WristMenuUIActive = false;
     }
 
     //Setting UI ∫Ò»∞º∫
@@ -37,7 +36,7 @@ public class BtnSettingClicked : MonoBehaviour
 
     private void Start()
     {
-        SettingUnActive();  //SettingUI Actvie
+        SettingUnActive();  //SettingUI UnActvie
     }
 
     void Update()

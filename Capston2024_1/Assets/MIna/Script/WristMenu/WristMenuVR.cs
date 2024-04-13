@@ -26,6 +26,10 @@ public class WristMenuVR : MonoBehaviour
 
     private void Start()
     {
+        BtnSettingClicked.SettingUIActive = false;
+        BtnGalleryClicked.GalleryUIActive = false;
+        BtnCameraClicked.CameraActive = false;
+        BtnFlashLightClicked.FlashLightActive = false;
         WristMenuUnActive();
     }
 
@@ -51,11 +55,18 @@ public class WristMenuVR : MonoBehaviour
             WristMenuUnActive();
         }
 
-        
+        /*
+        //Camera,FlashLight가 활성화 상태인 경우 -> WristUI 끄기
         if (BtnCameraClicked.CameraActive == true || BtnFlashLightClicked.FlashLightActive == true )
         {
             WristMenuUnActive();
         }
-        
+        */
+
+        //Camera와 FlashLight가 동시에 활성화 상태인 경우(두 손 모두 사용중) -> WristUI 끄기
+        if (BtnCameraClicked.CameraActive == true && BtnFlashLightClicked.FlashLightActive == true)
+        {
+            WristMenuUnActive();
+        }
     }
 }

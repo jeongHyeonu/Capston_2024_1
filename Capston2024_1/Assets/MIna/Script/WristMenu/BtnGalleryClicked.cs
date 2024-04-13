@@ -15,7 +15,6 @@ public class BtnGalleryClicked : MonoBehaviour
     {
         GalleryUIActive = true;
         GalleryUI.SetActive(GalleryUIActive);
-        WristMenuVR.WristMenuUIActive = false;
     }
 
     //Setting UI ∫Ò»∞º∫
@@ -35,7 +34,7 @@ public class BtnGalleryClicked : MonoBehaviour
 
     private void Start()
     {
-        GalleryUnActive();  //GalleryUI Actvie
+        GalleryUnActive();  //GalleryUI UnActvie
     }
 
     void Update()
