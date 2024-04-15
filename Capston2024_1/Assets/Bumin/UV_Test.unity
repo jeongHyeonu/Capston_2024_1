@@ -591,6 +591,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flashlight
       objectReference: {fileID: 0}
+    - target: {fileID: 7451354116154007336, guid: 8227406c06d23ab48b3d803b0ba5ec79,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7451354116154007336, guid: 8227406c06d23ab48b3d803b0ba5ec79,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8808787502382936941, guid: 8227406c06d23ab48b3d803b0ba5ec79,
         type: 3}
       propertyPath: m_LocalPosition.x
