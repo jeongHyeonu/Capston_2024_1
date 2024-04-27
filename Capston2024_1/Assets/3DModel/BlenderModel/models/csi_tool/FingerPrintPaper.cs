@@ -12,14 +12,16 @@ public class FingerPrintPaper : MonoBehaviour
     [SerializeField] public GameObject fingerPrintTape_knife; // 흉기 위에 있는 지문  
 
     [SerializeField] public GameObject lastTutoBoard;
+    [SerializeField] public GameObject tutoCam;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject == fingerPrintTape_soju) // 소주병 위에 있는 지문일때
         {
-            Vector3 spawnPoint = this.transform.position + new Vector3(0, .01f, 0);
+            Vector3 spawnPoint = this.transform.position + new Vector3(0, .05f, 0);
             TutorialUX.Instance.hologramObjects[4].SetActive(false);
             lastTutoBoard?.SetActive(true);
+            tutoCam?.GetComponent<TutorialCamera>().lastStep_ON();
             Destroy(fingerPrintTape_soju);
             Instantiate(fingerPrintPaperBlack, spawnPoint, Quaternion.Euler(Vector3.zero));
         }
