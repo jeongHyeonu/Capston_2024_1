@@ -21,6 +21,12 @@ public class ScreenTexture_VR_image : MonoBehaviour
     public bool pull = false;
     public Vector3 firstPos; //사진의 저장소 처음 위치
     public Quaternion firstRot; //사진의 저장소 처음 각도
+
+
+
+    //카메라 라이트 기능
+    public GameObject camera_light;
+
     void Start()
     {
         resWidth = Screen.width;
@@ -38,6 +44,9 @@ public class ScreenTexture_VR_image : MonoBehaviour
         Debug.Log("처음 각도" + firstRot);
 
         StartCoroutine(CheckCamera());//0308 코루틴 시작
+
+
+        camera_light.SetActive(false);
     }
     /*
     void Update()
@@ -61,13 +70,16 @@ public class ScreenTexture_VR_image : MonoBehaviour
         //if (OVRInput.GetDown(OVRInput.Button.One) && pull == false && GrabCamera.onCamera == true)
         if (OVRInput.GetDown(OVRInput.Button.One) && GrabCamera.onCamera == true)
             {//카메라를 손에 쥐고 있고 A 버튼을 누를 경우 실행
+            camera_light.SetActive(true);//라이트 키기
             ClickScreenShot();
             Create3();
+            camera_light.SetActive(false);//라이트 끄기
         }
+        /*
         if (OVRInput.GetDown(OVRInput.Button.Two))
         {//B 버튼을 누를 경우 실행
             PullAlbum2();
-        }
+        }*/
         yield return new WaitForSeconds(0); // _time 만큼 쉬었다가
         StartCoroutine(CheckCamera()); // 재귀적으로 코루틴 실행
     }
@@ -139,6 +151,7 @@ public class ScreenTexture_VR_image : MonoBehaviour
     private int how_y = 0;
     public void Create3()
     {
+        Debug.Log("생성");
         if (how_x >= 3)
         {
             how_x = 0;

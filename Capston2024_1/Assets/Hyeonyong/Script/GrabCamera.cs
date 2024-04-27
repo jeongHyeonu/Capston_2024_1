@@ -9,6 +9,11 @@ public class GrabCamera : MonoBehaviour
     public Transform RightHand; //오른손
     private bool grab = false; //오른손과 충돌 중인가?
     public static bool onCamera=false; //카메라를 손에 쥐었는가?
+
+
+
+   // public GameObject Filter;
+   // private bool onFilter = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +35,15 @@ public class GrabCamera : MonoBehaviour
 
             PutDownCamera();
             grab = false;
+        }*/
+
+        /*
+        if (onCamera == true && OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger))
+        {
+            SetFilter(onFilter);
+            onFilter = !onFilter;
+
+            Debug.Log("필터소환.");
         }*/
     }
 
@@ -76,6 +90,8 @@ public class GrabCamera : MonoBehaviour
     }
 
     // 손이 있는지 체크하는 코루틴 0308
+
+
     IEnumerator HandCheckCoroutine()
     {
         if (OVRInput.GetDown(OVRInput.Button.SecondaryHandTrigger)&&grab==true)
@@ -89,6 +105,7 @@ public class GrabCamera : MonoBehaviour
             PutDownCamera();
             onCamera = false;
         }
+
         yield return new WaitForSeconds(0); 
         if (grab == true)
         {
@@ -113,4 +130,8 @@ public class GrabCamera : MonoBehaviour
         Debug.Log("놓았다.") ;
         //Camera.transform.SetParent(null);
     }
+    /*
+    public void SetFilter(bool check) {
+        Filter.SetActive(check);
+    }*/
 }

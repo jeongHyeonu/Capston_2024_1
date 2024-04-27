@@ -22,6 +22,10 @@ public class FingerPrintTape : MonoBehaviour
     bool isTapeOnSoju = false;
     bool isTapeOnKnife = false;
 
+
+    public bool onTape = false; //0426자 양현용 : 테이프 생성 판단용으로 추가
+    
+
     private void Start() // 원래 물체 존재했던 위치 기억
     {
         originPos = transform.position;
@@ -32,6 +36,13 @@ public class FingerPrintTape : MonoBehaviour
         if (other.gameObject == fingerPrintOnSoju) // 소주병 위에 있는 지문일때
         {
             if (fingerPrintOnSoju.GetComponent<FingerPrintObject>().isVisible == false) return; // 지문이 아직 드러나지 않았다면 실행X
+
+
+
+            //////////////////////////////////////////////////////////
+            onTape = true;//0426자 양현용 : 테이프 생성 판단용으로 추가
+            //////////////////////////////////////////////////////////
+
 
             // 코루틴 실행
             isTapeOnSoju = true;
@@ -44,6 +55,12 @@ public class FingerPrintTape : MonoBehaviour
         if (other.gameObject == fingerPrintOnKnife) // 흉기 위에 있는 지문일때
         {
             if (fingerPrintOnKnife.GetComponent<FingerPrintObject>().isVisible == false) return; // 지문이 아직 드러나지 않았다면 실행X
+
+
+            //////////////////////////////////////////////////////////
+            onTape = true;//0426자 양현용 : 테이프 생성 판단용으로 추가
+            //////////////////////////////////////////////////////////
+
 
             // 코루틴 실행
             isTapeOnKnife = true;
@@ -90,6 +107,9 @@ public class FingerPrintTape : MonoBehaviour
         // 왼손-오른손 위치 체크
         if (Vector3.Distance(indicatorHand.transform.position,leftHand.transform.position)<.08f) // 왼손과 표시자 손이 가까이 있는가 검사
         {
+
+
+
             isTapeOnSoju = false;
             fp_paper.fingerPrintTape_soju = Instantiate(fingerPrintTape_soju, this.transform.position,Quaternion.Euler(new Vector3(0, 0, 0)));
             fingerPrintOnSoju.SetActive(false);
@@ -117,6 +137,8 @@ public class FingerPrintTape : MonoBehaviour
         // 왼손-오른손 위치 체크
         if (Vector3.Distance(indicatorHand.transform.position, leftHand.transform.position) < .08f) // 왼손과 표시자 손이 가까이 있는가 검사
         {
+
+
             isTapeOnKnife = false;
             fp_paper.fingerPrintTape_knife = Instantiate(fingerPrintTape_knife, this.transform.position, Quaternion.Euler(new Vector3(0,0,0)));
             fingerPrintOnKnife.SetActive(false);
