@@ -6,7 +6,7 @@ using UnityEngine;
 public class FingerPrintLiquid : MonoBehaviour
 {
     private bool paperTriggered = false; // Paper와의 충돌을 추적하기 위한 변수
-    private bool ironLiquidTriggered = false; // Iron_Liquid와의 충돌을 추적하기 위한 변수
+    private bool hairLiquidTriggered = false; // Iron_Liquid와의 충돌을 추적하기 위한 변수
     private bool liquidTriggered = false; // Liquid와의 충돌을 추적하기 위한 변수
 
     // Paper와 Iron_Liquid의 충돌을 감지하는 메서드
@@ -16,9 +16,9 @@ public class FingerPrintLiquid : MonoBehaviour
         {
             paperTriggered = true; // Paper와의 충돌이 발생했음을 표시
         }
-        else if (other.gameObject.layer == LayerMask.NameToLayer("Iron"))
+        else if (other.gameObject.layer == LayerMask.NameToLayer("Hair"))
         {
-            ironLiquidTriggered = true; // Iron_Liquid와의 충돌이 발생했음을 표시
+            hairLiquidTriggered = true; // Iron_Liquid와의 충돌이 발생했음을 표시
         }
         else if (other.gameObject.CompareTag("Liquid"))
         {
@@ -32,7 +32,7 @@ public class FingerPrintLiquid : MonoBehaviour
     private void CheckTriggered()
     {
         // Paper와 Iron_Liquid 모두 충돌한 경우
-        if (paperTriggered && ironLiquidTriggered && liquidTriggered)
+        if (paperTriggered && hairLiquidTriggered && liquidTriggered)
         {
             StartCoroutine(TriggerEffect()); // 지연 실행을 위한 코루틴 시작
         }

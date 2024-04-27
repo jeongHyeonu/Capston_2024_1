@@ -12,6 +12,7 @@ TagManager:
   - TransparentObject
   - Liquid
   - Paper
+  - SamplesInfoPanel
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - 
   - UV_Light
   - 
-  - Iron
+  - Hair
   - Liquid
   - Paper
   - 
