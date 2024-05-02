@@ -7,9 +7,11 @@ public class FingerPrintPaper : MonoBehaviour
 {
     [SerializeField] GameObject fingerPrintPaperBlack; // 프리팹
     [SerializeField] GameObject fingerPrintPaperUV; // 프리팹
+    [SerializeField] GameObject fingerPrintPaperRed; // 프리팹
 
     [SerializeField] public GameObject fingerPrintTape_soju; // 소주병 위에 있는 지문
     [SerializeField] public GameObject fingerPrintTape_knife; // 흉기 위에 있는 지문  
+    [SerializeField] public GameObject fingerPrintTape_red;
 
     [SerializeField] public GameObject lastTutoBoard;
     [SerializeField] public GameObject tutoCam;
@@ -31,6 +33,13 @@ public class FingerPrintPaper : MonoBehaviour
             Vector3 spawnPoint = this.transform.position + new Vector3(0, .01f, 0);
             Destroy(fingerPrintTape_knife);
             Instantiate(fingerPrintPaperUV, spawnPoint, Quaternion.Euler(Vector3.zero));
+        }
+
+        if (other.gameObject == fingerPrintTape_red) // 적색지문일때
+        {
+            Vector3 spawnPoint = this.transform.position + new Vector3(0, .01f, 0);
+            Destroy(fingerPrintTape_red);
+            Instantiate(fingerPrintPaperRed, spawnPoint, Quaternion.Euler(Vector3.zero));
         }
     }
 }

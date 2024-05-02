@@ -9,6 +9,7 @@ public class FingerPrintPowder : MonoBehaviour
     {
         ironPowder, // 철가루
         fluorescencePowder, // 형광가루
+        fluorescenceRedPowder, // 빨간 형광가루
         silver, // 은백색 가루
         none, // 입혀진 가루 없음
     }
@@ -30,6 +31,9 @@ public class FingerPrintPowder : MonoBehaviour
                     break;
                 case powderType.fluorescencePowder:
                     brushObj.p_type = powderType.fluorescencePowder;
+                    break;
+                case powderType.fluorescenceRedPowder:
+                    brushObj.p_type = powderType.fluorescenceRedPowder;
                     break;
                 case powderType.silver:
                     brushObj.p_type = powderType.silver;

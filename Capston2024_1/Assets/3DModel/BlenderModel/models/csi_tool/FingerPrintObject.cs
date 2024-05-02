@@ -23,12 +23,22 @@ public class FingerPrintObject : MonoBehaviour
     {
         soju,
         knife,
+        cup
     }
 
     // 소주병 지문에 트리거 Enter시 또는 흉기 지문에 트리거 Enter시 실행
     private void OnTriggerEnter(Collider other)
     {
-        if (isVisible == true) return; // 지문 보이는 상태면 실행X
+        // 지문 보이는 상태면, 테이프 닿았을때 지문 테이프 생성
+        if (isVisible == true)
+        {
+            //급한대로 하드코딩.. ㅈㅅ
+            if (this.object_type==ObjectType.cup && other.gameObject.name == "fingerprint_kit_01.tape")
+            {
+                GetComponent<MeshRenderer>().enabled = false;  
+                this.gameObject.transform.GetChild(0).gameObject.SetActive(true);
+            }
+        }
 
         if (other.gameObject.name == "brushHead")
         {
@@ -49,6 +59,13 @@ public class FingerPrintObject : MonoBehaviour
                 this.gameObject.GetComponent<MeshRenderer>().material.DOFade(1f, 2f);
                 isVisible = true; // 나중에 테이프로 채취시, 지문이 드러났는지 여부가 true일때 채취 가능
                 //TutorialUX.Instance.NextHologram();
+            }
+
+            if (brushObj.p_type == powderType.fluorescenceRedPowder && object_type == ObjectType.cup)
+            {
+                this.gameObject.GetComponent<MeshRenderer>().material.DOFade(1f, 2f);
+                isVisible = true; // 나중에 테이프로 채취시, 지문이 드러났는지 여부가 true일때 채취 가능
+                rulerAndCard?.SetActive(true);
             }
         }
     }
