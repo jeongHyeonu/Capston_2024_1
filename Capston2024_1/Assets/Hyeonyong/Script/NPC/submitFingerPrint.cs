@@ -12,6 +12,9 @@ public class submitFingerPrint : MonoBehaviour
     public TextMeshPro thirdCameraScore1;
 
     public bool isfreeTest = false;
+
+
+    public bool submit = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,11 +33,16 @@ public class submitFingerPrint : MonoBehaviour
         Debug.Log("npc에 닿았다.");
         if (other.tag=="FINGERPRINTCARD")
         {
-            checkcard=other.GetComponent<CheckCard>();
+            submit = true;
+            checkcard =other.GetComponent<CheckCard>();
             if (checkcard.onCheckCard == true)
             {
                 Debug.Log("npc에 제출성공.");
-                thirdCameraScore1.text = "15";
+
+                if (thirdCameraScore1 != null)
+                {
+                    thirdCameraScore1.text = "15";
+                }
                 Destroy(other.gameObject);
             }
             else if(checkcard.onCheckCard == false)

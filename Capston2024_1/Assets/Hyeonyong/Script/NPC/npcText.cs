@@ -40,6 +40,14 @@ public class npcText : MonoBehaviour
         StartCoroutine(Clean());
     }
 
+    // 증거물 사진을 촬영하지 않고 액체법을 시행했을 때
+    public void FailedFirstCamera_Liquid() //CheckCamera관련
+    {
+        onFailed = true;
+        Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
+        npc.text = "first Camera Failed";
+        StartCoroutine(Clean());
+    }
 
     // 분말의 양이 적거나 많을 때
     public void FailedAmountPowder()
@@ -79,6 +87,12 @@ public class npcText : MonoBehaviour
         StartCoroutine(Clean());
     }
 
+    public void FindFingerPrint() {
+        onFailed = true;
+        Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
+        npc.text = "FreeTest";
+        StartCoroutine(Clean());
+    }
     
     IEnumerator Clean() {
         

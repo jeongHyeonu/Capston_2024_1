@@ -21,11 +21,8 @@ EditorBuildSettings:
     path: Assets/prototype/FingerPrint_test2.unity
     guid: 531b06692c5a005458b3a41a3761a60c
   - enabled: 1
-    path: Assets/Hyeonyong/Scenes/Tutorial_test.unity
-    guid: 39713371811757a41a918bd711f31399
-  - enabled: 1
-    path: Assets/Hyeonyong/Scenes/Crime_test.unity
-    guid: 0110f4f10af4a8b4982befc9ef75fe02
+    path: Assets/Hyeonyong/Scenes/Crime_Hyeonyong.unity
+    guid: d28d81390dad9ae4d8ae4c2b08237dde
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 8b3bff07114b49d48b6cc1e1d1dc9b7f,
       type: 2}

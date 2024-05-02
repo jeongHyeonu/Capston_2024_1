@@ -5,9 +5,9 @@ using UnityEngine;
 
 public class FingerPrintLiquid : MonoBehaviour
 {
-    private bool paperTriggered = false; // Paper와의 충돌을 추적하기 위한 변수
-    private bool hairLiquidTriggered = false; // Iron_Liquid와의 충돌을 추적하기 위한 변수
-    private bool liquidTriggered = false; // Liquid와의 충돌을 추적하기 위한 변수
+    public bool paperTriggered = false; // Paper와의 충돌을 추적하기 위한 변수
+    public bool hairLiquidTriggered = false; // Iron_Liquid와의 충돌을 추적하기 위한 변수
+    public bool liquidTriggered = false; // Liquid와의 충돌을 추적하기 위한 변수
 
     // Paper와 Iron_Liquid의 충돌을 감지하는 메서드
     private void OnTriggerEnter(Collider other)
