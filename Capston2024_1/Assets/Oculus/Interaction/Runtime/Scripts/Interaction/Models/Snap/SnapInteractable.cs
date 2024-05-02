@@ -92,6 +92,7 @@ namespace Oculus.Interaction
             if (SnapPoseDelegate != null)
             {
                 SnapPoseDelegate.TrackElement(interactor.Identifier, interactor.SnapPose);
+                interactor.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
             }
         }
 
@@ -110,6 +111,7 @@ namespace Oculus.Interaction
             if (SnapPoseDelegate != null)
             {
                 SnapPoseDelegate.SnapElement(interactor.Identifier, interactor.SnapPose);
+                interactor.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
             }
         }
 

@@ -19,17 +19,17 @@ public class SnapItem : MonoBehaviour
         // item을 잡았는지 확인
         isGrabbed = GetComponent<OVRGrabbable>().isGrabbed;
 
-        // item을 인벤토리에 넣었는지 확인
+        // item이 slot에 있는지 확인
         isItemSnapped = SnapPos.GetComponent<SnapLoaction>().Snapped;
 
-        if(isItemSnapped == true)   // item을 Slot에 넣었을 경우
+        if (isItemSnapped == true)   // item을 Slot에 넣었을 경우
         {
             GetComponent<Rigidbody>().isKinematic = true;
             transform.SetParent(Slot.transform);
             isSnapped = true;
         }
 
-        if(isItemSnapped == false && isGrabbed == false)    // item을 Slot에 안 넣은 상태+손에서 놓았을 때
+        if (isItemSnapped == false && isGrabbed == false)    // item을 Slot에 안 넣은 상태&&손에서 놓았을 때
         {
             GetComponent<Rigidbody>().isKinematic = false;
         }
