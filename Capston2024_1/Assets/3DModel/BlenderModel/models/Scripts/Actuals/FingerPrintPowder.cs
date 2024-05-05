@@ -39,8 +39,6 @@ public class FingerPrintPowder : MonoBehaviour
                     brushObj.p_type = powderType.silver;
                     break;
             }
-
-            TutorialUX.Instance.TriggerUX_ON(this.gameObject);
         }
     }
 
@@ -53,8 +51,6 @@ public class FingerPrintPowder : MonoBehaviour
             if (brushObj.isEquiped) return; // 이미 붓에 입혀진 경우 실행X
 
             brushObj.p_type = powderType.none;
-
-            TutorialUX.Instance.UX_OFF();
         }
     }
 }

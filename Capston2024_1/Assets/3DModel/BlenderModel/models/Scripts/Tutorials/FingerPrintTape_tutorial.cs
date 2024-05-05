@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // 지문채취 테이프에 부여할 스크립트 - 소주병 지문에 닿으면 실행
-public class FingerPrintTape : MonoBehaviour
+public class FingerPrintTape_tutorial : MonoBehaviour
 {
     [SerializeField] GameObject fingerPrintTape_soju; // 프리팹
     [SerializeField] GameObject fingerPrintTape_knife; // 프리팹
@@ -17,7 +17,7 @@ public class FingerPrintTape : MonoBehaviour
     [SerializeField] GameObject indicatorHand; // ux, 지문에 손 갖다댈 경우 표시자
     [SerializeField] Vector3 originPos; // 원래 물체 존재했던 위치
 
-    [SerializeField] FingerPrintPaper fp_paper; // 전사지
+    [SerializeField] FingerPrintPaper_tutorial fp_paper; // 전사지
     
     bool isTapeOnSoju = false;
     bool isTapeOnKnife = false;
@@ -35,7 +35,7 @@ public class FingerPrintTape : MonoBehaviour
     {
         if (other.gameObject == fingerPrintOnSoju) // 소주병 위에 있는 지문일때
         {
-            if (fingerPrintOnSoju.GetComponent<FingerPrintObject>().isVisible == false) return; // 지문이 아직 드러나지 않았다면 실행X
+            if (fingerPrintOnSoju.GetComponent<FingerPrintObject_tutorial>().isVisible == false) return; // 지문이 아직 드러나지 않았다면 실행X
 
 
 
@@ -54,7 +54,7 @@ public class FingerPrintTape : MonoBehaviour
 
         if (other.gameObject == fingerPrintOnKnife) // 흉기 위에 있는 지문일때
         {
-            if (fingerPrintOnKnife.GetComponent<FingerPrintObject>().isVisible == false) return; // 지문이 아직 드러나지 않았다면 실행X
+            if (fingerPrintOnKnife.GetComponent<FingerPrintObject_tutorial>().isVisible == false) return; // 지문이 아직 드러나지 않았다면 실행X
 
 
             //////////////////////////////////////////////////////////

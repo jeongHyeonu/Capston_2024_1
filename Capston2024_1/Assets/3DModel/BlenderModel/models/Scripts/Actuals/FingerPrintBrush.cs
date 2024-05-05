@@ -64,7 +64,6 @@ public class FingerPrintBrush : MonoBehaviour
             {
                 case FingerPrintPowder.powderType.ironPowder:
                     IronPowder_equip();
-                    TutorialUX.Instance?.NextHologram(1); // 튜토리얼일때, 홀로그램 적용
                     break;
                 case FingerPrintPowder.powderType.fluorescencePowder:
                     FluorescencePowder_equip();

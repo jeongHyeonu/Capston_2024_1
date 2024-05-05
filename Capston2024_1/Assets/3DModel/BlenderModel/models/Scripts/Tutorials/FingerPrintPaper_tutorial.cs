@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // 지문채취 전사지에 부여할 스크립트 - 지문 감식 테이프 올려놓으면 수행
-public class FingerPrintPaper : MonoBehaviour
+public class FingerPrintPaper_tutorial : MonoBehaviour
 {
     [SerializeField] GameObject fingerPrintPaperBlack; // 프리팹
     [SerializeField] GameObject fingerPrintPaperUV; // 프리팹

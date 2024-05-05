@@ -2,14 +2,14 @@ using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static FingerPrintPowder;
+using static FingerPrintPowder_tutorial;
 
 // 지문 검사 대상에 부여할 스크립트
 // -----------------------------------------------
 // 소주병 지문에 부여할 스크립트, 철가루 자석붓 올려놓을 경우 지문이 드러남
 // 흉기 지문에 부여할 스크립트, 형광가루 자석붓 올려놓을 경우 지문이 드러남
 
-public class FingerPrintObject : MonoBehaviour
+public class FingerPrintObject_tutorial : MonoBehaviour
 {
     public bool isVisible = false;
     [SerializeField] private ObjectType object_type;
@@ -42,7 +42,7 @@ public class FingerPrintObject : MonoBehaviour
 
         if (other.gameObject.name == "brushHead")
         {
-            FingerPrintBrush brushObj = other.transform.parent.gameObject.GetComponent<FingerPrintBrush>();
+            FingerPrintBrush_tutorial brushObj = other.transform.parent.gameObject.GetComponent<FingerPrintBrush_tutorial>();
 
             if(brushObj.p_type == powderType.ironPowder && object_type == ObjectType.soju)
             {
