@@ -10,7 +10,7 @@ public class GrabCamera : MonoBehaviour
     private bool grab = false; //오른손과 충돌 중인가?
     public static bool onCamera=false; //카메라를 손에 쥐었는가?
 
-
+    public bool onCrime = false;
 
    // public GameObject Filter;
    // private bool onFilter = true;
@@ -128,10 +128,10 @@ public class GrabCamera : MonoBehaviour
     {
         onCamera = false;
         Debug.Log("놓았다.") ;
-        //Camera.transform.SetParent(null);
+
+        if (onCrime == true)
+        {
+            Camera.transform.position += new Vector3(0f, 100f, 0f);
+        }
     }
-    /*
-    public void SetFilter(bool check) {
-        Filter.SetActive(check);
-    }*/
 }

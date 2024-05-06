@@ -17,7 +17,7 @@ public class npcText : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Canvas.position = Canvas.position + new Vector3(100f, 0f, 0f);
+        Canvas.position = Canvas.position + new Vector3(0f, 100f, 0f);
 
     }
 
@@ -99,7 +99,7 @@ public class npcText : MonoBehaviour
             if (OVRInput.GetDown(OVRInput.Button.Two))
             {
                 Debug.Log(" B 버튼 눌림");
-                Canvas.transform.position = Canvas.transform.position + new Vector3(100f, 0f, 0f);
+                Canvas.transform.position = Canvas.transform.position + new Vector3(0f, 100f, 0f);
                 onFailed = false;
             }
             yield return new WaitForSeconds(0); // _time 만큼 쉬었다가

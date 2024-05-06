@@ -14,7 +14,7 @@ public class FingerPrintTape : MonoBehaviour
 
 
     public bool onTape = false; //0426자 양현용 : 테이프 생성 판단용으로 추가
-    
+    public string name;
 
     private void Start() // 원래 물체 존재했던 위치 기억
     {
@@ -23,6 +23,9 @@ public class FingerPrintTape : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+
+
+
         if(other.gameObject.TryGetComponent<FingerPrintObject>(out var fp_obj))
         {
             if (fp_obj.isVisible == false) return; // 지문이 아직 드러나지 않았다면 실행X
@@ -50,7 +53,12 @@ public class FingerPrintTape : MonoBehaviour
 
             fp_obj.gameObject.SetActive(false);
             SoundManager.Instance.PlaySFX(SoundManager.SFX_list.TAPE); // 사운드
+
+            ////////////////////////////////0505일자 양현용 추가 : 경고메시지용
+            onTape = true;
+            //////////////////////////////
         }
+
 
     }
 

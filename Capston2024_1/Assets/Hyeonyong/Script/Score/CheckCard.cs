@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
 
@@ -14,6 +15,10 @@ public class CheckCard : MonoBehaviour
 
 
     public bool onCheckCard=false;
+
+
+    public TextMeshProUGUI score;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -79,6 +84,74 @@ public class CheckCard : MonoBehaviour
                 if (viewportPoint.x > 0.1 && viewportPoint.x < 0.9 &&
                      viewportPoint.y > 0.1 && viewportPoint.y < 0.9 && viewportPoint.z > 0)
                 {
+                    if(gameObject.name=="Door1")
+                    {
+                        GameObject onscore = GameObject.Find("1-7");
+                        score = (TextMeshProUGUI)onscore.GetComponent("TextMeshProUGUI");
+                        if (score != null)
+                        {
+                            score.text = "" + 15;
+                        }
+                        else {
+                            Debug.Log("score가 없다.");
+                        }
+                    }
+
+                    if (gameObject.name == "Chair1")
+                    {
+                        GameObject onscore = GameObject.Find("2-7");
+                        score = (TextMeshProUGUI)onscore.GetComponent("TextMeshProUGUI");
+                        if (score != null)
+                        {
+                            score.text = "" + 15;
+                        }
+                        else
+                        {
+                            Debug.Log("score가 없다.");
+                        }
+                    }
+
+                    if (gameObject.name == "Desk1")
+                    {
+                        GameObject onscore = GameObject.Find("3-7");
+                        score = (TextMeshProUGUI)onscore.GetComponent("TextMeshProUGUI");
+                        if (score != null)
+                        {
+                            score.text = "" + 15;
+                        }
+                        else
+                        {
+                            Debug.Log("score가 없다.");
+                        }
+                    }
+
+                    if (gameObject.name == "Drawer1")
+                    {
+                        GameObject onscore = GameObject.Find("4-7");
+                        score = (TextMeshProUGUI)onscore.GetComponent("TextMeshProUGUI");
+                        if (score != null)
+                        {
+                            score.text = "" + 15;
+                        }
+                        else
+                        {
+                            Debug.Log("score가 없다.");
+                        }
+                    }
+
+                    if (gameObject.name == "Door1")
+                    {
+                        GameObject onscore = GameObject.Find("5-7");
+                        score = (TextMeshProUGUI)onscore.GetComponent("TextMeshProUGUI");
+                        if (score != null)
+                        {
+                            score.text = "" + 15;
+                        }
+                        else
+                        {
+                            Debug.Log("score가 없다.");
+                        }
+                    }
                     onCheckCard = true;
                 }
         }

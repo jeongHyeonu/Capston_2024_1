@@ -513,3 +513,4 @@ MonoBehaviour:
   RightHand: {fileID: 0}
   HandTrigger: {fileID: 0}
   onCheckCard: 0
+  score: {fileID: 0}

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEditor.XR;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class onCrimeNPC2 : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class onCrimeNPC2 : MonoBehaviour
     public Transform Canvas; //텍스트 캔버스
 
 
+    public GameObject CheckButton;
     /*
 public Vector3 firstPos; //캔버스 처음 위치
 public Quaternion firstRot; //캔버스 처음 각도
@@ -25,21 +27,25 @@ public Quaternion firstRot; //캔버스 처음 각도
     public bool replay = false;
 
 
-    public submitFingerPrint submitfingerprint;
-    public bool onsubmit=false;
-    public bool onsubmit_clean=false;
+    //public submitFingerPrint submitfingerprint;
+    //public bool onsubmit=false;
+    //public bool onsubmit_clean=false;
     void Start()
     {
         // firstPos = Canvas.position;
         Canvas.position = Canvas.position + new Vector3(100f, 0f, 0f);
         //firstRot = Canvas.rotation;
 
-        submitfingerprint = gameObject.GetComponent<submitFingerPrint>();
+        //submitfingerprint = gameObject.GetComponent<submitFingerPrint>();
+
+
+        ////결과 확인 버튼 비활성화
+        CheckButton.SetActive(false);
 
     }
     private void OnTriggerEnter(Collider other)
     {
-        onsubmit = submitfingerprint.submit;
+        //onsubmit = submitfingerprint.submit;
         // 충돌한 객체가 NPC 태그를 가지고 있는지 확인
         if (other.gameObject.tag == playerTag)
         {
@@ -82,30 +88,35 @@ public Quaternion firstRot; //캔버스 처음 각도
 
                 // 버튼이 눌렸을 때 해야 할 작업들을 수행
                 Debug.Log("현재 번호: " + ScriptNum);
-                if (ScriptNum == 0 && onsubmit == false)
+                //if (ScriptNum == 0 && onsubmit == false)
+                if (ScriptNum == 0)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
                     npc1.text = "지문 감식이 다 끝나셨나요? 더 안 찾아보셔도 되겠어요?";//다 찾았어? 더 안찾아봐도 됨?
                 }
-                else if (ScriptNum == 1 && onsubmit == false)
-                {
+                //else if (ScriptNum == 1 && onsubmit == false)
+                else if (ScriptNum == 1)
+                        {
                     Canvas.transform.position = Canvas.transform.position + new Vector3(100f, 0f, 0f);
                 }
 
 
-                else if (ScriptNum == 2 && onsubmit == false)
+                //else if (ScriptNum == 2 && onsubmit == false)
+                else if (ScriptNum == 2)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
                     npc1.text = "전부 수사하셨나요? 알겠습니다.";//다 찾았어? 더 안찾아봐도 됨?
                 }
 
-                else if (ScriptNum == 3 && onsubmit == false)
+                //else if (ScriptNum == 3 && onsubmit == false)
+                else if (ScriptNum == 3)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
                     npc1.text = "수집한 증거물들은 제 오른쪽 박스에 조심히 넣어주신 후, 채취한 지문 전사판들은 제게 주세요.\n제출이 끝나면 제출완료 버튼을 눌러주세요.";//다 찾았어? 더 안찾아봐도 됨?
                 }
 
-                else if (ScriptNum == 4 && onsubmit == false)
+                //else if (ScriptNum == 4 && onsubmit == false)
+                else if (ScriptNum == 4)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
                     npc1.text = "제출이 끝나면 평가해 드릴 거에요. 평가표 확인이 끝나면 버튼을 눌러주세요.";//다 찾았어? 더 안찾아봐도 됨?
@@ -114,6 +125,10 @@ public Quaternion firstRot; //캔버스 처음 각도
                 else if (ScriptNum == 5)
                 {
                     Canvas.transform.position = Canvas.transform.position + new Vector3(100f, 0f, 0f);
+
+
+                    //결과 확인버튼 활성화
+                    CheckButton.SetActive(true);
                 }
                 /*
                 if (ScriptNum == 0 && onsubmit == false)
@@ -158,4 +173,24 @@ public Quaternion firstRot; //캔버스 처음 각도
             yield return null;
         }
     }
+
+
+    public GameObject CenterEyeObj;  // 오큘러스 CameraRig의 CenterEyeObj 연결
+    OVRScreenFade OFade;
+
+    public void SceneFade()
+    {
+        Debug.Log("씬 이동 시작");
+        OFade = CenterEyeObj.transform.GetComponent<OVRScreenFade>();
+        StartCoroutine(SceneFadeCoroutine());
+    }
+    IEnumerator SceneFadeCoroutine()
+    {
+        OFade.FadeOut();
+
+        yield return new WaitForSeconds(OFade.fadeTime);
+
+        SceneManager.LoadScene("Lab_Hyeonyong");
+    }
+
 }
