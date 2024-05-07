@@ -1,0 +1,7 @@
+URP in Three Simple Steps (or, how to avoid the Missing Magenta Texture of Doom)
+
+1. Ensure your project is using the Universal Render Pipeline. If the file 'GlassURP' in the Materials folder looks like a piece of paper with a folded corner, it's not URP
+
+2. Click the arrow to the right of the Shader Graph 'GlassURP' in the Materials folder and drag the material (looks like a shiny clear sphere) to the model (either a mesh from the 'Meshes' folder or one of your own)
+
+3. After a brief loading period, it should display as expected (contact me [uas.bubba@gmail.com] if not) 
