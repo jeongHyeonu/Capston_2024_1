@@ -12290,6 +12290,7 @@ GameObject:
   - component: {fileID: 370274668}
   - component: {fileID: 370274669}
   - component: {fileID: 370274670}
+  - component: {fileID: 370274671}
   m_Layer: 0
   m_Name: NearChair2
   m_TagString: Untagged
@@ -12347,6 +12348,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTag: Player
   near: 0
+--- !u!114 &370274671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370274667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 090907cad40bce044af8f8e018b12f33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onName: FreeTest
+  onChanged: 0
 --- !u!1 &374233331
 GameObject:
   m_ObjectHideFlags: 0
@@ -41000,6 +41015,7 @@ GameObject:
   - component: {fileID: 1012840984}
   - component: {fileID: 1012840986}
   - component: {fileID: 1012840985}
+  - component: {fileID: 1012840987}
   m_Layer: 0
   m_Name: NearDoor2
   m_TagString: Untagged
@@ -41057,6 +41073,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3, y: 2, z: 2}
   m_Center: {x: 0, y: 0, z: 0.3}
+--- !u!114 &1012840987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1012840983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 090907cad40bce044af8f8e018b12f33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onName: FreeTest
+  onChanged: 0
 --- !u!1 &1018249976
 GameObject:
   m_ObjectHideFlags: 0
@@ -64208,6 +64238,7 @@ GameObject:
   - component: {fileID: 1960315796}
   - component: {fileID: 1960315798}
   - component: {fileID: 1960315797}
+  - component: {fileID: 1960315799}
   m_Layer: 0
   m_Name: NearDesk2
   m_TagString: Untagged
@@ -64265,6 +64296,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1960315799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960315795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 090907cad40bce044af8f8e018b12f33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onName: FreeTest
+  onChanged: 0
 --- !u!1 &1960413498
 GameObject:
   m_ObjectHideFlags: 0

@@ -139,7 +139,7 @@ public class CheckCard : MonoBehaviour
                         }
                     }
 
-                    if (gameObject.name == "Door1")
+                    if (gameObject.name == "WaterTap1")
                     {
                         GameObject onscore = GameObject.Find("5-7");
                         score = (TextMeshProUGUI)onscore.GetComponent("TextMeshProUGUI");
