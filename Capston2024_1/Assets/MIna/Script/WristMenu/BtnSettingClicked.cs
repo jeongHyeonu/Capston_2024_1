@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class BtnSettingClicked : MonoBehaviour
 {
     //SettingUI 객체
     public GameObject SettingUI;
     public Button backBtn;
+    public Button restartBtn;
     //public GameObject SettingUIAnchor;
 
     public static bool SettingUIActive; //SettingUI 활성 상태 유무
@@ -33,6 +35,11 @@ public class BtnSettingClicked : MonoBehaviour
         SettingUnActive();
     }
 
+    //ReStart 버튼 함수
+    public void GoToStartScene()
+    {
+        SceneManager.LoadScene("Lab_Mina");
+    }
 
     private void Start()
     {
@@ -42,5 +49,6 @@ public class BtnSettingClicked : MonoBehaviour
     void Update()
     {
         backBtn.onClick.AddListener(BackBtnOnClick);    //SettingUI UnActvie
+        restartBtn.onClick.AddListener(GoToStartScene);
     }
 }
