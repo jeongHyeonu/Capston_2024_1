@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FingerPrintLiquidScore : MonoBehaviour
+public class FingerPrintLiquidScore2 : MonoBehaviour
 {
     private bool paperTriggered = false;
     private bool hairLiquidTriggered = false;
@@ -23,7 +23,7 @@ public class FingerPrintLiquidScore : MonoBehaviour
             LiquidScoreBoard liquidScoreBoard = FindObjectOfType<LiquidScoreBoard>();
             if (liquidScoreBoard != null)
             {
-                liquidScoreBoard.score4.text = "15";
+                liquidScoreBoard.score11.text = "15";
             }
         }
         else if (other.gameObject.layer == LayerMask.NameToLayer("Hair"))
@@ -42,7 +42,7 @@ public class FingerPrintLiquidScore : MonoBehaviour
             LiquidScoreBoard liquidScoreBoard = FindObjectOfType<LiquidScoreBoard>();
             if (liquidScoreBoard != null)
             {
-                liquidScoreBoard.score5.text = "15";
+                liquidScoreBoard.score12.text = "15";
             }
             StartCoroutine(TriggerEffect());
         }
