@@ -83,32 +83,30 @@ public class FingerPrintBrush : MonoBehaviour
 
         else // 가루 묻혀져있으면 방출
         {
-            isEquiped = false;
             SoundManager.Instance.PlaySFX(SoundManager.SFX_list.BRUSH); // 사운드
 
             switch (p_type)
             {
                 case FingerPrintPowder.powderType.ironPowder:
-                    ironPowder.SetActive(false);
-                    if (isStrong) { isStrong = false; ironPowder.GetComponent<MeshRenderer>().material.DOColor(Color.white, 0.2f); return; } // 메터리얼 원상복귀
                     ironParticle.Play();
+                    if (isStrong) { isStrong = false; ironPowder.GetComponent<MeshRenderer>().material.DOColor(Color.white, 0.2f); return; } // 메터리얼 원상복귀
+                    ironPowder.SetActive(false);
                     break;
                 case FingerPrintPowder.powderType.fluorescencePowder:
-                    fluorescencePowder.SetActive(false);
-                    if (isStrong) { isStrong = false; fluorescencePowder.GetComponent<MeshRenderer>().material.DOColor(Color.white, 0.2f); return; } // 메터리얼 원상복귀
                     fluorescenceParticle.Play();
+                    if (isStrong) { isStrong = false; fluorescencePowder.GetComponent<MeshRenderer>().material.DOColor(Color.white, 0.2f); return; } // 메터리얼 원상복귀
+                    fluorescencePowder.SetActive(false);
                     break;
                 case FingerPrintPowder.powderType.fluorescenceRedPowder:
-                    fluorescenceRedPowder.SetActive(false);
-                    if (isStrong) { isStrong = false; fluorescenceRedPowder.GetComponent<MeshRenderer>().material.DOColor(Color.white, 0.2f); return; } // 메터리얼 원상복귀
                     fluorescenceRedParticle.Play();
+                    if (isStrong) { isStrong = false; fluorescenceRedPowder.GetComponent<MeshRenderer>().material.DOColor(Color.white, 0.2f); return; } // 메터리얼 원상복귀
+                    fluorescenceRedPowder.SetActive(false);
                     break;
             }
 
             p_type = FingerPrintPowder.powderType.none;
+            isEquiped = false;
 
-
-            
         }
 
 

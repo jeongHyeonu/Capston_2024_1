@@ -16035,6 +16035,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isVisible: 0
   obj_type: 3
+  answerPowder: 0
+  targetScore1: {fileID: 0}
+  targetScore2: {fileID: 0}
   rulerAndCard: {fileID: 0}
   mat:
   - {fileID: 2100000, guid: cdba50f3436d0f440ba2fd5f3b027399, type: 2}
@@ -22563,6 +22566,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isVisible: 0
   obj_type: 3
+  answerPowder: 2
+  targetScore1: {fileID: 1983371790}
+  targetScore2: {fileID: 2092818391}
   rulerAndCard: {fileID: 0}
   mat:
   - {fileID: 2100000, guid: cdba50f3436d0f440ba2fd5f3b027399, type: 2}
@@ -32811,6 +32817,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isVisible: 0
   obj_type: 3
+  answerPowder: 0
+  targetScore1: {fileID: 333633081}
+  targetScore2: {fileID: 881627886}
   rulerAndCard: {fileID: 0}
   mat:
   - {fileID: 2100000, guid: cdba50f3436d0f440ba2fd5f3b027399, type: 2}
@@ -33330,6 +33339,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isVisible: 0
   obj_type: 3
+  answerPowder: 2
+  targetScore1: {fileID: 1062053804}
+  targetScore2: {fileID: 634446925}
   rulerAndCard: {fileID: 0}
   mat:
   - {fileID: 2100000, guid: cdba50f3436d0f440ba2fd5f3b027399, type: 2}
@@ -38228,6 +38240,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isVisible: 0
   obj_type: 3
+  answerPowder: 0
+  targetScore1: {fileID: 0}
+  targetScore2: {fileID: 0}
   rulerAndCard: {fileID: 0}
   mat:
   - {fileID: 2100000, guid: cdba50f3436d0f440ba2fd5f3b027399, type: 2}
@@ -62855,6 +62870,7 @@ MonoBehaviour:
     type: 3}
   originPos: {x: 0, y: 0, z: 0}
   isEquiped: 0
+  isStrong: 0
   p_type: 4
 --- !u!114 &1362943909
 MonoBehaviour:
@@ -70263,6 +70279,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isVisible: 0
   obj_type: 3
+  answerPowder: 2
+  targetScore1: {fileID: 2950405}
+  targetScore2: {fileID: 35562402}
   rulerAndCard: {fileID: 0}
   mat:
   - {fileID: 2100000, guid: cdba50f3436d0f440ba2fd5f3b027399, type: 2}
@@ -77221,6 +77240,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isVisible: 0
   obj_type: 3
+  answerPowder: 0
+  targetScore1: {fileID: 0}
+  targetScore2: {fileID: 0}
   rulerAndCard: {fileID: 0}
   mat:
   - {fileID: 2100000, guid: cdba50f3436d0f440ba2fd5f3b027399, type: 2}
@@ -78097,6 +78119,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isVisible: 0
   obj_type: 3
+  answerPowder: 0
+  targetScore1: {fileID: 0}
+  targetScore2: {fileID: 0}
   rulerAndCard: {fileID: 0}
   mat:
   - {fileID: 2100000, guid: cdba50f3436d0f440ba2fd5f3b027399, type: 2}
@@ -80465,6 +80490,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isVisible: 0
   obj_type: 3
+  answerPowder: 1
+  targetScore1: {fileID: 62180786}
+  targetScore2: {fileID: 1494836511}
   rulerAndCard: {fileID: 0}
   mat:
   - {fileID: 2100000, guid: cdba50f3436d0f440ba2fd5f3b027399, type: 2}
@@ -81015,6 +81043,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isVisible: 0
   obj_type: 3
+  answerPowder: 0
+  targetScore1: {fileID: 0}
+  targetScore2: {fileID: 0}
   rulerAndCard: {fileID: 0}
   mat:
   - {fileID: 2100000, guid: cdba50f3436d0f440ba2fd5f3b027399, type: 2}
@@ -81333,6 +81364,7 @@ MonoBehaviour:
     type: 3}
   originPos: {x: 0, y: 0, z: 0}
   isEquiped: 0
+  isStrong: 0
   p_type: 4
 --- !u!1 &1983371788
 GameObject:

@@ -1,6 +1,7 @@
 using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using static FingerPrintPowder;
 
@@ -18,6 +19,9 @@ public class FingerPrintObject : MonoBehaviour
     public bool isVisible = false;
     public ObjectType obj_type = ObjectType.none; // 붓으로 문지른게 어떤 색인지 체크
 
+    [SerializeField] powderType answerPowder;
+    [SerializeField] TextMeshProUGUI targetScore1;
+    [SerializeField] TextMeshProUGUI targetScore2;
     [SerializeField] GameObject rulerAndCard;
     [SerializeField] Material[] mat = new Material[3];
 
@@ -30,7 +34,13 @@ public class FingerPrintObject : MonoBehaviour
         {
             FingerPrintBrush brushObj = other.transform.parent.gameObject.GetComponent<FingerPrintBrush>();
 
-            if(brushObj.p_type == powderType.ironPowder) // 철가루 묻혔으면, 매터리얼 변경
+            // 점수1, 적절한 양의 분말을 묻혔는가?
+            if (!brushObj.isStrong) targetScore1.text = "15";
+
+            // 점수2, 알맞은 색 분말을 묻혔는가?
+            if (brushObj.p_type == answerPowder) targetScore2.text = "15";
+
+            if (brushObj.p_type == powderType.ironPowder) // 철가루 묻혔으면, 매터리얼 변경
             {
                 obj_type = ObjectType.iron;
                 this.gameObject.GetComponent<MeshRenderer>().material = mat[0];
