@@ -34,7 +34,7 @@ public class TutorialCamera : MonoBehaviour
 
     private void Update()
     {
-        if (OVRInput.Get(OVRInput.Button.SecondaryIndexTrigger))
+        if (OVRInput.GetDown(OVRInput.Button.One))
         {
             if (isCameraTime == false) return;
             InteractCamera();

@@ -43,6 +43,7 @@ public class FingerPrintObject_tutorial : MonoBehaviour
         if (other.gameObject.name == "brushHead")
         {
             FingerPrintBrush_tutorial brushObj = other.transform.parent.gameObject.GetComponent<FingerPrintBrush_tutorial>();
+            if (brushObj.isStrong == true) return; // 분말 강도 너무 쌔면 실행 X
 
             if(brushObj.p_type == powderType.ironPowder && object_type == ObjectType.soju)
             {
