@@ -53,8 +53,6 @@ public class TotalScore : MonoBehaviour
     {
         DontDestroyOnLoad(this.gameObject);
     }
-    void Update() { }
-    // Update is called once per frame
     public void GetTotalScore()
     {
         total += int.Parse(score1_1.text);

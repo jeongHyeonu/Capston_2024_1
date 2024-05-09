@@ -12,6 +12,10 @@ public class FingerPrintLiquid_Tutorial : MonoBehaviour
     [SerializeField] TutorialUX_Liquid t_ux;
     [SerializeField] TutorialCamera_Liquid tutoCam;
     [SerializeField] GameObject paper;
+
+    [SerializeField] public int maxDryCnt = 20;
+    int dryCnt = 0;
+
     static bool isTutorialUX = false;
 
     // Paper와 Iron_Liquid의 충돌을 감지하는 메서드
@@ -46,15 +50,19 @@ public class FingerPrintLiquid_Tutorial : MonoBehaviour
     // 페이드 인 효과를 적용하는 코루틴 메서드
     private IEnumerator TriggerEffect()
     {
-        yield return new WaitForSeconds(3f);
-        this.transform.gameObject.GetComponent<MeshRenderer>().materials[0].DOFade(1f, 0.4f); // 페이드 인 효과를 적용
-        Debug.Log("Finger Liquid Clear NPC Set"); // 페이드 인 효과가 적용되었음을 로그로 출력
+        yield return new WaitForSeconds(1f);
+        if (dryCnt < maxDryCnt) dryCnt++;
+        else
+        {
+            this.transform.gameObject.GetComponent<MeshRenderer>().materials[0].DOFade(1f, 0.4f); // 페이드 인 효과를 적용
 
-        if (!isTutorialUX) {
-            isTutorialUX = true;
-            t_ux.TutorialStep(4);
-            tutoCam.secondStep_ON();
-            paper.transform.DOMove(paper.transform.position+new Vector3(0,0,.3f),2f).SetDelay(0.5f);
+            if (!isTutorialUX)
+            {
+                isTutorialUX = true;
+                t_ux.TutorialStep(4);
+                tutoCam.secondStep_ON();
+                paper.transform.DOMove(paper.transform.position + new Vector3(0, 0, .3f), 2f).SetDelay(0.5f);
+            }
         }
     }
 }

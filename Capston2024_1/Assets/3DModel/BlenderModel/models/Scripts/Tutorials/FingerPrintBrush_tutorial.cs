@@ -17,6 +17,7 @@ public class FingerPrintBrush_tutorial : MonoBehaviour
     [SerializeField] Vector3 originPos; // 원래 물체 존재했던 위치
 
     public bool isEquiped; // 이미 파우더 입혀진 경우
+    public bool isStrong; // 분말 강도 - 분말 처음 묻히는 경우 true, 한번 털면 true, 분말 두번 털면 false
     public FingerPrintPowder_tutorial.powderType p_type; // 파우더 타입
 
     private void Start() // 원래 물체 존재했던 위치 기억
@@ -31,6 +32,8 @@ public class FingerPrintBrush_tutorial : MonoBehaviour
         ironParticle.Play();
         SoundManager.Instance.PlaySFX(SoundManager.SFX_list.BRUSH); // 사운드
         p_type = FingerPrintPowder_tutorial.powderType.ironPowder;
+        isStrong = true;
+        ironPowder.GetComponent<MeshRenderer>().material.DOColor(new Color(.4f, .4f, .4f), 0f);
     }
 
     // 형광가루를 붓에 묻힐 경우
@@ -40,6 +43,8 @@ public class FingerPrintBrush_tutorial : MonoBehaviour
         fluorescenceParticle.Play();
         SoundManager.Instance.PlaySFX(SoundManager.SFX_list.BRUSH); // 사운드
         p_type = FingerPrintPowder_tutorial.powderType.fluorescencePowder;
+        isStrong = true;
+        fluorescencePowder.GetComponent<MeshRenderer>().material.DOColor(new Color(.2f, .8f, 1f), 0f);
     }
 
     // 빨간 형광가루를 붓에 묻힐 경우
@@ -49,6 +54,8 @@ public class FingerPrintBrush_tutorial : MonoBehaviour
         fluorescenceRedParticle.Play();
         SoundManager.Instance.PlaySFX(SoundManager.SFX_list.BRUSH); // 사운드
         p_type = FingerPrintPowder_tutorial.powderType.fluorescenceRedPowder;
+        isStrong = true;
+        fluorescenceRedPowder.GetComponent<MeshRenderer>().material.DOColor(new Color(1f, .2f, .2f), 0f);
     }
 
     // 붓 상태에 따라 붓에 가루 장착 또는 붓에 묻혀진 가루 발사, 
@@ -77,29 +84,30 @@ public class FingerPrintBrush_tutorial : MonoBehaviour
 
         else // 가루 묻혀져있으면 방출
         {
-            isEquiped = false;
             SoundManager.Instance.PlaySFX(SoundManager.SFX_list.BRUSH); // 사운드
 
             switch (p_type)
             {
                 case FingerPrintPowder_tutorial.powderType.ironPowder:
-                    ironPowder.SetActive(false);
                     ironParticle.Play();
+                    if (isStrong) { isStrong = false; ironPowder.GetComponent<MeshRenderer>().material.DOColor(Color.white, 0.2f); return; } // 메터리얼 원상복귀
+                    ironPowder.SetActive(false);
                     break;
                 case FingerPrintPowder_tutorial.powderType.fluorescencePowder:
-                    fluorescencePowder.SetActive(false);
                     fluorescenceParticle.Play();
+                    if (isStrong) { isStrong = false; fluorescencePowder.GetComponent<MeshRenderer>().material.DOColor(Color.white, 0.2f); return; } // 메터리얼 원상복귀
+                    fluorescencePowder.SetActive(false);
                     break;
                 case FingerPrintPowder_tutorial.powderType.fluorescenceRedPowder:
-                    fluorescenceRedPowder.SetActive(false);
                     fluorescenceRedParticle.Play();
+                    if (isStrong) { isStrong = false; fluorescenceRedPowder.GetComponent<MeshRenderer>().material.DOColor(Color.white, 0.2f); return; } // 메터리얼 원상복귀
+                    fluorescenceRedPowder.SetActive(false);
                     break;
             }
 
             p_type = FingerPrintPowder_tutorial.powderType.none;
+            isEquiped = false;
 
-
-            
         }
 
 

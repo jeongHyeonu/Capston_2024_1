@@ -482,6 +482,7 @@ MonoBehaviour:
   t_ux: {fileID: 507952674}
   tutoCam: {fileID: 558642729}
   paper: {fileID: 1828517765}
+  maxDryCnt: 20
 --- !u!1 &13806534
 GameObject:
   m_ObjectHideFlags: 0
@@ -2746,6 +2747,7 @@ MonoBehaviour:
   t_ux: {fileID: 507952674}
   tutoCam: {fileID: 558642729}
   paper: {fileID: 1828517765}
+  maxDryCnt: 20
 --- !u!114 &85644080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2761,6 +2763,7 @@ MonoBehaviour:
   t_ux: {fileID: 507952674}
   tutoCam: {fileID: 558642729}
   paper: {fileID: 1828517765}
+  maxDryCnt: 20
 --- !u!1 &86356754 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5776819975601215399, guid: cbb3b391cb86b8e4390fb33cdb470141,
@@ -9143,6 +9146,7 @@ MonoBehaviour:
   t_ux: {fileID: 507952674}
   tutoCam: {fileID: 558642729}
   paper: {fileID: 1828517765}
+  maxDryCnt: 20
 --- !u!1 &283336183
 GameObject:
   m_ObjectHideFlags: 0
@@ -24461,6 +24465,7 @@ MonoBehaviour:
   t_ux: {fileID: 507952674}
   tutoCam: {fileID: 558642729}
   paper: {fileID: 1828517765}
+  maxDryCnt: 20
 --- !u!1 &613373331
 GameObject:
   m_ObjectHideFlags: 0
@@ -25889,6 +25894,7 @@ MonoBehaviour:
   t_ux: {fileID: 507952674}
   tutoCam: {fileID: 558642729}
   paper: {fileID: 1828517765}
+  maxDryCnt: 20
 --- !u!1 &654578292
 GameObject:
   m_ObjectHideFlags: 0
@@ -31794,17 +31800,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a15b86eaba863a24ab87562603997822,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 5.181078
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a15b86eaba863a24ab87562603997822,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 5.181078
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a15b86eaba863a24ab87562603997822,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 15
+      value: 34.666668
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a15b86eaba863a24ab87562603997822,
         type: 3}
@@ -31819,7 +31825,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a15b86eaba863a24ab87562603997822,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.269274
+      value: 0.242
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a15b86eaba863a24ab87562603997822,
         type: 3}
@@ -35231,6 +35237,7 @@ MonoBehaviour:
   t_ux: {fileID: 507952674}
   tutoCam: {fileID: 558642729}
   paper: {fileID: 1828517765}
+  maxDryCnt: 20
 --- !u!1 &860740961
 GameObject:
   m_ObjectHideFlags: 0
@@ -46145,6 +46152,7 @@ MonoBehaviour:
   t_ux: {fileID: 507952674}
   tutoCam: {fileID: 558642729}
   paper: {fileID: 1828517765}
+  maxDryCnt: 20
 --- !u!1 &1052830078
 GameObject:
   m_ObjectHideFlags: 0
@@ -47573,6 +47581,7 @@ MonoBehaviour:
   t_ux: {fileID: 507952674}
   tutoCam: {fileID: 558642729}
   paper: {fileID: 1828517765}
+  maxDryCnt: 20
 --- !u!1 &1113826436
 GameObject:
   m_ObjectHideFlags: 0
@@ -47920,6 +47929,7 @@ MonoBehaviour:
   t_ux: {fileID: 507952674}
   tutoCam: {fileID: 558642729}
   paper: {fileID: 1828517765}
+  maxDryCnt: 20
 --- !u!1 &1145873569 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4000027101236304725, guid: cbb3b391cb86b8e4390fb33cdb470141,
@@ -48207,7 +48217,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -51778,6 +51788,7 @@ MonoBehaviour:
   t_ux: {fileID: 507952674}
   tutoCam: {fileID: 558642729}
   paper: {fileID: 1828517765}
+  maxDryCnt: 20
 --- !u!1 &1246088021 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7996034190911123189, guid: cbb3b391cb86b8e4390fb33cdb470141,
@@ -52773,10 +52784,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1846009368}
-    - targetCorrespondingSourceObject: {fileID: 4204515841032317880, guid: 7e470b2ea69afaa44afbbdd94cc89091,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1846009367}
     - targetCorrespondingSourceObject: {fileID: 2845574854699334570, guid: 7e470b2ea69afaa44afbbdd94cc89091,
         type: 3}
       insertIndex: -1
@@ -52939,6 +52946,7 @@ MonoBehaviour:
   t_ux: {fileID: 507952674}
   tutoCam: {fileID: 558642729}
   paper: {fileID: 1828517765}
+  maxDryCnt: 20
 --- !u!114 &1285012346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52954,6 +52962,7 @@ MonoBehaviour:
   t_ux: {fileID: 507952674}
   tutoCam: {fileID: 558642729}
   paper: {fileID: 1828517765}
+  maxDryCnt: 20
 --- !u!1 &1285717139
 GameObject:
   m_ObjectHideFlags: 0
@@ -53419,6 +53428,7 @@ MonoBehaviour:
   t_ux: {fileID: 507952674}
   tutoCam: {fileID: 558642729}
   paper: {fileID: 1828517765}
+  maxDryCnt: 20
 --- !u!1 &1301158991
 GameObject:
   m_ObjectHideFlags: 0
@@ -55184,6 +55194,7 @@ MonoBehaviour:
   t_ux: {fileID: 507952674}
   tutoCam: {fileID: 558642729}
   paper: {fileID: 1828517765}
+  maxDryCnt: 20
 --- !u!1 &1337478193
 GameObject:
   m_ObjectHideFlags: 0
@@ -55282,6 +55293,7 @@ MonoBehaviour:
   t_ux: {fileID: 507952674}
   tutoCam: {fileID: 558642729}
   paper: {fileID: 1828517765}
+  maxDryCnt: 20
 --- !u!1 &1347789085
 GameObject:
   m_ObjectHideFlags: 0
@@ -55496,6 +55508,7 @@ MonoBehaviour:
   t_ux: {fileID: 507952674}
   tutoCam: {fileID: 558642729}
   paper: {fileID: 1828517765}
+  maxDryCnt: 20
 --- !u!1 &1358042761
 GameObject:
   m_ObjectHideFlags: 0
@@ -58503,6 +58516,7 @@ MonoBehaviour:
   t_ux: {fileID: 507952674}
   tutoCam: {fileID: 558642729}
   paper: {fileID: 1828517765}
+  maxDryCnt: 20
 --- !u!1 &1433182125
 GameObject:
   m_ObjectHideFlags: 0
@@ -61301,6 +61315,7 @@ MonoBehaviour:
   t_ux: {fileID: 507952674}
   tutoCam: {fileID: 558642729}
   paper: {fileID: 1828517765}
+  maxDryCnt: 20
 --- !u!1 &1476778326
 GameObject:
   m_ObjectHideFlags: 0
@@ -63385,6 +63400,7 @@ MonoBehaviour:
   t_ux: {fileID: 507952674}
   tutoCam: {fileID: 558642729}
   paper: {fileID: 1828517765}
+  maxDryCnt: 20
 --- !u!1 &1527023153
 GameObject:
   m_ObjectHideFlags: 0
@@ -64980,7 +64996,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 0.2, y: 0.1, z: 0.2}
   m_Center: {x: 0, y: 0.05, z: 0}
@@ -65116,6 +65132,7 @@ MonoBehaviour:
   t_ux: {fileID: 507952674}
   tutoCam: {fileID: 558642729}
   paper: {fileID: 1828517765}
+  maxDryCnt: 20
 --- !u!1 &1576535459
 GameObject:
   m_ObjectHideFlags: 0
@@ -66216,6 +66233,7 @@ MonoBehaviour:
   t_ux: {fileID: 507952674}
   tutoCam: {fileID: 558642729}
   paper: {fileID: 1828517765}
+  maxDryCnt: 20
 --- !u!1 &1608969132
 GameObject:
   m_ObjectHideFlags: 0
@@ -66398,6 +66416,7 @@ MonoBehaviour:
   t_ux: {fileID: 507952674}
   tutoCam: {fileID: 558642729}
   paper: {fileID: 1828517765}
+  maxDryCnt: 20
 --- !u!1 &1618156637
 GameObject:
   m_ObjectHideFlags: 0
@@ -67029,6 +67048,7 @@ MonoBehaviour:
   t_ux: {fileID: 507952674}
   tutoCam: {fileID: 558642729}
   paper: {fileID: 1828517765}
+  maxDryCnt: 20
 --- !u!1 &1648437361 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9057907714387923355, guid: cbb3b391cb86b8e4390fb33cdb470141,
@@ -68391,6 +68411,7 @@ MonoBehaviour:
   t_ux: {fileID: 507952674}
   tutoCam: {fileID: 558642729}
   paper: {fileID: 1828517765}
+  maxDryCnt: 20
 --- !u!1 &1690413250
 GameObject:
   m_ObjectHideFlags: 0
@@ -71109,6 +71130,7 @@ MonoBehaviour:
   t_ux: {fileID: 507952674}
   tutoCam: {fileID: 558642729}
   paper: {fileID: 1828517765}
+  maxDryCnt: 20
 --- !u!1 &1790771596
 GameObject:
   m_ObjectHideFlags: 0
@@ -71356,6 +71378,7 @@ MonoBehaviour:
   t_ux: {fileID: 507952674}
   tutoCam: {fileID: 558642729}
   paper: {fileID: 1828517765}
+  maxDryCnt: 20
 --- !u!1 &1798642911
 GameObject:
   m_ObjectHideFlags: 0
@@ -73009,21 +73032,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba44d4c976cce5c4faf831203f072b17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1846009367
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1285012335}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c93af37ff0eeb5a449d0049dd6570aaa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  t_ux: {fileID: 0}
-  tutoCam: {fileID: 0}
-  paper: {fileID: 0}
 --- !u!114 &1846009368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73039,6 +73047,7 @@ MonoBehaviour:
   t_ux: {fileID: 507952674}
   tutoCam: {fileID: 558642729}
   paper: {fileID: 1828517765}
+  maxDryCnt: 20
 --- !u!1 &1846947877 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 670137257325919751, guid: cbb3b391cb86b8e4390fb33cdb470141,
@@ -73372,6 +73381,7 @@ MonoBehaviour:
   t_ux: {fileID: 507952674}
   tutoCam: {fileID: 558642729}
   paper: {fileID: 1828517765}
+  maxDryCnt: 20
 --- !u!1 &1870396600 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8100576152092845001, guid: cbb3b391cb86b8e4390fb33cdb470141,
@@ -74284,6 +74294,7 @@ MonoBehaviour:
   t_ux: {fileID: 507952674}
   tutoCam: {fileID: 558642729}
   paper: {fileID: 1828517765}
+  maxDryCnt: 20
 --- !u!1 &1883681304
 GameObject:
   m_ObjectHideFlags: 0
@@ -74940,6 +74951,7 @@ MonoBehaviour:
     type: 3}
   originPos: {x: 0, y: 0, z: 0}
   isEquiped: 0
+  isStrong: 0
   p_type: 4
 --- !u!114 &1898249252
 MonoBehaviour:
@@ -76373,6 +76385,7 @@ MonoBehaviour:
   t_ux: {fileID: 507952674}
   tutoCam: {fileID: 558642729}
   paper: {fileID: 1828517765}
+  maxDryCnt: 20
 --- !u!114 &1938465578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76388,6 +76401,7 @@ MonoBehaviour:
   t_ux: {fileID: 507952674}
   tutoCam: {fileID: 558642729}
   paper: {fileID: 1828517765}
+  maxDryCnt: 20
 --- !u!114 &1938465579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76403,6 +76417,7 @@ MonoBehaviour:
   t_ux: {fileID: 507952674}
   tutoCam: {fileID: 558642729}
   paper: {fileID: 1828517765}
+  maxDryCnt: 20
 --- !u!114 &1938465580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76418,6 +76433,7 @@ MonoBehaviour:
   t_ux: {fileID: 507952674}
   tutoCam: {fileID: 558642729}
   paper: {fileID: 1828517765}
+  maxDryCnt: 20
 --- !u!114 &1938465587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76433,6 +76449,7 @@ MonoBehaviour:
   t_ux: {fileID: 507952674}
   tutoCam: {fileID: 558642729}
   paper: {fileID: 1828517765}
+  maxDryCnt: 20
 --- !u!1 &1943370900
 GameObject:
   m_ObjectHideFlags: 0
@@ -77003,6 +77020,7 @@ MonoBehaviour:
   t_ux: {fileID: 507952674}
   tutoCam: {fileID: 558642729}
   paper: {fileID: 1828517765}
+  maxDryCnt: 20
 --- !u!1 &1960406022
 GameObject:
   m_ObjectHideFlags: 0
@@ -77490,6 +77508,7 @@ MonoBehaviour:
   t_ux: {fileID: 507952674}
   tutoCam: {fileID: 558642729}
   paper: {fileID: 1828517765}
+  maxDryCnt: 20
 --- !u!1 &1969765781
 GameObject:
   m_ObjectHideFlags: 0
@@ -77736,7 +77755,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -78162,6 +78181,7 @@ MonoBehaviour:
   t_ux: {fileID: 507952674}
   tutoCam: {fileID: 558642729}
   paper: {fileID: 1828517765}
+  maxDryCnt: 20
 --- !u!1 &1984367008
 GameObject:
   m_ObjectHideFlags: 0
@@ -79356,6 +79376,7 @@ MonoBehaviour:
   t_ux: {fileID: 507952674}
   tutoCam: {fileID: 558642729}
   paper: {fileID: 1828517765}
+  maxDryCnt: 20
 --- !u!1 &2025227245 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8355401896434864565, guid: cbb3b391cb86b8e4390fb33cdb470141,
@@ -81993,6 +82014,7 @@ MonoBehaviour:
   t_ux: {fileID: 507952674}
   tutoCam: {fileID: 558642729}
   paper: {fileID: 1828517765}
+  maxDryCnt: 20
 --- !u!1 &2098744921
 GameObject:
   m_ObjectHideFlags: 0
@@ -82553,6 +82575,7 @@ MonoBehaviour:
   t_ux: {fileID: 507952674}
   tutoCam: {fileID: 558642729}
   paper: {fileID: 1828517765}
+  maxDryCnt: 20
 --- !u!114 &2102440950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82568,6 +82591,7 @@ MonoBehaviour:
   t_ux: {fileID: 507952674}
   tutoCam: {fileID: 558642729}
   paper: {fileID: 1828517765}
+  maxDryCnt: 20
 --- !u!114 &2102440951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82583,6 +82607,7 @@ MonoBehaviour:
   t_ux: {fileID: 507952674}
   tutoCam: {fileID: 558642729}
   paper: {fileID: 1828517765}
+  maxDryCnt: 20
 --- !u!114 &2102440952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82598,6 +82623,7 @@ MonoBehaviour:
   t_ux: {fileID: 507952674}
   tutoCam: {fileID: 558642729}
   paper: {fileID: 1828517765}
+  maxDryCnt: 20
 --- !u!114 &2102440959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82613,6 +82639,7 @@ MonoBehaviour:
   t_ux: {fileID: 507952674}
   tutoCam: {fileID: 558642729}
   paper: {fileID: 1828517765}
+  maxDryCnt: 20
 --- !u!1 &2107249382
 GameObject:
   m_ObjectHideFlags: 0
@@ -89201,7 +89228,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2146426045}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 605a966b114f30b4090239b4bb79727e, type: 3}
   m_Name: 
