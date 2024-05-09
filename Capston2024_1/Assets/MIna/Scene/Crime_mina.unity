@@ -16438,7 +16438,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &450873702
 Transform:
   m_ObjectHideFlags: 0
@@ -29420,11 +29420,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca71260282965a746aab7f075e3daaf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TextPos: {fileID: 0}
-  Canvas: {fileID: 0}
+  TextPos: {fileID: 450873702}
+  Canvas: {fileID: 811832007}
   firstPos: {x: 0, y: 0, z: 0}
   firstRot: {x: 0, y: 0, z: 0, w: 0}
-  npc: {fileID: 0}
+  npc: {fileID: 254698448}
   onFailed: 0
 --- !u!114 &556044560
 MonoBehaviour:
@@ -35639,9 +35639,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerTag: Player
-  npc1: {fileID: 0}
-  TextPos: {fileID: 0}
-  Canvas: {fileID: 0}
+  npc1: {fileID: 1171123046}
+  TextPos: {fileID: 450873702}
+  Canvas: {fileID: 811832007}
   replay: 0
 --- !u!136 &738574096
 CapsuleCollider:
@@ -73866,7 +73866,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1792095340
 Transform:
   m_ObjectHideFlags: 0
@@ -80722,9 +80722,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerTag: Player
-  npc1: {fileID: 0}
-  TextPos: {fileID: 0}
-  Canvas: {fileID: 0}
+  npc1: {fileID: 1171123046}
+  TextPos: {fileID: 450873702}
+  Canvas: {fileID: 811832007}
   CheckButton: {fileID: 1485565767}
   replay: 0
   CenterEyeObj: {fileID: 7180308}
