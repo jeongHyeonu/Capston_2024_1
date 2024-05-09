@@ -29420,8 +29420,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca71260282965a746aab7f075e3daaf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TextPos: {fileID: 450873702}
-  Canvas: {fileID: 811832007}
+  TextPos: {fileID: 1792095340}
+  Canvas: {fileID: 379393382}
   firstPos: {x: 0, y: 0, z: 0}
   firstRot: {x: 0, y: 0, z: 0, w: 0}
   npc: {fileID: 254698448}

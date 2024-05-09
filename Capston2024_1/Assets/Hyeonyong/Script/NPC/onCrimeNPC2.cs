@@ -190,7 +190,8 @@ public Quaternion firstRot; //캔버스 처음 각도
 
         yield return new WaitForSeconds(OFade.fadeTime);
 
-        SceneManager.LoadScene("Lab_Hyeonyong");
+        //SceneManager.LoadScene("Lab_Hyeonyong");
+        SceneManager.LoadScene("Lab_Mina");
     }
 
 }
