@@ -36,10 +36,31 @@ public class BtnSettingClicked : MonoBehaviour
     }
 
     //ReStart 버튼 함수
+    /*
     public void GoToStartScene()
     {
         SceneManager.LoadScene("Lab_Mina");
+    }*/
+
+
+    public GameObject CenterEyeObj;  // 오큘러스 CameraRig의 CenterEyeObj 연결
+    OVRScreenFade OFade;
+
+    public void SceneFade()
+    {
+        Debug.Log("씬 이동 시작");
+        OFade = CenterEyeObj.transform.GetComponent<OVRScreenFade>();
+        StartCoroutine(SceneFadeCoroutine());
     }
+    IEnumerator SceneFadeCoroutine()
+    {
+        OFade.FadeOut();
+
+        yield return new WaitForSeconds(OFade.fadeTime);
+
+        SceneManager.LoadScene("Lab_Mina");
+    }
+
 
     private void Start()
     {
@@ -49,6 +70,6 @@ public class BtnSettingClicked : MonoBehaviour
     void Update()
     {
         backBtn.onClick.AddListener(BackBtnOnClick);    //SettingUI UnActvie
-        restartBtn.onClick.AddListener(GoToStartScene);
+        restartBtn.onClick.AddListener(SceneFade);
     }
 }

@@ -38780,6 +38780,11 @@ PrefabInstance:
       propertyPath: restartBtn
       value: 
       objectReference: {fileID: 2084174337}
+    - target: {fileID: 4557756679235338004, guid: ac6db2efa1d8c2841b7aa2d941d1ae35,
+        type: 3}
+      propertyPath: CenterEyeObj
+      value: 
+      objectReference: {fileID: 7180308}
     - target: {fileID: 4615722221806495351, guid: ac6db2efa1d8c2841b7aa2d941d1ae35,
         type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
