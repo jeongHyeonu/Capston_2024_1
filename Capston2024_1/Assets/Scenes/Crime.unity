@@ -22566,7 +22566,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isVisible: 0
   obj_type: 3
-  answerPowder: 2
+  answerPowder: 0
   targetScore1: {fileID: 1983371790}
   targetScore2: {fileID: 2092818391}
   rulerAndCard: {fileID: 0}
