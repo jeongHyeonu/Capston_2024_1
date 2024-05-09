@@ -43,8 +43,11 @@ public class FingerPrintLiquidScore : MonoBehaviour
             if (liquidScoreBoard != null)
             {
                 liquidScoreBoard.score5.text = "15";
+                if (paperTriggered && hairLiquidTriggered && liquidTriggered)
+                {
+                    StartCoroutine(TriggerEffect());
+                }
             }
-            StartCoroutine(TriggerEffect());
         }
     }
 
