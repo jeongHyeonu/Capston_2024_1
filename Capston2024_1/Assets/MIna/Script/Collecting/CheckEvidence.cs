@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class CheckEvidence : MonoBehaviour
 {
+    
     public static bool Ev1_isChecked = false;   //Ev1(술병) 수거 체크
     public static bool Ev2_isChecked = false;   //Ev2(소주잔) 수거 체크
     public static bool Ev3_isChecked = false;   //Ev3(영수증) 수거 체크
@@ -31,15 +33,5 @@ public class CheckEvidence : MonoBehaviour
         }
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
