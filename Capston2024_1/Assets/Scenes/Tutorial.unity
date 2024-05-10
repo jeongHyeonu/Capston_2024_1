@@ -58657,6 +58657,11 @@ PrefabInstance:
       propertyPath: m_player
       value: 
       objectReference: {fileID: 1437367568}
+    - target: {fileID: 8455786948003233208, guid: ce816f2e6abb0504092c23ed9b970dfd,
+        type: 3}
+      propertyPath: _interactableFilters.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:

@@ -504,6 +504,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc6393d1397a284fa1794e714e7bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paperTriggered: 0
+  hairLiquidTriggered: 0
+  liquidTriggered: 0
 --- !u!1 &11173943
 GameObject:
   m_ObjectHideFlags: 0
@@ -7268,6 +7271,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc6393d1397a284fa1794e714e7bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paperTriggered: 0
+  hairLiquidTriggered: 0
+  liquidTriggered: 0
 --- !u!1001 &105317673
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7723,6 +7729,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc6393d1397a284fa1794e714e7bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paperTriggered: 0
+  hairLiquidTriggered: 0
+  liquidTriggered: 0
 --- !u!1 &114532028
 GameObject:
   m_ObjectHideFlags: 0
@@ -8538,6 +8547,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc6393d1397a284fa1794e714e7bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paperTriggered: 0
+  hairLiquidTriggered: 0
+  liquidTriggered: 0
 --- !u!1 &162137621
 GameObject:
   m_ObjectHideFlags: 0
@@ -8788,6 +8800,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc6393d1397a284fa1794e714e7bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paperTriggered: 0
+  hairLiquidTriggered: 0
+  liquidTriggered: 0
 --- !u!1 &174581155
 GameObject:
   m_ObjectHideFlags: 0
@@ -9798,10 +9813,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2112860820}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 105, y: -810}
-  m_SizeDelta: {x: 120, y: 120}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &194034809
 MonoBehaviour:
@@ -10662,6 +10677,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc6393d1397a284fa1794e714e7bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paperTriggered: 0
+  hairLiquidTriggered: 0
+  liquidTriggered: 0
 --- !u!1 &249583672
 GameObject:
   m_ObjectHideFlags: 0
@@ -11746,10 +11764,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2112860820}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 105, y: -85}
-  m_SizeDelta: {x: 120, y: 120}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &301413950
 MonoBehaviour:
@@ -12338,10 +12356,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2112860820}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 250, y: -85}
-  m_SizeDelta: {x: 120, y: 120}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &323082874
 MonoBehaviour:
@@ -12640,10 +12658,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2112860820}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 395, y: -810}
-  m_SizeDelta: {x: 120, y: 120}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &345204317
 MonoBehaviour:
@@ -12931,6 +12949,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc6393d1397a284fa1794e714e7bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paperTriggered: 0
+  hairLiquidTriggered: 0
+  liquidTriggered: 0
 --- !u!1 &355899026
 GameObject:
   m_ObjectHideFlags: 0
@@ -14988,6 +15009,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc6393d1397a284fa1794e714e7bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paperTriggered: 0
+  hairLiquidTriggered: 0
+  liquidTriggered: 0
 --- !u!1 &425945846
 GameObject:
   m_ObjectHideFlags: 0
@@ -15020,10 +15044,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2112860820}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 105, y: -230}
-  m_SizeDelta: {x: 120, y: 120}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &425945848
 MonoBehaviour:
@@ -16963,6 +16987,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc6393d1397a284fa1794e714e7bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paperTriggered: 0
+  hairLiquidTriggered: 0
+  liquidTriggered: 0
 --- !u!1 &524518504
 GameObject:
   m_ObjectHideFlags: 0
@@ -23113,10 +23140,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2112860820}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 250, y: -375}
-  m_SizeDelta: {x: 120, y: 120}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &574997010
 MonoBehaviour:
@@ -24231,10 +24258,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2112860820}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 105, y: -520}
-  m_SizeDelta: {x: 120, y: 120}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &602193712
 MonoBehaviour:
@@ -24574,10 +24601,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2112860820}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 105, y: -375}
-  m_SizeDelta: {x: 120, y: 120}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &618529979
 MonoBehaviour:
@@ -26750,6 +26777,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc6393d1397a284fa1794e714e7bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paperTriggered: 0
+  hairLiquidTriggered: 0
+  liquidTriggered: 0
 --- !u!1 &705053632
 GameObject:
   m_ObjectHideFlags: 0
@@ -28867,10 +28897,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2112860820}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 540, y: -810}
-  m_SizeDelta: {x: 120, y: 120}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &776927805
 MonoBehaviour:
@@ -31316,6 +31346,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc6393d1397a284fa1794e714e7bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paperTriggered: 0
+  hairLiquidTriggered: 0
+  liquidTriggered: 0
 --- !u!1 &865148221
 GameObject:
   m_ObjectHideFlags: 0
@@ -31638,10 +31671,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2112860820}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 105, y: -955}
-  m_SizeDelta: {x: 120, y: 120}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &895024405
 MonoBehaviour:
@@ -32297,10 +32330,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2112860820}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 250, y: -665}
-  m_SizeDelta: {x: 120, y: 120}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &930173707
 MonoBehaviour:
@@ -32614,10 +32647,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2112860820}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 540, y: -375}
-  m_SizeDelta: {x: 120, y: 120}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &945636034
 MonoBehaviour:
@@ -33485,10 +33518,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2112860820}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 105, y: -665}
-  m_SizeDelta: {x: 120, y: 120}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &965489302
 MonoBehaviour:
@@ -34327,10 +34360,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2112860820}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 395, y: -85}
-  m_SizeDelta: {x: 120, y: 120}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1015231688
 MonoBehaviour:
@@ -35770,10 +35803,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2112860820}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 395, y: -230}
-  m_SizeDelta: {x: 120, y: 120}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1100307276
 MonoBehaviour:
@@ -35916,6 +35949,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc6393d1397a284fa1794e714e7bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paperTriggered: 0
+  hairLiquidTriggered: 0
+  liquidTriggered: 0
 --- !u!65 &1103637468
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36241,6 +36277,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc6393d1397a284fa1794e714e7bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paperTriggered: 0
+  hairLiquidTriggered: 0
+  liquidTriggered: 0
 --- !u!1 &1114713398
 GameObject:
   m_ObjectHideFlags: 0
@@ -42625,10 +42664,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2112860820}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 395, y: -520}
-  m_SizeDelta: {x: 120, y: 120}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1181794434
 MonoBehaviour:
@@ -42680,6 +42719,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc6393d1397a284fa1794e714e7bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paperTriggered: 0
+  hairLiquidTriggered: 0
+  liquidTriggered: 0
 --- !u!1 &1188722067
 GameObject:
   m_ObjectHideFlags: 0
@@ -42870,6 +42912,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc6393d1397a284fa1794e714e7bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paperTriggered: 0
+  hairLiquidTriggered: 0
+  liquidTriggered: 0
 --- !u!1 &1194135157
 GameObject:
   m_ObjectHideFlags: 0
@@ -43010,6 +43055,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc6393d1397a284fa1794e714e7bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paperTriggered: 0
+  hairLiquidTriggered: 0
+  liquidTriggered: 0
 --- !u!1 &1207053487
 GameObject:
   m_ObjectHideFlags: 0
@@ -43346,6 +43394,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc6393d1397a284fa1794e714e7bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paperTriggered: 0
+  hairLiquidTriggered: 0
+  liquidTriggered: 0
 --- !u!1 &1211587113
 GameObject:
   m_ObjectHideFlags: 0
@@ -45239,6 +45290,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc6393d1397a284fa1794e714e7bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paperTriggered: 0
+  hairLiquidTriggered: 0
+  liquidTriggered: 0
 --- !u!114 &1285012337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45251,6 +45305,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc6393d1397a284fa1794e714e7bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paperTriggered: 0
+  hairLiquidTriggered: 0
+  liquidTriggered: 0
 --- !u!114 &1285012338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45263,6 +45320,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc6393d1397a284fa1794e714e7bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paperTriggered: 0
+  hairLiquidTriggered: 0
+  liquidTriggered: 0
 --- !u!114 &1285012339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45275,6 +45335,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc6393d1397a284fa1794e714e7bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paperTriggered: 0
+  hairLiquidTriggered: 0
+  liquidTriggered: 0
 --- !u!114 &1285012340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45287,6 +45350,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc6393d1397a284fa1794e714e7bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paperTriggered: 0
+  hairLiquidTriggered: 0
+  liquidTriggered: 0
 --- !u!65 &1285133626
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -45856,10 +45922,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2112860820}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 250, y: -230}
-  m_SizeDelta: {x: 120, y: 120}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1296847916
 MonoBehaviour:
@@ -46421,6 +46487,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc6393d1397a284fa1794e714e7bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paperTriggered: 0
+  hairLiquidTriggered: 0
+  liquidTriggered: 0
 --- !u!1 &1318231304
 GameObject:
   m_ObjectHideFlags: 0
@@ -47128,6 +47197,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc6393d1397a284fa1794e714e7bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paperTriggered: 0
+  hairLiquidTriggered: 0
+  liquidTriggered: 0
 --- !u!65 &1340833194
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -48558,10 +48630,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2112860820}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 540, y: -665}
-  m_SizeDelta: {x: 120, y: 120}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1389756446
 MonoBehaviour:
@@ -49508,6 +49580,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc6393d1397a284fa1794e714e7bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paperTriggered: 0
+  hairLiquidTriggered: 0
+  liquidTriggered: 0
 --- !u!65 &1425784455
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -49709,6 +49784,11 @@ PrefabInstance:
       propertyPath: m_player
       value: 
       objectReference: {fileID: 1437367568}
+    - target: {fileID: 8455786948003233208, guid: ce816f2e6abb0504092c23ed9b970dfd,
+        type: 3}
+      propertyPath: _interactableFilters.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -51046,10 +51126,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2112860820}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 540, y: -85}
-  m_SizeDelta: {x: 120, y: 120}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1470593653
 MonoBehaviour:
@@ -51161,6 +51241,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc6393d1397a284fa1794e714e7bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paperTriggered: 0
+  hairLiquidTriggered: 0
+  liquidTriggered: 0
 --- !u!65 &1476307431
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -52887,10 +52970,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2112860820}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 540, y: -520}
-  m_SizeDelta: {x: 120, y: 120}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1530397531
 MonoBehaviour:
@@ -53822,10 +53905,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2112860820}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 395, y: -665}
-  m_SizeDelta: {x: 120, y: 120}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1576535461
 MonoBehaviour:
@@ -53908,6 +53991,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc6393d1397a284fa1794e714e7bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paperTriggered: 0
+  hairLiquidTriggered: 0
+  liquidTriggered: 0
 --- !u!65 &1581376496
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -54011,6 +54097,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc6393d1397a284fa1794e714e7bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paperTriggered: 0
+  hairLiquidTriggered: 0
+  liquidTriggered: 0
 --- !u!1 &1587725538
 GameObject:
   m_ObjectHideFlags: 0
@@ -54492,6 +54581,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc6393d1397a284fa1794e714e7bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paperTriggered: 0
+  hairLiquidTriggered: 0
+  liquidTriggered: 0
 --- !u!1 &1609218546
 GameObject:
   m_ObjectHideFlags: 0
@@ -55032,6 +55124,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc6393d1397a284fa1794e714e7bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paperTriggered: 0
+  hairLiquidTriggered: 0
+  liquidTriggered: 0
 --- !u!1 &1648629882
 GameObject:
   m_ObjectHideFlags: 0
@@ -55333,11 +55428,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ironPowder: {fileID: 662710878}
   fluorescencePowder: {fileID: 48349740}
+  fluorescenceRedPowder: {fileID: 0}
   ironParticle: {fileID: 1159766455}
   fluorescenceParticle: {fileID: 541681065}
-  soju_fingerPrint: {fileID: 673162942}
+  fluorescenceRedParticle: {fileID: 0}
+  fingerPrint_overed: {fileID: 0}
   originPos: {x: 0, y: 0, z: 0}
   isEquiped: 0
+  isStrong: 0
   p_type: 3
 --- !u!114 &1651384612
 MonoBehaviour:
@@ -56478,6 +56576,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc6393d1397a284fa1794e714e7bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paperTriggered: 0
+  hairLiquidTriggered: 0
+  liquidTriggered: 0
 --- !u!1 &1692580351
 GameObject:
   m_ObjectHideFlags: 0
@@ -58378,6 +58479,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc6393d1397a284fa1794e714e7bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paperTriggered: 0
+  hairLiquidTriggered: 0
+  liquidTriggered: 0
 --- !u!1 &1773955344
 GameObject:
   m_ObjectHideFlags: 0
@@ -58862,6 +58966,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc6393d1397a284fa1794e714e7bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paperTriggered: 0
+  hairLiquidTriggered: 0
+  liquidTriggered: 0
 --- !u!65 &1784798597
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -60220,6 +60327,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc6393d1397a284fa1794e714e7bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paperTriggered: 0
+  hairLiquidTriggered: 0
+  liquidTriggered: 0
 --- !u!1 &1838562550
 GameObject:
   m_ObjectHideFlags: 0
@@ -62515,6 +62625,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc6393d1397a284fa1794e714e7bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paperTriggered: 0
+  hairLiquidTriggered: 0
+  liquidTriggered: 0
 --- !u!114 &1938465578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62527,6 +62640,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc6393d1397a284fa1794e714e7bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paperTriggered: 0
+  hairLiquidTriggered: 0
+  liquidTriggered: 0
 --- !u!114 &1938465579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62539,6 +62655,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc6393d1397a284fa1794e714e7bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paperTriggered: 0
+  hairLiquidTriggered: 0
+  liquidTriggered: 0
 --- !u!114 &1938465580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62551,6 +62670,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc6393d1397a284fa1794e714e7bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paperTriggered: 0
+  hairLiquidTriggered: 0
+  liquidTriggered: 0
 --- !u!114 &1938465581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62563,6 +62685,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc6393d1397a284fa1794e714e7bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paperTriggered: 0
+  hairLiquidTriggered: 0
+  liquidTriggered: 0
 --- !u!65 &1941884825
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -63407,10 +63532,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2112860820}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 540, y: -230}
-  m_SizeDelta: {x: 120, y: 120}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1984367010
 MonoBehaviour:
@@ -64030,10 +64155,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2112860820}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 395, y: -375}
-  m_SizeDelta: {x: 120, y: 120}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2020209037
 MonoBehaviour:
@@ -64116,6 +64241,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc6393d1397a284fa1794e714e7bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paperTriggered: 0
+  hairLiquidTriggered: 0
+  liquidTriggered: 0
 --- !u!1 &2024087978
 GameObject:
   m_ObjectHideFlags: 0
@@ -64739,10 +64867,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2112860820}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 250, y: -810}
-  m_SizeDelta: {x: 120, y: 120}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2035443245
 MonoBehaviour:
@@ -65067,9 +65195,11 @@ MonoBehaviour:
     type: 3}
   fingerPrintPaperUV: {fileID: 4264934985314179423, guid: d584223a303b6974a93a2814ff254c9a,
     type: 3}
+  fingerPrintPaperRed: {fileID: 0}
   fingerPrintTape_soju: {fileID: 5456637689869158133, guid: c673fda8f0f1f8d46acf3ad1015d0c9e,
     type: 3}
   fingerPrintTape_knife: {fileID: 0}
+  fingerPrintTape_red: {fileID: 0}
   lastTutoBoard: {fileID: 1744129533}
   tutoCam: {fileID: 696544496222083307}
 --- !u!54 &2060002699
@@ -65279,10 +65409,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2112860820}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 250, y: -520}
-  m_SizeDelta: {x: 120, y: 120}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2074356318
 MonoBehaviour:
@@ -65825,6 +65955,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc6393d1397a284fa1794e714e7bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paperTriggered: 0
+  hairLiquidTriggered: 0
+  liquidTriggered: 0
 --- !u!114 &2102440950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65837,6 +65970,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc6393d1397a284fa1794e714e7bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paperTriggered: 0
+  hairLiquidTriggered: 0
+  liquidTriggered: 0
 --- !u!114 &2102440951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65849,6 +65985,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc6393d1397a284fa1794e714e7bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paperTriggered: 0
+  hairLiquidTriggered: 0
+  liquidTriggered: 0
 --- !u!114 &2102440952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65861,6 +66000,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc6393d1397a284fa1794e714e7bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paperTriggered: 0
+  hairLiquidTriggered: 0
+  liquidTriggered: 0
 --- !u!114 &2102440953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65873,6 +66015,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc6393d1397a284fa1794e714e7bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paperTriggered: 0
+  hairLiquidTriggered: 0
+  liquidTriggered: 0
 --- !u!65 &2105245039
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -67277,6 +67422,7 @@ MonoBehaviour:
   pull: 0
   firstPos: {x: 0, y: 0, z: 0}
   firstRot: {x: 0, y: 0, z: 0, w: 0}
+  camera_light: {fileID: 0}
   Posx: -9
   Posy: 0
   canvas: {fileID: 0}
