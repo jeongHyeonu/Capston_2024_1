@@ -5,6 +5,12 @@ using DG.Tweening;
 
 public class testcs : MonoBehaviour
 {
+    public FingerPrintObject fingerprintobject;
+
+    private void Start()
+    {
+        fingerprintobject = GetComponent<FingerPrintObject>();
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -14,8 +20,10 @@ public class testcs : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.layer == LayerMask.NameToLayer("UV_Light"))
-            this.transform.gameObject.GetComponent<MeshRenderer>().materials[0].DOFade(0f, 0.4f);
+        if (fingerprintobject.isVisible == false) {
+            if (other.gameObject.layer == LayerMask.NameToLayer("UV_Light"))
+                this.transform.gameObject.GetComponent<MeshRenderer>().materials[0].DOFade(0f, 0.4f);
+        }
     }
 
 }
