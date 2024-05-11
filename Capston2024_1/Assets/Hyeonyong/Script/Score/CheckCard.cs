@@ -152,6 +152,36 @@ public class CheckCard : MonoBehaviour
                             Debug.Log("score가 없다.");
                         }
                     }
+
+                    if (gameObject.name == "Soju")
+                    {
+                        GameObject onscore = GameObject.Find("1-7");
+                        score = (TextMeshProUGUI)onscore.GetComponent("TextMeshProUGUI");
+                        if (score != null)
+                        {
+                            score.text = "" + 15;
+                        }
+                        else
+                        {
+                            Debug.Log("score가 없다.");
+                        }
+                    }
+
+
+                    if (gameObject.name == "WhiskyGlass")
+                    {
+                        GameObject onscore = GameObject.Find("2-7");
+                        score = (TextMeshProUGUI)onscore.GetComponent("TextMeshProUGUI");
+                        if (score != null)
+                        {
+                            score.text = "" + 15;
+                        }
+                        else
+                        {
+                            Debug.Log("score가 없다.");
+                        }
+                    }
+
                     onCheckCard = true;
                 }
         }

@@ -35,6 +35,10 @@ public class CheckCamera2 : MonoBehaviour
 
     public GameObject other;
 
+    public GameObject other1;
+    public GameObject other2;
+    public GameObject other3;
+
 
     public TextMeshProUGUI Score3; 
     void Start()
@@ -66,7 +70,8 @@ public class CheckCamera2 : MonoBehaviour
                 {
                     if (Physics.Raycast(transform.position, rayDirection, out hit))
                     {
-                        if (hit.collider.gameObject != cameraToCheck.gameObject && hit.collider.gameObject != gameObject && hit.collider.gameObject != Player && hit.collider.gameObject != gameObject && hit.collider.gameObject != Cam && hit.collider.gameObject != RightHand && hit.collider.gameObject != other)
+                        if (hit.collider.gameObject != cameraToCheck.gameObject && hit.collider.gameObject != gameObject && hit.collider.gameObject != Player && hit.collider.gameObject != gameObject && hit.collider.gameObject != Cam && hit.collider.gameObject != RightHand && hit.collider.gameObject != other
+                            && hit.collider.gameObject != other1 && hit.collider.gameObject != other2 && hit.collider.gameObject != other3 )
                         {
                             // 다른 객체로 가려져 있으면 "False" 출력
                             // Check.text = "False1";

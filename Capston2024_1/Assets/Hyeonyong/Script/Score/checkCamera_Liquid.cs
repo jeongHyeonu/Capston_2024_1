@@ -7,8 +7,8 @@ public class checkCamera_Liquid : MonoBehaviour
 {
     // 이 코드는 카메라에 원하는 객체를 인식시키기 위해 사용하는 코드이다. 현재 간단한 프로토타입만 제작됨
     public Camera cameraToCheck; // Camera 오브젝트의 레퍼런스를 받을 변수
-    public TextMeshPro Score; // 그냥 체크용으로 넣어둔 것이라 나중에 지울 예정
-    public TextMeshPro Score2; // 그냥 체크용으로 넣어둔 것이라 나중에 지울 예정
+    public TextMeshProUGUI Score; // 그냥 체크용으로 넣어둔 것이라 나중에 지울 예정
+    public TextMeshProUGUI Score2; // 그냥 체크용으로 넣어둔 것이라 나중에 지울 예정
     public GameObject Player; // OVRPlayerContoroller
     public GameObject Cam; // 카메라 프리팹
     public GameObject RightHand; // 카메라 프리팹'
@@ -34,6 +34,9 @@ public class checkCamera_Liquid : MonoBehaviour
     public GameObject other;
 
     public GameObject other1;
+    public GameObject other2;
+    public GameObject other3;
+    public GameObject other4;
 
 
 
@@ -99,12 +102,12 @@ public class checkCamera_Liquid : MonoBehaviour
                     {
                         //인식하고자 하는 객체와 카메라, 플레이어 오브젝트가 가리는 것은 제외
                         if (hit.collider.gameObject != cameraToCheck.gameObject && hit.collider.gameObject != gameObject && hit.collider.gameObject != Player && hit.collider.gameObject != gameObject && hit.collider.gameObject != Cam && hit.collider.gameObject != RightHand && hit.collider.gameObject != Camera_light && hit.collider.gameObject != other
-                            && hit.collider.gameObject != other1)
+                            && hit.collider.gameObject != other1 && hit.collider.gameObject != other2 && hit.collider.gameObject != other3 && hit.collider.gameObject != other4)
                         {
                             // 다른 객체로 가려져 있으면 "False" 출력
                             // Check.text = "False1";
                             string hiddenObjectName = hit.collider.gameObject.name;
-                            Debug.Log("다른 객체로 가려져 있다." + hiddenObjectName);
+                            Debug.Log("(액체법)다른 객체로 가려져 있다." + hiddenObjectName);
                             return;
                         }
                     }
@@ -146,11 +149,11 @@ public class checkCamera_Liquid : MonoBehaviour
                         //카메라와 객체 사이에 무언가 부딪힐 경우z
                         {
                             if (hit.collider.gameObject != cameraToCheck.gameObject && hit.collider.gameObject != gameObject && hit.collider.gameObject != Player && hit.collider.gameObject != gameObject && hit.collider.gameObject != Cam && hit.collider.gameObject != RightHand && hit.collider.gameObject != Camera_light && hit.collider.gameObject != other
-                                && hit.collider.gameObject != other1)
+                                && hit.collider.gameObject != other1 && hit.collider.gameObject != other2 && hit.collider.gameObject != other3 && hit.collider.gameObject != other4)
                             {
                                 // 다른 객체로 가려져 있으면 "False" 출력
                                 string hiddenObjectName = hit.collider.gameObject.name;
-                                Debug.Log("다른 객체로 가려져 있다." + hiddenObjectName);
+                                Debug.Log("(액체법)다른 객체로 가려져 있다." + hiddenObjectName);
                                 return;
                             }
                         }
@@ -166,7 +169,7 @@ public class checkCamera_Liquid : MonoBehaviour
                         return;
                     }
 
-
+                }
 
 
 
@@ -205,4 +208,4 @@ public class checkCamera_Liquid : MonoBehaviour
             }
         }
     }
-}
+

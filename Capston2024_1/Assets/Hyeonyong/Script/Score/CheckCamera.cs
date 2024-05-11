@@ -40,6 +40,9 @@ public class CheckCamera : MonoBehaviour
 
     public GameObject other1;
 
+    public GameObject other2;
+
+    public GameObject other3;
 
 
     public OnLight CheckLight;
@@ -104,7 +107,7 @@ public class CheckCamera : MonoBehaviour
                     {
                         //인식하고자 하는 객체와 카메라, 플레이어 오브젝트가 가리는 것은 제외
                         if (hit.collider.gameObject != cameraToCheck.gameObject && hit.collider.gameObject != gameObject && hit.collider.gameObject != Player && hit.collider.gameObject != gameObject && hit.collider.gameObject != Cam && hit.collider.gameObject != RightHand && hit.collider.gameObject != other
-                            && hit.collider.gameObject != other1)
+                            && hit.collider.gameObject != other1 && hit.collider.gameObject != other2 && hit.collider.gameObject != other3)
                         {
                             // 다른 객체로 가려져 있으면 "False" 출력
                             // Check.text = "False1";
@@ -150,7 +153,8 @@ public class CheckCamera : MonoBehaviour
                         //카메라와 객체 사이에 무언가 부딪힐 경우z
                         {
                             //인식하고자 하는 객체와 카메라, 플레이어 오브젝트가 가리는 것은 제외
-                            if (hit.collider.gameObject != cameraToCheck.gameObject && hit.collider.gameObject != gameObject && hit.collider.gameObject != Player && hit.collider.gameObject != gameObject && hit.collider.gameObject != Cam && hit.collider.gameObject != RightHand && hit.collider.gameObject != other)
+                            if (hit.collider.gameObject != cameraToCheck.gameObject && hit.collider.gameObject != gameObject && hit.collider.gameObject != Player && hit.collider.gameObject != gameObject && hit.collider.gameObject != Cam && hit.collider.gameObject != RightHand && hit.collider.gameObject != other
+                                && hit.collider.gameObject != other1 && hit.collider.gameObject != other2 && hit.collider.gameObject != other3)
                             {
                                 // 다른 객체로 가려져 있으면 "False" 출력
                                 // Check.text = "False1";

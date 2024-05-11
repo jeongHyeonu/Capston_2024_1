@@ -33,6 +33,11 @@ public class checkCamera_Liquid2 : MonoBehaviour
 
     public GameObject other1;
 
+    public GameObject other2;
+    public GameObject other3;
+    public GameObject other4;
+
+
 
 
     public bool doing = false; // 현재 다른 작업을 수행중인지 확인하는 코드.
@@ -41,7 +46,7 @@ public class checkCamera_Liquid2 : MonoBehaviour
 
     public OnLight CheckLight;
 
-    public TextMeshPro Score3; 
+    public TextMeshProUGUI Score3; 
     void Start()
     {
         fingerprintliquid = GetComponent<FingerPrintLiquid>();
@@ -80,12 +85,12 @@ public class checkCamera_Liquid2 : MonoBehaviour
                     {
                         //인식하고자 하는 객체와 카메라, 플레이어 오브젝트가 가리는 것은 제외
                         if (hit.collider.gameObject != cameraToCheck.gameObject && hit.collider.gameObject != gameObject && hit.collider.gameObject != Player && hit.collider.gameObject != gameObject && hit.collider.gameObject != Cam && hit.collider.gameObject != RightHand && hit.collider.gameObject != Camera_light && hit.collider.gameObject != other
-                            && hit.collider.gameObject != other1)
+                            && hit.collider.gameObject != other1 && hit.collider.gameObject != other2 && hit.collider.gameObject != other3 && hit.collider.gameObject != other4)
                         {
                             // 다른 객체로 가려져 있으면 "False" 출력
                             // Check.text = "False1";
                             string hiddenObjectName = hit.collider.gameObject.name;
-                            Debug.Log("다른 객체로 가려져 있다." + hiddenObjectName);
+                            Debug.Log("(액체법)다른 객체로 가려져 있다." + hiddenObjectName);
                             return;
                         }
                     }
@@ -104,11 +109,11 @@ public class checkCamera_Liquid2 : MonoBehaviour
                     //카메라와 객체 사이에 무언가 부딪힐 경우z
                     {
                         if (hit.collider.gameObject != cameraToCheck.gameObject && hit.collider.gameObject != gameObject && hit.collider.gameObject != Player && hit.collider.gameObject != gameObject && hit.collider.gameObject != Cam && hit.collider.gameObject != RightHand && hit.collider.gameObject != Camera_light && hit.collider.gameObject != other
-                            && hit.collider.gameObject != other1)
+                            && hit.collider.gameObject != other1 && hit.collider.gameObject != other2 && hit.collider.gameObject != other3 && hit.collider.gameObject != other4)
                         {
                             // 다른 객체로 가려져 있으면 "False" 출력
                             string hiddenObjectName = hit.collider.gameObject.name;
-                            Debug.Log("다른 객체로 가려져 있다." + hiddenObjectName);
+                            Debug.Log("(액체법)다른 객체로 가려져 있다." + hiddenObjectName);
                             return;
                         }
                     }
