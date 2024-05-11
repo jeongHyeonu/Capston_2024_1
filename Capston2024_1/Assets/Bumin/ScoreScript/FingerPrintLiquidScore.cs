@@ -5,9 +5,9 @@ using UnityEngine;
 
 public class FingerPrintLiquidScore : MonoBehaviour
 {
-    private bool paperTriggered = false;
-    private bool hairLiquidTriggered = false;
-    private bool liquidTriggered = false;
+    public bool paperTriggered = false;
+    public bool hairLiquidTriggered = false;
+    public bool liquidTriggered = false;
 
     private float hairLiquidTriggerTime; // 트리거에 닿은 시간을 기록할 변수
 

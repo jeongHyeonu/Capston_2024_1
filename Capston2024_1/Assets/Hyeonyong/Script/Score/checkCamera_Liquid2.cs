@@ -13,7 +13,7 @@ public class checkCamera_Liquid2 : MonoBehaviour
     public GameObject Camera_light;
 
 
-    FingerPrintLiquid fingerprintliquid;
+    FingerPrintLiquidScore fingerprintliquid;
 
     private int third_score = 0; //분말법을 한 후에 사진을 찍을 경우
 
@@ -49,7 +49,7 @@ public class checkCamera_Liquid2 : MonoBehaviour
     public TextMeshProUGUI Score3; 
     void Start()
     {
-        fingerprintliquid = GetComponent<FingerPrintLiquid>();
+        fingerprintliquid = GetComponent<FingerPrintLiquidScore>();
 
         failed = HandTrigger.GetComponent<npcText>();
 

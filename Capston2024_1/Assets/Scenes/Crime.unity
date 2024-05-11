@@ -16199,6 +16199,9 @@ MonoBehaviour:
   HandTrigger: {fileID: 556044557}
   tape: {fileID: 590947541}
   other: {fileID: 2139680250}
+  other1: {fileID: 0}
+  other2: {fileID: 0}
+  other3: {fileID: 0}
   Score3: {fileID: 1162509812}
 --- !u!114 &416033184
 MonoBehaviour:
@@ -16222,6 +16225,8 @@ MonoBehaviour:
   tape: {fileID: 590947541}
   other: {fileID: 2139680250}
   other1: {fileID: 0}
+  other2: {fileID: 0}
+  other3: {fileID: 0}
   CheckLight: {fileID: 0}
 --- !u!114 &416033185
 MonoBehaviour:
@@ -22798,6 +22803,8 @@ MonoBehaviour:
   tape: {fileID: 590947541}
   other: {fileID: 2139680250}
   other1: {fileID: 0}
+  other2: {fileID: 0}
+  other3: {fileID: 0}
   CheckLight: {fileID: 0}
 --- !u!114 &463322721
 MonoBehaviour:
@@ -22818,6 +22825,9 @@ MonoBehaviour:
   HandTrigger: {fileID: 556044557}
   tape: {fileID: 590947541}
   other: {fileID: 2139680250}
+  other1: {fileID: 0}
+  other2: {fileID: 0}
+  other3: {fileID: 0}
   Score3: {fileID: 926138772}
 --- !u!114 &463322725
 MonoBehaviour:
@@ -33214,6 +33224,8 @@ MonoBehaviour:
   tape: {fileID: 590947541}
   other: {fileID: 2139680250}
   other1: {fileID: 0}
+  other2: {fileID: 0}
+  other3: {fileID: 0}
   CheckLight: {fileID: 0}
 --- !u!114 &626982058
 MonoBehaviour:
@@ -33234,6 +33246,9 @@ MonoBehaviour:
   HandTrigger: {fileID: 556044557}
   tape: {fileID: 590947541}
   other: {fileID: 2139680250}
+  other1: {fileID: 0}
+  other2: {fileID: 0}
+  other3: {fileID: 0}
   Score3: {fileID: 560066266}
 --- !u!114 &626982062
 MonoBehaviour:
@@ -33668,6 +33683,9 @@ MonoBehaviour:
   HandTrigger: {fileID: 556044557}
   tape: {fileID: 590947541}
   other: {fileID: 2139680250}
+  other1: {fileID: 0}
+  other2: {fileID: 0}
+  other3: {fileID: 0}
   Score3: {fileID: 1593956249}
 --- !u!114 &634222424
 MonoBehaviour:
@@ -33691,6 +33709,8 @@ MonoBehaviour:
   tape: {fileID: 590947541}
   other: {fileID: 2139680250}
   other1: {fileID: 0}
+  other2: {fileID: 0}
+  other3: {fileID: 0}
   CheckLight: {fileID: 0}
 --- !u!114 &634222425
 MonoBehaviour:
@@ -38459,6 +38479,9 @@ MonoBehaviour:
   HandTrigger: {fileID: 556044557}
   tape: {fileID: 590947541}
   other: {fileID: 2139680250}
+  other1: {fileID: 0}
+  other2: {fileID: 0}
+  other3: {fileID: 0}
   Score3: {fileID: 1162509812}
 --- !u!114 &794652765
 MonoBehaviour:
@@ -38482,6 +38505,8 @@ MonoBehaviour:
   tape: {fileID: 590947541}
   other: {fileID: 2139680250}
   other1: {fileID: 0}
+  other2: {fileID: 0}
+  other3: {fileID: 0}
   CheckLight: {fileID: 0}
 --- !u!114 &794652766
 MonoBehaviour:
@@ -70841,6 +70866,8 @@ MonoBehaviour:
   tape: {fileID: 590947541}
   other: {fileID: 2139680250}
   other1: {fileID: 1738002511}
+  other2: {fileID: 0}
+  other3: {fileID: 0}
   CheckLight: {fileID: 0}
 --- !u!114 &1578289694
 MonoBehaviour:
@@ -70861,6 +70888,9 @@ MonoBehaviour:
   HandTrigger: {fileID: 556044557}
   tape: {fileID: 590947541}
   other: {fileID: 2139680250}
+  other1: {fileID: 0}
+  other2: {fileID: 0}
+  other3: {fileID: 0}
   Score3: {fileID: 888380965}
 --- !u!114 &1578289698
 MonoBehaviour:
@@ -79788,18 +79818,28 @@ PrefabInstance:
     - target: {fileID: 7415956222573912548, guid: e9a4f22a5cd65ce449de1ba56faf43e1,
         type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7415956222573912548, guid: e9a4f22a5cd65ce449de1ba56faf43e1,
         type: 3}
       propertyPath: _whenUnselect.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7415956222573912548, guid: e9a4f22a5cd65ce449de1ba56faf43e1,
         type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7415956222573912548, guid: e9a4f22a5cd65ce449de1ba56faf43e1,
+        type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 872906990}
+    - target: {fileID: 7415956222573912548, guid: e9a4f22a5cd65ce449de1ba56faf43e1,
+        type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 872906990}
     - target: {fileID: 7415956222573912548, guid: e9a4f22a5cd65ce449de1ba56faf43e1,
         type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[2].m_Target
@@ -79812,6 +79852,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7415956222573912548, guid: e9a4f22a5cd65ce449de1ba56faf43e1,
         type: 3}
+      propertyPath: _whenUnselect.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 872906990}
+    - target: {fileID: 7415956222573912548, guid: e9a4f22a5cd65ce449de1ba56faf43e1,
+        type: 3}
+      propertyPath: _whenUnselect.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 872906990}
+    - target: {fileID: 7415956222573912548, guid: e9a4f22a5cd65ce449de1ba56faf43e1,
+        type: 3}
       propertyPath: _whenUnselect.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 872906990}
@@ -79819,6 +79869,11 @@ PrefabInstance:
         type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7415956222573912548, guid: e9a4f22a5cd65ce449de1ba56faf43e1,
+        type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: InTransCamera
       objectReference: {fileID: 0}
     - target: {fileID: 7415956222573912548, guid: e9a4f22a5cd65ce449de1ba56faf43e1,
         type: 3}
@@ -79837,8 +79892,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7415956222573912548, guid: e9a4f22a5cd65ce449de1ba56faf43e1,
         type: 3}
+      propertyPath: _whenUnselect.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OutTransCamera
+      objectReference: {fileID: 0}
+    - target: {fileID: 7415956222573912548, guid: e9a4f22a5cd65ce449de1ba56faf43e1,
+        type: 3}
       propertyPath: _whenUnselect.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: 
+      value: OutTransCamera
       objectReference: {fileID: 0}
     - target: {fileID: 7415956222573912548, guid: e9a4f22a5cd65ce449de1ba56faf43e1,
         type: 3}
@@ -79847,7 +79907,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7415956222573912548, guid: e9a4f22a5cd65ce449de1ba56faf43e1,
         type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BtnCameraClicked, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7415956222573912548, guid: e9a4f22a5cd65ce449de1ba56faf43e1,
+        type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: BtnCameraClicked, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7415956222573912548, guid: e9a4f22a5cd65ce449de1ba56faf43e1,
+        type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: BtnCameraClicked, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7415956222573912548, guid: e9a4f22a5cd65ce449de1ba56faf43e1,
+        type: 3}
+      propertyPath: _whenUnselect.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BtnCameraClicked, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7415956222573912548, guid: e9a4f22a5cd65ce449de1ba56faf43e1,
+        type: 3}
+      propertyPath: _whenUnselect.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: BtnCameraClicked, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7415956222573912548, guid: e9a4f22a5cd65ce449de1ba56faf43e1,
@@ -79857,7 +79937,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7415956222573912548, guid: e9a4f22a5cd65ce449de1ba56faf43e1,
         type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7415956222573912548, guid: e9a4f22a5cd65ce449de1ba56faf43e1,
+        type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7415956222573912548, guid: e9a4f22a5cd65ce449de1ba56faf43e1,
+        type: 3}
+      propertyPath: _whenUnselect.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7415956222573912548, guid: e9a4f22a5cd65ce449de1ba56faf43e1,
@@ -80804,6 +80894,8 @@ MonoBehaviour:
   tape: {fileID: 590947541}
   other: {fileID: 2139680250}
   other1: {fileID: 0}
+  other2: {fileID: 0}
+  other3: {fileID: 0}
   CheckLight: {fileID: 0}
 --- !u!114 &1967212384
 MonoBehaviour:
@@ -80824,6 +80916,9 @@ MonoBehaviour:
   HandTrigger: {fileID: 556044557}
   tape: {fileID: 590947541}
   other: {fileID: 2139680250}
+  other1: {fileID: 0}
+  other2: {fileID: 0}
+  other3: {fileID: 0}
   Score3: {fileID: 1162509812}
 --- !u!114 &1967212388
 MonoBehaviour:
@@ -89694,7 +89789,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 872906989}
         m_TargetAssemblyTypeName: BtnFlashLightClicked, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: InTransFlashLight
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
