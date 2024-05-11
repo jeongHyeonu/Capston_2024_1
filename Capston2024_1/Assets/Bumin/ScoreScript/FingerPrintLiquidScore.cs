@@ -35,16 +35,21 @@ public class FingerPrintLiquidScore : MonoBehaviour
 
     private IEnumerator CheckHairTrigger()
     {
-        yield return new WaitForSeconds(20f);
-        if (!hairLiquidTriggered)
+        Debug.Log("체크0.");
+        yield return new WaitForSeconds(5f);
+        Debug.Log("체크1.");
+        if (hairLiquidTriggered)
         {
-            hairLiquidTriggered = true;
+            Debug.Log("체크2.");
             LiquidScoreBoard liquidScoreBoard = FindObjectOfType<LiquidScoreBoard>();
             if (liquidScoreBoard != null)
             {
                 liquidScoreBoard.score5.text = "15";
-                if (paperTriggered && hairLiquidTriggered && liquidTriggered)
+                hairLiquidTriggered = true;
+                Debug.Log("체크3.");
+                if ((paperTriggered && hairLiquidTriggered && liquidTriggered) == true)
                 {
+                    Debug.Log("체크4.");
                     StartCoroutine(TriggerEffect());
                 }
             }
@@ -54,6 +59,7 @@ public class FingerPrintLiquidScore : MonoBehaviour
 
     private IEnumerator TriggerEffect()
     {
+        Debug.Log("체크5.");
         yield return new WaitForSeconds(5f);
         // 페이드 인 효과 적용
         this.transform.gameObject.GetComponent<MeshRenderer>().materials[0].DOFade(1f, 0.4f);

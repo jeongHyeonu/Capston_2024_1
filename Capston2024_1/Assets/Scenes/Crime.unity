@@ -16262,6 +16262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba44d4c976cce5c4faf831203f072b17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fingerprintobject: {fileID: 0}
 --- !u!65 &416033187
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22694,6 +22695,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba44d4c976cce5c4faf831203f072b17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fingerprintobject: {fileID: 0}
 --- !u!65 &463322712
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33115,6 +33117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba44d4c976cce5c4faf831203f072b17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fingerprintobject: {fileID: 0}
 --- !u!65 &626982049
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33746,6 +33749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba44d4c976cce5c4faf831203f072b17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fingerprintobject: {fileID: 0}
 --- !u!65 &634222427
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38542,6 +38546,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba44d4c976cce5c4faf831203f072b17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fingerprintobject: {fileID: 0}
 --- !u!65 &794652768
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -48215,6 +48220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba44d4c976cce5c4faf831203f072b17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fingerprintobject: {fileID: 0}
 --- !u!65 &982494594
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -70805,6 +70811,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba44d4c976cce5c4faf831203f072b17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fingerprintobject: {fileID: 0}
 --- !u!114 &1578289688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77523,6 +77530,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba44d4c976cce5c4faf831203f072b17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fingerprintobject: {fileID: 0}
 --- !u!114 &1872274099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79759,7 +79767,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Parent
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1806353999}
     - target: {fileID: 2068426853450249860, guid: e9a4f22a5cd65ce449de1ba56faf43e1,
         type: 3}
       propertyPath: canvas
@@ -79769,7 +79777,7 @@ PrefabInstance:
         type: 3}
       propertyPath: MirrorPos
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1806353999}
     - target: {fileID: 2068426853450249860, guid: e9a4f22a5cd65ce449de1ba56faf43e1,
         type: 3}
       propertyPath: camera_light
@@ -80802,6 +80810,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba44d4c976cce5c4faf831203f072b17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fingerprintobject: {fileID: 0}
 --- !u!65 &1967212377
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -81345,6 +81354,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba44d4c976cce5c4faf831203f072b17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fingerprintobject: {fileID: 0}
 --- !u!65 &1979553527
 BoxCollider:
   m_ObjectHideFlags: 0
