@@ -89,13 +89,14 @@ public class GrabPaper : MonoBehaviour
         Debug.Log("종이를 잡겠다.");
         onPaper = true;
         paper.transform.SetParent(pincett);
-        paper.transform.localPosition = new Vector3(0f, 1.2f, 0f);
-        paper.transform.localRotation = Quaternion.Euler(-90.0f,0f, 0f);
+        paper.transform.localPosition = new Vector3(-0.03f, 0f, 0f);
+        paper.transform.localRotation = Quaternion.Euler(0.0f,0f, 0f);
         //paper.transform.Rotate(90f, 0f, 0f);
         //Camera.transform.position = RightHand.transform.position;
     }
     private void PutDownPaper()//카메라와 오른손의 자식관계를 해제한다.
     {
+        grab = false;
         onPaper = false;
         Debug.Log("종이를 놓았다.");
         paper.transform.SetParent(null);

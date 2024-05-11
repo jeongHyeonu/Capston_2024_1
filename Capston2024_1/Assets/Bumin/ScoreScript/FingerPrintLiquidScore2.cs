@@ -35,18 +35,15 @@ public class FingerPrintLiquidScore2 : MonoBehaviour
 
     private IEnumerator CheckHairTrigger()
     {
-        Debug.Log("üũ0.");
         yield return new WaitForSeconds(5f);
-        Debug.Log("üũ1.");
-        if (hairLiquidTriggered)
+        hairLiquidTriggered = true;
+        if (hairLiquidTriggered == true)
         {
             Debug.Log("üũ2.");
             LiquidScoreBoard liquidScoreBoard = FindObjectOfType<LiquidScoreBoard>();
+            liquidScoreBoard.score12.text = "15";
             if (liquidScoreBoard != null)
             {
-                liquidScoreBoard.score12.text = "15";
-                hairLiquidTriggered = true;
-                Debug.Log("üũ3.");
                 if ((paperTriggered && hairLiquidTriggered && liquidTriggered) == true)
                 {
                     Debug.Log("üũ4.");

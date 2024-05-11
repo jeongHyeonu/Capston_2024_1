@@ -22050,7 +22050,7 @@ GameObject:
   - component: {fileID: 969863169}
   - component: {fileID: 969863168}
   - component: {fileID: 969863167}
-  - component: {fileID: 969863166}
+  - component: {fileID: 969863175}
   m_Layer: 0
   m_Name: tweezers flat
   m_TagString: Untagged
@@ -22073,18 +22073,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1087139695}
   m_LocalEulerAnglesHint: {x: 0, y: 160, z: 90}
---- !u!114 &969863166
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 969863164}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8c8c169883ced34bb71269e5b28c11e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &969863167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22120,7 +22108,7 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
-  _pointableElement: {fileID: 0}
+  _pointableElement: {fileID: 969863167}
   _rigidbody: {fileID: 969863172}
   _grabSource: {fileID: 0}
   _useClosestPointAsGrabSource: 0
@@ -22225,7 +22213,7 @@ CapsuleCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.025
   m_Height: 0.3
@@ -22308,6 +22296,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 969863164}
   m_Mesh: {fileID: -4913095844862807578, guid: b9be7a238009cc9479120ea64f0858e8, type: 3}
+--- !u!114 &969863175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969863164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f74b0ca2d9b1e8343b6a4b942f34630c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onPaper: 0
+  grab: 0
+  pincett: {fileID: 969863165}
+  paper: {fileID: 0}
 --- !u!1 &970565675
 GameObject:
   m_ObjectHideFlags: 0
@@ -29674,6 +29678,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Receipt(Ev3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 266882697287639558, guid: 043bc6bddba53064bb2edd7d37c21258,
+        type: 3}
+      propertyPath: m_TagString
+      value: Paper
       objectReference: {fileID: 0}
     - target: {fileID: 448537581620346063, guid: 043bc6bddba53064bb2edd7d37c21258,
         type: 3}
@@ -38185,6 +38194,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PaperEnvelope(Ev4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3510579398970270106, guid: a897af575d48f0a4f9b129e12522a2ca,
+        type: 3}
+      propertyPath: m_TagString
+      value: Paper
       objectReference: {fileID: 0}
     - target: {fileID: 4218614269285061951, guid: a897af575d48f0a4f9b129e12522a2ca,
         type: 3}
