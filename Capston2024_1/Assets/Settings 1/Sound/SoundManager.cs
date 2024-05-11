@@ -131,7 +131,18 @@ public class SoundManager : Singleton<SoundManager>
         audioSource.PlayOneShot(SFX_audioclips[playSoundName]); // 음악 재생
     }
 
+    // 사운드 재생 - 효과음
+    public void PlaySFX(int _code)
+    {
+        // 사운드 이름
+        SFX_list playSoundName = (SFX_list)_code;
 
+        // 사운드 객체
+        GameObject soundObject = SFX_Object;
+        AudioSource audioSource = soundObject.GetComponent<AudioSource>(); // 컴포넌트 불러오기
+        audioSource.volume = volume_SFX; // 음량조절
+        audioSource.PlayOneShot(SFX_audioclips[playSoundName]); // 음악 재생
+    }
 
     // 설정에서 볼륨 바꿀때 사용
     public void ChangeVolume_BGM(float _vol)

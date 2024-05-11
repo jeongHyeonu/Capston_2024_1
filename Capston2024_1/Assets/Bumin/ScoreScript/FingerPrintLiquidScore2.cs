@@ -5,9 +5,9 @@ using UnityEngine;
 
 public class FingerPrintLiquidScore2 : MonoBehaviour
 {
-    private bool paperTriggered = false;
-    private bool hairLiquidTriggered = false;
-    private bool liquidTriggered = false;
+    public bool paperTriggered = false;
+    public bool hairLiquidTriggered = false;
+    public bool liquidTriggered = false;
 
     private float hairLiquidTriggerTime; // 트리거에 닿은 시간을 기록할 변수
 
@@ -35,22 +35,28 @@ public class FingerPrintLiquidScore2 : MonoBehaviour
 
     private IEnumerator CheckHairTrigger()
     {
-        yield return new WaitForSeconds(20f);
-        if (!hairLiquidTriggered)
+        yield return new WaitForSeconds(5f);
+        hairLiquidTriggered = true;
+        if (hairLiquidTriggered == true)
         {
-            hairLiquidTriggered = true;
+            Debug.Log("체크2.");
             LiquidScoreBoard liquidScoreBoard = FindObjectOfType<LiquidScoreBoard>();
+            liquidScoreBoard.score12.text = "15";
             if (liquidScoreBoard != null)
             {
-                liquidScoreBoard.score12.text = "15";
+                if ((paperTriggered && hairLiquidTriggered && liquidTriggered) == true)
+                {
+                    Debug.Log("체크4.");
+                    StartCoroutine(TriggerEffect());
+                }
             }
-            StartCoroutine(TriggerEffect());
         }
     }
 
 
     private IEnumerator TriggerEffect()
     {
+        Debug.Log("체크5.");
         yield return new WaitForSeconds(5f);
         // 페이드 인 효과 적용
         this.transform.gameObject.GetComponent<MeshRenderer>().materials[0].DOFade(1f, 0.4f);

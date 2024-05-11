@@ -7,21 +7,21 @@ using UnityEngine.SceneManagement;
 
 public class LiquidScoreBoard : MonoBehaviour
 {
-    public TextMeshPro score1;
-    public TextMeshPro score2;
-    public TextMeshPro score3;
-    public TextMeshPro score4;
-    public TextMeshPro score5;
-    public TextMeshPro score6;
-    public TextMeshPro score7;
-    public TextMeshPro score8;
-    public TextMeshPro score9;
-    public TextMeshPro score10;
-    public TextMeshPro score11;
-    public TextMeshPro score12;
-    public TextMeshPro score13;
-    public TextMeshPro score14;
-    public TextMeshPro score15;
+    public TextMeshProUGUI score1;
+    public TextMeshProUGUI score2;
+    public TextMeshProUGUI score3;
+    public TextMeshProUGUI score4;
+    public TextMeshProUGUI score5;
+    public TextMeshProUGUI score6;
+    public TextMeshProUGUI score7;
+    public TextMeshProUGUI score8;
+    public TextMeshProUGUI score9;
+    public TextMeshProUGUI score10;
+    public TextMeshProUGUI score11;
+    public TextMeshProUGUI score12;
+    public TextMeshProUGUI score13;
+    public TextMeshProUGUI score14;
+    public TextMeshProUGUI score15;
 
     int num = 0;
     // Start is called before the first frame update

@@ -23,6 +23,7 @@ public class FingerPrintLiquid_Tutorial : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Paper"))
         {
+            SoundManager.Instance.PlaySFX(SoundManager.SFX_list.WOOSH_1);
             paperTriggered = true; // Paper와의 충돌이 발생했음을 표시
         }
         else if (other.gameObject.layer == LayerMask.NameToLayer("Hair"))

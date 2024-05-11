@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class ChangeGloves : MonoBehaviour
@@ -6,10 +7,15 @@ public class ChangeGloves : MonoBehaviour
     public Material newMaterial;
 
     // 충돌 대상 오브젝트를 인스펙터에서 설정할 수 있도록 함
-    public GameObject oculusHandObject;
-
+    public GameObject oculusHandObjectR;
+    public GameObject oculusHandObjectL;
     // 원래의 메테리얼을 저장할 변수
-    private Material originalMaterial;
+    public Material originalMaterial;
+
+    public TextMeshProUGUI Score1;
+    public TextMeshProUGUI Score2;
+    public TextMeshProUGUI Score3;
+    public TextMeshProUGUI Score4;
 
     private void Start()
     {
@@ -24,14 +30,23 @@ public class ChangeGloves : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         // 트리거에 충돌한 것이 설정된 오브젝트와 일치하면
-        if (other.gameObject == oculusHandObject)
+        //if (other.gameObject == oculusHandObject)
+        if (other.gameObject.tag=="Hand")
         {
+            Debug.Log("체크123");
             // 손 모델의 Renderer 컴포넌트 가져오기
-            Renderer handRenderer = other.GetComponent<Renderer>();
+            Renderer handRenderer = oculusHandObjectR.GetComponent<Renderer>();
+
+            Renderer handRenderer2 = oculusHandObjectL.GetComponent<Renderer>();
             if (handRenderer != null)
             {
                 // 새로운 메테리얼로 변경
                 handRenderer.material = newMaterial;
+                handRenderer2.material = newMaterial;
+                Score1.text =""+ 10;
+                Score2.text = "" + 10;
+                Score3.text = "" + 10;
+                Score4.text = "" + 10;
             }
         }
     }

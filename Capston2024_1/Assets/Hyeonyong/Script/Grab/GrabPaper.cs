@@ -12,6 +12,9 @@ public class GrabPaper : MonoBehaviour
     public Transform pincett;
 
     public GameObject paper;
+
+
+    private PackingEvidence PE;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,17 +24,51 @@ public class GrabPaper : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
+        if (OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger) && grab == true)
+        {
+            GrabOnHand();
+        }
+        if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger) && grab == true)
+        {
+            GrabOnHand();
+        }
+        if (OVRInput.GetUp(OVRInput.Button.SecondaryIndexTrigger))
+        {
+
+            PutDownPaper();
+           // onPaper = false;
+        }
+        if (OVRInput.GetUp(OVRInput.Button.PrimaryIndexTrigger))
+        {
+
+            PutDownPaper();
+          //  onPaper = false;
+        }
     }
 
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Paper"))
+        //if (other.CompareTag("Paper"))
+        if (other.tag == "RECEIPT" || other.tag == "ENVELOPE")
         {
             paper = other.gameObject;
             grab = true;
-            StartCoroutine(onGrabPaper());
+            //StartCoroutine(onGrabPaper());
+            Debug.Log("종이와 닿았다.");
+        }
+
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        //if (other.CompareTag("Paper")||other.tag=="RECEIPT"||other.tag=="ENVELOPE")
+        if (other.tag == "RECEIPT" || other.tag == "ENVELOPE")
+        {
+            paper = other.gameObject;
+            grab = true;
+            //StartCoroutine(onGrabPaper());
             Debug.Log("종이와 닿았다.");
         }
 
@@ -39,10 +76,11 @@ public class GrabPaper : MonoBehaviour
 
     private void OnTriggerExit(Collider other) 
     {
-        if (other.CompareTag("Paper"))
+        // if (other.CompareTag("Paper") || other.tag == "RECEIPT" || other.tag == "ENVELOPE")
+        if (other.tag == "RECEIPT" || other.tag == "ENVELOPE")
         {
             // 코루틴 중단
-            StopCoroutine(onGrabPaper());
+            //StopCoroutine(onGrabPaper());
             grab = false;
             Debug.Log("코루틴 중단");
             paper = null;
@@ -50,7 +88,7 @@ public class GrabPaper : MonoBehaviour
     }
 
 
-
+    /*
     IEnumerator onGrabPaper()
     {
         if (OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger) && grab == true)
@@ -81,7 +119,7 @@ public class GrabPaper : MonoBehaviour
         }
     }
 
-
+    */
 
 
     private void GrabOnHand() // 카메라를 오른손의 자식으로 두고 위치를 이동시킨다.
@@ -89,16 +127,39 @@ public class GrabPaper : MonoBehaviour
         Debug.Log("종이를 잡겠다.");
         onPaper = true;
         paper.transform.SetParent(pincett);
-        paper.transform.localPosition = new Vector3(0f, 1.2f, 0f);
-        paper.transform.localRotation = Quaternion.Euler(-90.0f,0f, 0f);
+
+        if (paper.tag == "RECEIPT") 
+        {
+            paper.transform.localPosition = new Vector3(0.05f, 0f, -0.15f);
+            paper.transform.localRotation = Quaternion.Euler(0f, 0f, -90f);
+            PE = paper.GetComponent<PackingEvidence>();
+            PE.OnGrab();
+
+
+        }
+        if (paper.tag == "ENVELOPE")
+        {
+            paper.transform.localPosition = new Vector3(0.00f, 0f, -0.15f);
+            paper.transform.localRotation = Quaternion.Euler(0f, 0f, 180f);
+
+            PE = paper.GetComponent<PackingEvidence>();
+            PE.OnGrab();
+        }
+        /*
+        paper.transform.localPosition = new Vector3(0f, 0f, -0.15f);
+        paper.transform.localRotation = Quaternion.Euler(0f,0f, 90f);
+        */
         //paper.transform.Rotate(90f, 0f, 0f);
         //Camera.transform.position = RightHand.transform.position;
     }
     private void PutDownPaper()//카메라와 오른손의 자식관계를 해제한다.
     {
+        grab = false;
         onPaper = false;
         Debug.Log("종이를 놓았다.");
         paper.transform.SetParent(null);
+        PE = null;
+        paper = null;
     }
-
+    
 }

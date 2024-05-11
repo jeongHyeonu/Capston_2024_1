@@ -19,6 +19,8 @@ TagManager:
   - Ev3
   - Ev4
   - Ev_
+  - RECEIPT
+  - ENVELOPE
   layers:
   - Default
   - TransparentFX
