@@ -30,7 +30,7 @@ EditorBuildSettings:
     path: Assets/MIna/Scene/Lab_Mina.unity
     guid: d7c752b9e3f30224096b56e2d184b121
   - enabled: 0
-    path: Assets/Scenes/Crime.unity
+    path: Assets/Scenes/Crime(not use).unity
     guid: b982574c21bbeb94fafe1506303308bf
   - enabled: 0
     path: Assets/Scenes/Opening.unity
