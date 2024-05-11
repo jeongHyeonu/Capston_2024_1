@@ -16549,6 +16549,7 @@ GameObject:
   - component: {fileID: 706069198}
   - component: {fileID: 706069200}
   - component: {fileID: 706069199}
+  - component: {fileID: 706069201}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -16616,6 +16617,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 706069197}
   m_CullTransparentMesh: 1
+--- !u!114 &706069201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706069197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93d7ff3a44836d6489ab69d8b5eab374, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score1: {fileID: 859088185}
+  score2: {fileID: 511226136}
+  score3: {fileID: 800425578}
+  score4: {fileID: 1752058380}
+  score5: {fileID: 72689290}
+  score6: {fileID: 1653243592}
+  score7: {fileID: 1777716532}
+  score8: {fileID: 1373040100}
+  score9: {fileID: 698636818}
+  score10: {fileID: 593393216}
+  score11: {fileID: 2142431437}
+  score12: {fileID: 382585088}
+  score13: {fileID: 191897615}
+  score14: {fileID: 297378100}
+  score15: {fileID: 1315596630}
 --- !u!1001 &720137940
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30094,7 +30122,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -30122,7 +30150,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -55060,7 +55088,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
