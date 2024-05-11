@@ -27,6 +27,7 @@ public class TutorialPinset : MonoBehaviour
     {
         if (other.gameObject == receipt)
         {
+            SoundManager.Instance.PlaySFX(SoundManager.SFX_list.WOOSH_3);
             t_ux.TutorialStep(1);
             receipt.transform.SetParent(transform);
             receipt.transform.localPosition = new Vector3(0, 0, -0.1f);
@@ -34,10 +35,12 @@ public class TutorialPinset : MonoBehaviour
         }
         if (other.gameObject == liquid)
         {
+            SoundManager.Instance.PlaySFX(SoundManager.SFX_list.LIQUID_1);
             t_ux.TutorialStep(2);
         }
         if (other.gameObject == targetPos)
         {
+            SoundManager.Instance.PlaySFX(SoundManager.SFX_list.WOOSH_2);
             GetComponent<GrabInteractable>().enabled = false;
             GetComponent<Grabbable>().enabled = false;
             MoveOriginPos();
