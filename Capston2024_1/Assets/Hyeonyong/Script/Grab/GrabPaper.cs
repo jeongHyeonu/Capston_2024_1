@@ -127,6 +127,7 @@ public class GrabPaper : MonoBehaviour
         Debug.Log("종이를 잡겠다.");
         onPaper = true;
         paper.transform.SetParent(pincett);
+        SoundManager.Instance.PlaySFX(SoundManager.SFX_list.PINSET_PICK);
 
         if (paper.tag == "RECEIPT") 
         {
@@ -160,6 +161,8 @@ public class GrabPaper : MonoBehaviour
         paper.transform.SetParent(null);
         PE = null;
         paper = null;
+
+        SoundManager.Instance.PlaySFX(SoundManager.SFX_list.FLAP_1);
     }
     
 }

@@ -62,6 +62,8 @@ public class FingerPrintObject : MonoBehaviour
             this.gameObject.GetComponent<MeshRenderer>().material.DOFade(1f, 2f);
             isVisible = true; // 나중에 테이프로 채취시, 지문이 드러났는지 여부가 true일때 채취 가능
             rulerAndCard?.SetActive(true); // 지문 보이면 자/카드 등장
+
+            SoundManager.Instance.PlaySFX(SoundManager.SFX_list.FLAP_3); // 사운드
         }
     }
 }

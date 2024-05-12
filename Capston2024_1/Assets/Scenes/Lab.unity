@@ -817,6 +817,7 @@ GameObject:
   - component: {fileID: 43677906}
   - component: {fileID: 43677905}
   - component: {fileID: 43677904}
+  - component: {fileID: 43677910}
   m_Layer: 0
   m_Name: fingerprint_kit_01.info card (2)
   m_TagString: Untagged
@@ -833,7 +834,7 @@ Transform:
   m_GameObject: {fileID: 43677901}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.20166606, y: 0.13279653, z: -0.15876459}
+  m_LocalPosition: {x: 0.20166606, y: 0.1, z: -0.15876459}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -998,6 +999,55 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 43677901}
   m_Mesh: {fileID: -3069890967182607158, guid: 64a24205d19edbd46825e53672e5bda2, type: 3}
+--- !u!114 &43677910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43677901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactableView: {fileID: 43677904}
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1734120346}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 23
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &48512515
 GameObject:
   m_ObjectHideFlags: 0
@@ -9390,6 +9440,7 @@ GameObject:
   - component: {fileID: 216549489}
   - component: {fileID: 216549488}
   - component: {fileID: 216549487}
+  - component: {fileID: 216549493}
   m_Layer: 0
   m_Name: fingerprint_kit_01.info card (6)
   m_TagString: Untagged
@@ -9406,7 +9457,7 @@ Transform:
   m_GameObject: {fileID: 216549484}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.20166606, y: 0.13279653, z: -0.15876459}
+  m_LocalPosition: {x: 0.20166606, y: 0.14, z: -0.15876459}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9571,6 +9622,55 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 216549484}
   m_Mesh: {fileID: -3069890967182607158, guid: 64a24205d19edbd46825e53672e5bda2, type: 3}
+--- !u!114 &216549493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 216549484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactableView: {fileID: 216549487}
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1734120346}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 23
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &219538516
 GameObject:
   m_ObjectHideFlags: 0
@@ -9923,6 +10023,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1734120346}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 25
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenUnselect:
     m_PersistentCalls:
       m_Calls:
@@ -9934,6 +10046,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1734120346}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 30
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -12431,6 +12555,7 @@ GameObject:
   - component: {fileID: 396182044}
   - component: {fileID: 396182043}
   - component: {fileID: 396182042}
+  - component: {fileID: 396182048}
   m_Layer: 0
   m_Name: fingerprint_kit_01.info card (10)
   m_TagString: Untagged
@@ -12447,7 +12572,7 @@ Transform:
   m_GameObject: {fileID: 396182039}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.20166606, y: 0.13279653, z: -0.15876459}
+  m_LocalPosition: {x: 0.20166606, y: 0.18, z: -0.15876459}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12612,6 +12737,55 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 396182039}
   m_Mesh: {fileID: -3069890967182607158, guid: 64a24205d19edbd46825e53672e5bda2, type: 3}
+--- !u!114 &396182048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 396182039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactableView: {fileID: 396182042}
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1734120346}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 23
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &404895765
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18067,6 +18241,7 @@ GameObject:
   - component: {fileID: 797483941}
   - component: {fileID: 797483940}
   - component: {fileID: 797483939}
+  - component: {fileID: 797483945}
   m_Layer: 0
   m_Name: fingerprint_kit_01.info card (8)
   m_TagString: Untagged
@@ -18083,7 +18258,7 @@ Transform:
   m_GameObject: {fileID: 797483936}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.20166606, y: 0.13279653, z: -0.15876459}
+  m_LocalPosition: {x: 0.20166606, y: 0.16, z: -0.15876459}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -18248,6 +18423,55 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 797483936}
   m_Mesh: {fileID: -3069890967182607158, guid: 64a24205d19edbd46825e53672e5bda2, type: 3}
+--- !u!114 &797483945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797483936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactableView: {fileID: 797483939}
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1734120346}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 23
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &800425576
 GameObject:
   m_ObjectHideFlags: 0
@@ -19412,6 +19636,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1734120346}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 27
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenUnselect:
     m_PersistentCalls:
       m_Calls:
@@ -19423,6 +19659,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1734120346}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 29
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -19893,6 +20141,7 @@ GameObject:
   - component: {fileID: 884291090}
   - component: {fileID: 884291089}
   - component: {fileID: 884291088}
+  - component: {fileID: 884291094}
   m_Layer: 0
   m_Name: fingerprint_kit_01.info card (9)
   m_TagString: Untagged
@@ -19909,7 +20158,7 @@ Transform:
   m_GameObject: {fileID: 884291085}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.20166606, y: 0.13279653, z: -0.15876459}
+  m_LocalPosition: {x: 0.20166606, y: 0.17, z: -0.15876459}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -20074,6 +20323,55 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 884291085}
   m_Mesh: {fileID: -3069890967182607158, guid: 64a24205d19edbd46825e53672e5bda2, type: 3}
+--- !u!114 &884291094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884291085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactableView: {fileID: 884291088}
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1734120346}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 23
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &889632769
 GameObject:
   m_ObjectHideFlags: 0
@@ -21007,47 +21305,47 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 0796f3670482a16499bc26139f8f9f5f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.8718679
+      value: -1.879
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0796f3670482a16499bc26139f8f9f5f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.41654956
+      value: -0.177
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0796f3670482a16499bc26139f8f9f5f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.023019316
+      value: -0.96
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0796f3670482a16499bc26139f8f9f5f,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.5332947
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0796f3670482a16499bc26139f8f9f5f,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.00000008146034
+      value: 0.837105
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0796f3670482a16499bc26139f8f9f5f,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: -0.065480314
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0796f3670482a16499bc26139f8f9f5f,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0.10278351
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0796f3670482a16499bc26139f8f9f5f,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: 115
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0796f3670482a16499bc26139f8f9f5f,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -14
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0796f3670482a16499bc26139f8f9f5f,
         type: 3}
@@ -21321,8 +21619,8 @@ MonoBehaviour:
   isVisible: 0
   obj_type: 3
   answerPowder: 0
-  targetScore1: {fileID: 0}
-  targetScore2: {fileID: 0}
+  targetScore1: {fileID: 705102700}
+  targetScore2: {fileID: 512776544}
   rulerAndCard: {fileID: 662424506}
   mat:
   - {fileID: 2100000, guid: cdba50f3436d0f440ba2fd5f3b027399, type: 2}
@@ -22007,6 +22305,7 @@ GameObject:
   - component: {fileID: 946435927}
   - component: {fileID: 946435926}
   - component: {fileID: 946435925}
+  - component: {fileID: 946435931}
   m_Layer: 0
   m_Name: fingerprint_kit_01.print dust 03
   m_TagString: Untagged
@@ -22023,7 +22322,7 @@ Transform:
   m_GameObject: {fileID: 946435922}
   serializedVersion: 2
   m_LocalRotation: {x: 0.00000002111098, y: -0.258819, z: 0.0000000056566694, w: 0.9659259}
-  m_LocalPosition: {x: -3.314, y: 0.7892369, z: 9.961}
+  m_LocalPosition: {x: -3.314, y: 0.8, z: 9.961}
   m_LocalScale: {x: 0.39999998, y: 0.39999998, z: 0.39999998}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -22185,6 +22484,67 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 946435922}
   m_Mesh: {fileID: -6844545201272684823, guid: c6fd6627886677e499b7e4ace90f7e33, type: 3}
+--- !u!114 &946435931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946435922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactableView: {fileID: 946435926}
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1734120346}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1734120346}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 33
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &955976880
 GameObject:
   m_ObjectHideFlags: 0
@@ -22405,7 +22765,6 @@ GameObject:
   - component: {fileID: 969863173}
   - component: {fileID: 969863172}
   - component: {fileID: 969863171}
-  - component: {fileID: 969863170}
   - component: {fileID: 969863169}
   - component: {fileID: 969863168}
   - component: {fileID: 969863167}
@@ -22486,40 +22845,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactableView: {fileID: 0}
+  _interactableView: {fileID: 969863168}
   _whenHover:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: TutorialUX_Liquid, Assembly-CSharp
-        m_MethodName: GripUX_ON
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 969863164}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _whenUnhover:
     m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: TutorialUX_Liquid, Assembly-CSharp
-        m_MethodName: UX_OFF
-        m_Mode: 1
+      - m_Target: {fileID: 1734120346}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 103
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _whenSelect:
-    m_PersistentCalls:
-      m_Calls: []
   _whenUnselect:
     m_PersistentCalls:
       m_Calls: []
@@ -22535,26 +22882,6 @@ MonoBehaviour:
   _whenSelectingInteractorViewRemoved:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &969863170
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 969863164}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 605a966b114f30b4090239b4bb79727e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  receipt: {fileID: 0}
-  liquid: {fileID: 0}
-  targetPos: {fileID: 0}
-  t_ux: {fileID: 0}
-  originPos: {x: 0, y: 0, z: 0}
-  originRot: {x: 0, y: 0, z: 0, w: 0}
-  receiptPaperTarget: {fileID: 0}
-  paper: {fileID: 0}
 --- !u!136 &969863171
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -28335,6 +28662,7 @@ GameObject:
   - component: {fileID: 1040997909}
   - component: {fileID: 1040997908}
   - component: {fileID: 1040997907}
+  - component: {fileID: 1040997913}
   m_Layer: 0
   m_Name: fingerprint_kit_01.info card (11)
   m_TagString: Untagged
@@ -28351,7 +28679,7 @@ Transform:
   m_GameObject: {fileID: 1040997904}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.20166606, y: 0.13279653, z: -0.15876459}
+  m_LocalPosition: {x: 0.20166606, y: 0.19, z: -0.15876459}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -28516,6 +28844,55 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1040997904}
   m_Mesh: {fileID: -3069890967182607158, guid: 64a24205d19edbd46825e53672e5bda2, type: 3}
+--- !u!114 &1040997913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1040997904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactableView: {fileID: 1040997907}
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1734120346}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 23
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1044630766
 GameObject:
   m_ObjectHideFlags: 0
@@ -29081,6 +29458,7 @@ GameObject:
   - component: {fileID: 1075848544}
   - component: {fileID: 1075848543}
   - component: {fileID: 1075848542}
+  - component: {fileID: 1075848548}
   m_Layer: 0
   m_Name: fingerprint_kit_01.info card (4)
   m_TagString: Untagged
@@ -29097,7 +29475,7 @@ Transform:
   m_GameObject: {fileID: 1075848539}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.20166606, y: 0.13279653, z: -0.15876459}
+  m_LocalPosition: {x: 0.20166606, y: 0.12, z: -0.15876459}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -29262,6 +29640,55 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1075848539}
   m_Mesh: {fileID: -3069890967182607158, guid: 64a24205d19edbd46825e53672e5bda2, type: 3}
+--- !u!114 &1075848548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1075848539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactableView: {fileID: 1075848542}
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1734120346}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 23
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1078453787
 GameObject:
   m_ObjectHideFlags: 0
@@ -30466,6 +30893,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1734120346}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 88
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -34454,6 +34893,7 @@ GameObject:
   - component: {fileID: 1321853766}
   - component: {fileID: 1321853764}
   - component: {fileID: 1321853765}
+  - component: {fileID: 1321853770}
   m_Layer: 0
   m_Name: fingerprint_kit_01.print dust 02
   m_TagString: Untagged
@@ -34470,7 +34910,7 @@ Transform:
   m_GameObject: {fileID: 1321853761}
   serializedVersion: 2
   m_LocalRotation: {x: 0.00000002111098, y: -0.258819, z: 0.0000000056566694, w: 0.9659259}
-  m_LocalPosition: {x: -3.478, y: 0.7892369, z: 10.074}
+  m_LocalPosition: {x: -3.478, y: 0.8, z: 10.074}
   m_LocalScale: {x: 0.39999998, y: 0.39999998, z: 0.39999998}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -34631,6 +35071,67 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1321853761}
   m_Mesh: {fileID: 6102764267777100422, guid: 64a24205d19edbd46825e53672e5bda2, type: 3}
+--- !u!114 &1321853770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321853761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactableView: {fileID: 1321853765}
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1734120346}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1734120346}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 33
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1326528588
 GameObject:
   m_ObjectHideFlags: 0
@@ -35924,8 +36425,8 @@ MonoBehaviour:
   isVisible: 0
   obj_type: 3
   answerPowder: 0
-  targetScore1: {fileID: 0}
-  targetScore2: {fileID: 0}
+  targetScore1: {fileID: 2054588400}
+  targetScore2: {fileID: 889965997}
   rulerAndCard: {fileID: 1305640085}
   mat:
   - {fileID: 2100000, guid: cdba50f3436d0f440ba2fd5f3b027399, type: 2}
@@ -36792,6 +37293,7 @@ GameObject:
   - component: {fileID: 1394255128}
   - component: {fileID: 1394255127}
   - component: {fileID: 1394255126}
+  - component: {fileID: 1394255132}
   m_Layer: 0
   m_Name: fingerprint_kit_01.info card (5)
   m_TagString: Untagged
@@ -36808,7 +37310,7 @@ Transform:
   m_GameObject: {fileID: 1394255123}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.20166606, y: 0.13279653, z: -0.15876459}
+  m_LocalPosition: {x: 0.20166606, y: 0.13, z: -0.15876459}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -36973,6 +37475,55 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1394255123}
   m_Mesh: {fileID: -3069890967182607158, guid: 64a24205d19edbd46825e53672e5bda2, type: 3}
+--- !u!114 &1394255132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394255123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactableView: {fileID: 1394255126}
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1734120346}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 23
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1405753343
 GameObject:
   m_ObjectHideFlags: 0
@@ -38034,47 +38585,47 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 57543832a71d54340853b2551b730bb0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.27750212
+      value: 0.92
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 57543832a71d54340853b2551b730bb0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.16166618
+      value: -0.048
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 57543832a71d54340853b2551b730bb0,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.1824995
+      value: 0.401
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 57543832a71d54340853b2551b730bb0,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.50008726
+      value: 0.46003357
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 57543832a71d54340853b2551b730bb0,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.49991274
+      value: -0.40915546
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 57543832a71d54340853b2551b730bb0,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.50008726
+      value: -0.5888161
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 57543832a71d54340853b2551b730bb0,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.49991274
+      value: -0.5236951
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 57543832a71d54340853b2551b730bb0,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -89.98
+      value: -83.3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 57543832a71d54340853b2551b730bb0,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -90
+      value: -104
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 57543832a71d54340853b2551b730bb0,
         type: 3}
@@ -38684,7 +39235,7 @@ PrefabInstance:
     - target: {fileID: 474150318840361889, guid: a897af575d48f0a4f9b129e12522a2ca,
         type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 474150318840361889, guid: a897af575d48f0a4f9b129e12522a2ca,
         type: 3}
@@ -38693,12 +39244,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 474150318840361889, guid: a897af575d48f0a4f9b129e12522a2ca,
         type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 474150318840361889, guid: a897af575d48f0a4f9b129e12522a2ca,
+        type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1539934093}
     - target: {fileID: 474150318840361889, guid: a897af575d48f0a4f9b129e12522a2ca,
         type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1734120346}
+    - target: {fileID: 474150318840361889, guid: a897af575d48f0a4f9b129e12522a2ca,
+        type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 474150318840361889, guid: a897af575d48f0a4f9b129e12522a2ca,
+        type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 474150318840361889, guid: a897af575d48f0a4f9b129e12522a2ca,
@@ -38708,12 +39274,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 474150318840361889, guid: a897af575d48f0a4f9b129e12522a2ca,
         type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: PlaySFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 474150318840361889, guid: a897af575d48f0a4f9b129e12522a2ca,
+        type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: DontCatch, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 474150318840361889, guid: a897af575d48f0a4f9b129e12522a2ca,
         type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: SoundManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 474150318840361889, guid: a897af575d48f0a4f9b129e12522a2ca,
+        type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_IntArgument
+      value: 89
+      objectReference: {fileID: 0}
+    - target: {fileID: 474150318840361889, guid: a897af575d48f0a4f9b129e12522a2ca,
+        type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 474150318840361889, guid: a897af575d48f0a4f9b129e12522a2ca,
+        type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3510579398970270106, guid: a897af575d48f0a4f9b129e12522a2ca,
@@ -39970,7 +40556,19 @@ MonoBehaviour:
       m_Calls: []
   _whenSelect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1734120346}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 101
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenUnselect:
     m_PersistentCalls:
       m_Calls: []
@@ -40141,6 +40739,7 @@ GameObject:
   - component: {fileID: 1619619805}
   - component: {fileID: 1619619804}
   - component: {fileID: 1619619803}
+  - component: {fileID: 1619619809}
   m_Layer: 0
   m_Name: fingerprint_kit_01.info card (3)
   m_TagString: Untagged
@@ -40157,7 +40756,7 @@ Transform:
   m_GameObject: {fileID: 1619619800}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.20166606, y: 0.13279653, z: -0.15876459}
+  m_LocalPosition: {x: 0.20166606, y: 0.11, z: -0.15876459}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -40322,6 +40921,55 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1619619800}
   m_Mesh: {fileID: -3069890967182607158, guid: 64a24205d19edbd46825e53672e5bda2, type: 3}
+--- !u!114 &1619619809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619619800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactableView: {fileID: 1619619803}
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1734120346}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 23
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1631207779
 GameObject:
   m_ObjectHideFlags: 0
@@ -43125,27 +43773,27 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 0796f3670482a16499bc26139f8f9f5f,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.99691737
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0796f3670482a16499bc26139f8f9f5f,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.00000008146034
+      value: -0.078459024
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0796f3670482a16499bc26139f8f9f5f,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0796f3670482a16499bc26139f8f9f5f,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0796f3670482a16499bc26139f8f9f5f,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: -9
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0796f3670482a16499bc26139f8f9f5f,
         type: 3}
@@ -43815,6 +44463,18 @@ MonoBehaviour:
   _defaultInteractable: {fileID: 0}
   _timeOutInteractable: {fileID: 0}
   _timeOut: 0
+--- !u!114 &1734120346 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6901903191482986118, guid: ce816f2e6abb0504092c23ed9b970dfd,
+    type: 3}
+  m_PrefabInstance: {fileID: 1664799546}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13053be7ac8963d459c57b893421d1bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1734410292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45045,6 +45705,7 @@ GameObject:
   - component: {fileID: 1783373209}
   - component: {fileID: 1783373212}
   - component: {fileID: 1783373211}
+  - component: {fileID: 1783373216}
   m_Layer: 0
   m_Name: fingerprint_tape
   m_TagString: Untagged
@@ -45231,6 +45892,55 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1783373207}
   m_Mesh: {fileID: -5114197622868105213, guid: 64a24205d19edbd46825e53672e5bda2, type: 3}
+--- !u!114 &1783373216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783373207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactableView: {fileID: 1783373213}
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1734120346}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 68
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1806826441
 GameObject:
   m_ObjectHideFlags: 0
@@ -46077,6 +46787,7 @@ GameObject:
   - component: {fileID: 1865114691}
   - component: {fileID: 1865114690}
   - component: {fileID: 1865114689}
+  - component: {fileID: 1865114695}
   m_Layer: 0
   m_Name: fingerprint_kit_01.print dust 01
   m_TagString: Untagged
@@ -46093,7 +46804,7 @@ Transform:
   m_GameObject: {fileID: 1865114686}
   serializedVersion: 2
   m_LocalRotation: {x: 0.00000002111098, y: -0.258819, z: 0.0000000056566694, w: 0.9659259}
-  m_LocalPosition: {x: -3.1759999, y: 0.7892369, z: 10.121}
+  m_LocalPosition: {x: -3.1759999, y: 0.8, z: 10.121}
   m_LocalScale: {x: 0.39999998, y: 0.39999998, z: 0.39999998}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -46255,6 +46966,67 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1865114686}
   m_Mesh: {fileID: -2492897583440301788, guid: 0ad491139bc96ab4495b150a6566c343, type: 3}
+--- !u!114 &1865114695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1865114686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactableView: {fileID: 1865114690}
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1734120346}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1734120346}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 33
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1865925977 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1212859318982514, guid: ed3ef082868bb104c8de8b0b93eb9efc,
@@ -46971,6 +47743,7 @@ GameObject:
   - component: {fileID: 1913334309}
   - component: {fileID: 1913334308}
   - component: {fileID: 1913334307}
+  - component: {fileID: 1913334313}
   m_Layer: 0
   m_Name: fingerprint_kit_01.info card (7)
   m_TagString: Untagged
@@ -46987,7 +47760,7 @@ Transform:
   m_GameObject: {fileID: 1913334304}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.20166606, y: 0.13279653, z: -0.15876459}
+  m_LocalPosition: {x: 0.20166606, y: 0.15, z: -0.15876459}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -47152,6 +47925,55 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1913334304}
   m_Mesh: {fileID: -3069890967182607158, guid: 64a24205d19edbd46825e53672e5bda2, type: 3}
+--- !u!114 &1913334313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913334304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactableView: {fileID: 1913334307}
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1734120346}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 23
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1916574828 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100012, guid: ce816f2e6abb0504092c23ed9b970dfd,
@@ -54683,6 +55505,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 2054187998}
+    - targetCorrespondingSourceObject: {fileID: 5689416602978463335, guid: d77406a2f1f5fe34e8e383ceb5e37bff,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2054188001}
+    - targetCorrespondingSourceObject: {fileID: 5689416602978463335, guid: d77406a2f1f5fe34e8e383ceb5e37bff,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2054188000}
   m_SourcePrefab: {fileID: 100100000, guid: d77406a2f1f5fe34e8e383ceb5e37bff, type: 3}
 --- !u!4 &2054187996 stripped
 Transform:
@@ -54715,6 +55545,84 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
+--- !u!54 &2054187999 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 2620600750384733137, guid: d77406a2f1f5fe34e8e383ceb5e37bff,
+    type: 3}
+  m_PrefabInstance: {fileID: 2054187995}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2054188000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054187997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactableView: {fileID: 2054188001}
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1734120346}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 88
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2054188001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054187997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a1bc992571301d4a9602ac95ef4c71a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: -1
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 2054187998}
+  _rigidbody: {fileID: 2054187999}
+  _grabSource: {fileID: 0}
+  _useClosestPointAsGrabSource: 0
+  _releaseDistance: 0
+  _resetGrabOnGrabsUpdated: 1
+  _physicsGrabbable: {fileID: 0}
 --- !u!1 &2054588398
 GameObject:
   m_ObjectHideFlags: 0
@@ -55608,6 +56516,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 2086708079}
+    - targetCorrespondingSourceObject: {fileID: 3300510550322515736, guid: 29ad3a69a2cfa1843b934d1e838eed29,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2086708080}
   m_SourcePrefab: {fileID: 100100000, guid: 29ad3a69a2cfa1843b934d1e838eed29, type: 3}
 --- !u!4 &2086708073 stripped
 Transform:
@@ -55690,6 +56602,55 @@ MonoBehaviour:
   _releaseDistance: 0
   _resetGrabOnGrabsUpdated: 1
   _physicsGrabbable: {fileID: 0}
+--- !u!114 &2086708080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086708074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactableView: {fileID: 2086708079}
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1734120346}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 76
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2090295071
 GameObject:
   m_ObjectHideFlags: 0
@@ -56108,47 +57069,47 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 57543832a71d54340853b2551b730bb0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.27750212
+      value: 0.646
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 57543832a71d54340853b2551b730bb0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.16166618
+      value: -0.123
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 57543832a71d54340853b2551b730bb0,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.1824995
+      value: 0.405
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 57543832a71d54340853b2551b730bb0,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.50008726
+      value: 0.34429002
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 57543832a71d54340853b2551b730bb0,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.49991274
+      value: -0.3583957
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 57543832a71d54340853b2551b730bb0,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.50008726
+      value: -0.60116434
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 57543832a71d54340853b2551b730bb0,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.49991274
+      value: -0.62579423
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 57543832a71d54340853b2551b730bb0,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -89.98
+      value: -92.3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 57543832a71d54340853b2551b730bb0,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -90
+      value: -120.4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 57543832a71d54340853b2551b730bb0,
         type: 3}
