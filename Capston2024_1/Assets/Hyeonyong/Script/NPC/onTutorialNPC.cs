@@ -330,7 +330,7 @@ public class onTutorialNPC : MonoBehaviour
 
         yield return new WaitForSeconds(OFade.fadeTime);
 
-        SceneManager.LoadScene("Crime_Hyeonyong");
+        SceneManager.LoadScene("Crime(new)");
     }
 
 

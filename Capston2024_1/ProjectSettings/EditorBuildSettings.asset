@@ -32,12 +32,18 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Crime(not use).unity
     guid: b982574c21bbeb94fafe1506303308bf
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Opening.unity
     guid: 15cf7457948fe964d8eb94c80349fb8f
   - enabled: 1
     path: Assets/Scenes/Tutorial.unity
     guid: 32b21d08c420f3f43a1c0350f62cc2e6
+  - enabled: 1
+    path: Assets/Scenes/Crime(new).unity
+    guid: 2cdfe38c146c594488ffee949c7b2cc3
+  - enabled: 1
+    path: Assets/Scenes/Lab.unity
+    guid: 42bd873ee0bcc46459228ef4aa5ca49e
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 8b3bff07114b49d48b6cc1e1d1dc9b7f,
       type: 2}

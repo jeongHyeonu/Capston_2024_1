@@ -4444,7 +4444,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &160813396
 Transform:
   m_ObjectHideFlags: 0
@@ -15938,19 +15938,11 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 95c52ceb0f4ea56478c100c9200a466a,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 416033184}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 95c52ceb0f4ea56478c100c9200a466a,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 416033183}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 95c52ceb0f4ea56478c100c9200a466a,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 416033182}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 95c52ceb0f4ea56478c100c9200a466a,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 416033189}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 95c52ceb0f4ea56478c100c9200a466a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 416033190}
   m_SourcePrefab: {fileID: 100100000, guid: 95c52ceb0f4ea56478c100c9200a466a, type: 3}
 --- !u!4 &416033180 stripped
 Transform:
@@ -15964,67 +15956,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 416033179}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &416033182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 416033181}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5356e051465f7bf408b79640498aa220, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onLight: 0
---- !u!114 &416033183
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 416033181}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78074c0589a077c478a04fa57d563ea0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cameraToCheck: {fileID: 1780130611}
-  Player: {fileID: 7180306}
-  Cam: {fileID: 1960198354}
-  RightHand: {fileID: 556044557}
-  HandTrigger: {fileID: 556044557}
-  tape: {fileID: 590947541}
-  other: {fileID: 2139680250}
-  other1: {fileID: 0}
-  other2: {fileID: 0}
-  other3: {fileID: 0}
-  Score3: {fileID: 1162509812}
---- !u!114 &416033184
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 416033181}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 679954ce5202a5942827065e7f0ad482, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cameraToCheck: {fileID: 1780130611}
-  Score: {fileID: 448416679}
-  Score2: {fileID: 2031882596}
-  Player: {fileID: 7180306}
-  Cam: {fileID: 1960198354}
-  RightHand: {fileID: 556044557}
-  HandTrigger: {fileID: 556044557}
-  tape: {fileID: 590947541}
-  other: {fileID: 2139680250}
-  other1: {fileID: 0}
-  other2: {fileID: 0}
-  other3: {fileID: 0}
-  CheckLight: {fileID: 0}
 --- !u!114 &416033185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16120,9 +16051,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15bf438d389e2224489f592f8d4295ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  testPos: {fileID: 1967212374}
+  testPos: {fileID: 1513273252}
   find: 0
-  NP: {fileID: 370274667}
+  NP: {fileID: 1916960682}
+--- !u!114 &416033190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416033181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8de8bb15aade6bc4faa3f7e8c7686cf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraToCheck: {fileID: 1780130611}
+  Player: {fileID: 7180306}
+  Cam: {fileID: 1960198354}
+  RightHand: {fileID: 556044557}
+  HandTrigger: {fileID: 556044557}
+  tape: {fileID: 590947541}
+  other: {fileID: 1916960682}
 --- !u!1 &420245192
 GameObject:
   m_ObjectHideFlags: 0
@@ -17017,7 +16967,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _transferOnSecondSelection: 0
+  _transferOnSecondSelection: 1
   _addNewPointsToFront: 0
   _forwardElement: {fileID: 0}
   _oneGrabTransformer: {fileID: 0}
@@ -22800,7 +22750,7 @@ MonoBehaviour:
   other: {fileID: 2139680250}
   other1: {fileID: 0}
   other2: {fileID: 0}
-  other3: {fileID: 0}
+  other3: {fileID: 1252321197}
   CheckLight: {fileID: 0}
 --- !u!114 &463322721
 MonoBehaviour:
@@ -22823,7 +22773,7 @@ MonoBehaviour:
   other: {fileID: 2139680250}
   other1: {fileID: 0}
   other2: {fileID: 0}
-  other3: {fileID: 0}
+  other3: {fileID: 1252321197}
   Score3: {fileID: 926138772}
 --- !u!114 &463322725
 MonoBehaviour:
@@ -31698,7 +31648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _transferOnSecondSelection: 0
+  _transferOnSecondSelection: 1
   _addNewPointsToFront: 0
   _forwardElement: {fileID: 0}
   _oneGrabTransformer: {fileID: 0}
@@ -32972,17 +32922,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 95c52ceb0f4ea56478c100c9200a466a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.2326
+      value: -2.33131
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 95c52ceb0f4ea56478c100c9200a466a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.7654
+      value: 0.75345
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 95c52ceb0f4ea56478c100c9200a466a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.2833
+      value: -0.38685
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 95c52ceb0f4ea56478c100c9200a466a,
         type: 3}
@@ -33205,7 +33155,7 @@ MonoBehaviour:
   other: {fileID: 2139680250}
   other1: {fileID: 0}
   other2: {fileID: 0}
-  other3: {fileID: 0}
+  other3: {fileID: 1403505979}
   CheckLight: {fileID: 0}
 --- !u!114 &626982058
 MonoBehaviour:
@@ -33228,7 +33178,7 @@ MonoBehaviour:
   other: {fileID: 2139680250}
   other1: {fileID: 0}
   other2: {fileID: 0}
-  other3: {fileID: 0}
+  other3: {fileID: 1403505979}
   Score3: {fileID: 560066266}
 --- !u!114 &626982062
 MonoBehaviour:
@@ -33665,7 +33615,7 @@ MonoBehaviour:
   other: {fileID: 2139680250}
   other1: {fileID: 0}
   other2: {fileID: 0}
-  other3: {fileID: 0}
+  other3: {fileID: 2124523590}
   Score3: {fileID: 1593956249}
 --- !u!114 &634222424
 MonoBehaviour:
@@ -33690,7 +33640,7 @@ MonoBehaviour:
   other: {fileID: 2139680250}
   other1: {fileID: 0}
   other2: {fileID: 0}
-  other3: {fileID: 0}
+  other3: {fileID: 2124523590}
   CheckLight: {fileID: 0}
 --- !u!114 &634222425
 MonoBehaviour:
@@ -33791,7 +33741,7 @@ MonoBehaviour:
   testPos2: {fileID: 0}
   hand: {fileID: 556044557}
   find: 0
-  NP: {fileID: 1252321197}
+  NP: {fileID: 2124523590}
 --- !u!1 &634446923
 GameObject:
   m_ObjectHideFlags: 0
@@ -38008,19 +37958,11 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 95c52ceb0f4ea56478c100c9200a466a,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 794652765}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 95c52ceb0f4ea56478c100c9200a466a,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 794652764}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 95c52ceb0f4ea56478c100c9200a466a,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 794652763}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 95c52ceb0f4ea56478c100c9200a466a,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 794652770}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 95c52ceb0f4ea56478c100c9200a466a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 794652771}
   m_SourcePrefab: {fileID: 100100000, guid: 95c52ceb0f4ea56478c100c9200a466a, type: 3}
 --- !u!4 &794652761 stripped
 Transform:
@@ -38034,67 +37976,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 794652760}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &794652763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 794652762}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5356e051465f7bf408b79640498aa220, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onLight: 0
---- !u!114 &794652764
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 794652762}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78074c0589a077c478a04fa57d563ea0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cameraToCheck: {fileID: 1780130611}
-  Player: {fileID: 7180306}
-  Cam: {fileID: 1960198354}
-  RightHand: {fileID: 556044557}
-  HandTrigger: {fileID: 556044557}
-  tape: {fileID: 590947541}
-  other: {fileID: 2139680250}
-  other1: {fileID: 0}
-  other2: {fileID: 0}
-  other3: {fileID: 0}
-  Score3: {fileID: 1162509812}
---- !u!114 &794652765
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 794652762}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 679954ce5202a5942827065e7f0ad482, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cameraToCheck: {fileID: 1780130611}
-  Score: {fileID: 448416679}
-  Score2: {fileID: 2031882596}
-  Player: {fileID: 7180306}
-  Cam: {fileID: 1960198354}
-  RightHand: {fileID: 556044557}
-  HandTrigger: {fileID: 556044557}
-  tape: {fileID: 590947541}
-  other: {fileID: 2139680250}
-  other1: {fileID: 0}
-  other2: {fileID: 0}
-  other3: {fileID: 0}
-  CheckLight: {fileID: 0}
 --- !u!114 &794652766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38192,7 +38073,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   testPos: {fileID: 1147497035}
   find: 0
-  NP: {fileID: 370274667}
+  NP: {fileID: 1268126732}
+--- !u!114 &794652771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 794652762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8de8bb15aade6bc4faa3f7e8c7686cf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraToCheck: {fileID: 1780130611}
+  Player: {fileID: 7180306}
+  Cam: {fileID: 1960198354}
+  RightHand: {fileID: 556044557}
+  HandTrigger: {fileID: 556044557}
+  tape: {fileID: 590947541}
+  other: {fileID: 1268126732}
 --- !u!1 &796456727
 GameObject:
   m_ObjectHideFlags: 0
@@ -48069,7 +47969,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _transferOnSecondSelection: 0
+  _transferOnSecondSelection: 1
   _addNewPointsToFront: 0
   _forwardElement: {fileID: 0}
   _oneGrabTransformer: {fileID: 0}
@@ -48396,7 +48296,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &997548060
 Transform:
   m_ObjectHideFlags: 0
@@ -49318,7 +49218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _transferOnSecondSelection: 0
+  _transferOnSecondSelection: 1
   _addNewPointsToFront: 0
   _forwardElement: {fileID: 0}
   _oneGrabTransformer: {fileID: 0}
@@ -52674,7 +52574,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1147497036
 Transform:
   m_ObjectHideFlags: 0
@@ -55405,7 +55305,7 @@ Transform:
   m_GameObject: {fileID: 1252321197}
   serializedVersion: 2
   m_LocalRotation: {x: -0.001568794, y: 0.7071051, z: -0.0015687254, w: 0.7071051}
-  m_LocalPosition: {x: -3.048, y: 0.397, z: -6.724}
+  m_LocalPosition: {x: -3.048, y: 0.396, z: -7.115}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -63321,7 +63221,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1378682358
 Transform:
   m_ObjectHideFlags: 0
@@ -63579,7 +63479,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _transferOnSecondSelection: 0
+  _transferOnSecondSelection: 1
   _addNewPointsToFront: 0
   _forwardElement: {fileID: 0}
   _oneGrabTransformer: {fileID: 0}
@@ -64224,7 +64124,7 @@ Transform:
   m_GameObject: {fileID: 1403505979}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.658125, y: 0.4246477, z: -5.964715}
+  m_LocalPosition: {x: -4.658125, y: 0.4246477, z: -5.975}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -64263,7 +64163,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2, y: 2, z: 2}
+  m_Size: {x: 2, y: 3, z: 1}
   m_Center: {x: 0.1, y: 0, z: -0.5}
 --- !u!114 &1403505983
 MonoBehaviour:
@@ -64474,7 +64374,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _transferOnSecondSelection: 0
+  _transferOnSecondSelection: 1
   _addNewPointsToFront: 0
   _forwardElement: {fileID: 0}
   _oneGrabTransformer: {fileID: 0}
@@ -68017,7 +67917,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!135 &1513273253
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -70320,7 +70220,7 @@ MonoBehaviour:
   other: {fileID: 2139680250}
   other1: {fileID: 1738002511}
   other2: {fileID: 0}
-  other3: {fileID: 0}
+  other3: {fileID: 1738002511}
   CheckLight: {fileID: 0}
 --- !u!114 &1578289694
 MonoBehaviour:
@@ -70343,7 +70243,7 @@ MonoBehaviour:
   other: {fileID: 2139680250}
   other1: {fileID: 0}
   other2: {fileID: 0}
-  other3: {fileID: 0}
+  other3: {fileID: 1738002511}
   Score3: {fileID: 888380965}
 --- !u!114 &1578289698
 MonoBehaviour:
@@ -73144,7 +73044,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _transferOnSecondSelection: 0
+  _transferOnSecondSelection: 1
   _addNewPointsToFront: 0
   _forwardElement: {fileID: 0}
   _oneGrabTransformer: {fileID: 0}
@@ -75659,6 +75559,80 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1426266653}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1824720779
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2098409129}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 39042323418ca7244bc48a0f5f05fc62,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.906
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 39042323418ca7244bc48a0f5f05fc62,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.941115
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 39042323418ca7244bc48a0f5f05fc62,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.697
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 39042323418ca7244bc48a0f5f05fc62,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 39042323418ca7244bc48a0f5f05fc62,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 39042323418ca7244bc48a0f5f05fc62,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 39042323418ca7244bc48a0f5f05fc62,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 39042323418ca7244bc48a0f5f05fc62,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 39042323418ca7244bc48a0f5f05fc62,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 39042323418ca7244bc48a0f5f05fc62,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 39042323418ca7244bc48a0f5f05fc62,
+        type: 3}
+      propertyPath: m_Name
+      value: card_04
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 39042323418ca7244bc48a0f5f05fc62, type: 3}
+--- !u!4 &1824720780 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 39042323418ca7244bc48a0f5f05fc62,
+    type: 3}
+  m_PrefabInstance: {fileID: 1824720779}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1832420436
 GameObject:
   m_ObjectHideFlags: 0
@@ -76073,7 +76047,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _transferOnSecondSelection: 0
+  _transferOnSecondSelection: 1
   _addNewPointsToFront: 0
   _forwardElement: {fileID: 0}
   _oneGrabTransformer: {fileID: 0}
@@ -76504,7 +76478,7 @@ MonoBehaviour:
   RightHand: {fileID: 556044557}
   HandTrigger: {fileID: 556044557}
   tape: {fileID: 590947541}
-  other: {fileID: 1964394010}
+  other: {fileID: 1012840983}
 --- !u!1001 &1874500200
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -77384,7 +77358,7 @@ MonoBehaviour:
   RightHand: {fileID: 556044557}
   HandTrigger: {fileID: 556044557}
   tape: {fileID: 590947541}
-  other: {fileID: 624815214}
+  other: {fileID: 370274667}
 --- !u!1 &1913749137
 GameObject:
   m_ObjectHideFlags: 0
@@ -78799,7 +78773,7 @@ PrefabInstance:
     - target: {fileID: 7415956222573912548, guid: e9a4f22a5cd65ce449de1ba56faf43e1,
         type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: InTransCamera
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7415956222573912548, guid: e9a4f22a5cd65ce449de1ba56faf43e1,
         type: 3}
@@ -79820,7 +79794,7 @@ MonoBehaviour:
   HandTrigger: {fileID: 556044557}
   tape: {fileID: 590947541}
   other: {fileID: 2139680250}
-  other1: {fileID: 0}
+  other1: {fileID: 1087972905}
   other2: {fileID: 0}
   other3: {fileID: 0}
   CheckLight: {fileID: 0}
@@ -79845,7 +79819,7 @@ MonoBehaviour:
   other: {fileID: 2139680250}
   other1: {fileID: 0}
   other2: {fileID: 0}
-  other3: {fileID: 0}
+  other3: {fileID: 1087972905}
   Score3: {fileID: 1162509812}
 --- !u!114 &1967212388
 MonoBehaviour:
@@ -80376,7 +80350,7 @@ MonoBehaviour:
   RightHand: {fileID: 556044557}
   HandTrigger: {fileID: 556044557}
   tape: {fileID: 590947541}
-  other: {fileID: 2091986449}
+  other: {fileID: 1960315795}
 --- !u!1 &1983112017
 GameObject:
   m_ObjectHideFlags: 0
@@ -88112,6 +88086,7 @@ Transform:
   - {fileID: 483226196}
   - {fileID: 860600481}
   - {fileID: 5828471}
+  - {fileID: 1824720780}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2100711149
@@ -88215,7 +88190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _transferOnSecondSelection: 0
+  _transferOnSecondSelection: 1
   _addNewPointsToFront: 0
   _forwardElement: {fileID: 0}
   _oneGrabTransformer: {fileID: 0}
@@ -88571,7 +88546,7 @@ Transform:
   m_GameObject: {fileID: 2124523590}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.494, y: 0.4246477, z: -4.37}
+  m_LocalPosition: {x: -3.494, y: 0.4246477, z: -4.483}
   m_LocalScale: {x: 0.8, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -88914,7 +88889,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 872906989}
         m_TargetAssemblyTypeName: BtnFlashLightClicked, Assembly-CSharp
-        m_MethodName: InTransFlashLight
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

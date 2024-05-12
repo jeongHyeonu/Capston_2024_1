@@ -13,6 +13,7 @@ public class CheckCard : MonoBehaviour
     public GameObject HandTrigger;
     private float MaxDistance = 0.4f; //레이캐스트 거리(카메라  촬영 거리라고 생각해도 됨)
 
+    public GameObject Near;
 
     public bool onCheckCard=false;
 
@@ -28,6 +29,8 @@ public class CheckCard : MonoBehaviour
         Cam = GameObject.Find("Camera");
         RightHand = GameObject.Find("RIGHTHANDTRIGGER");
         HandTrigger = GameObject.Find("RIGHTHANDTRIGGER");
+
+        Near = GameObject.Find("Near");
         if (Player == null)
         {
             Debug.Log("플레이어 객체 없음");
@@ -43,6 +46,11 @@ public class CheckCard : MonoBehaviour
         if (HandTrigger == null)
         {
             Debug.Log("오른손 객체 없음");
+        }
+
+        if (Near == null)
+        {
+            Debug.Log("Near 객체 없음");
         }
     }
 
@@ -63,12 +71,12 @@ public class CheckCard : MonoBehaviour
                 //카메라와 객체 사이에 무언가 부딪힐 경우z
                 {
                     //인식하고자 하는 객체와 카메라, 플레이어 오브젝트가 가리는 것은 제외
-                    if (hit.collider.gameObject != cameraToCheck.gameObject && hit.collider.gameObject != gameObject && hit.collider.gameObject != Player && hit.collider.gameObject != gameObject && hit.collider.gameObject != Cam && hit.collider.gameObject != RightHand)
+                    if (hit.collider.gameObject != cameraToCheck.gameObject && hit.collider.gameObject != gameObject && hit.collider.gameObject != Player && hit.collider.gameObject != gameObject && hit.collider.gameObject != Cam && hit.collider.gameObject != RightHand && hit.collider.gameObject != Near)
                     {
                         // 다른 객체로 가려져 있으면 "False" 출력
                         // Check.text = "False1";
                         string hiddenObjectName = hit.collider.gameObject.name;
-                        Debug.Log("다른 객체로 가려져 있다." + hiddenObjectName);
+                        Debug.Log("CheckCard 다른 객체로 가려져 있다." + hiddenObjectName);
                         return;
                     }
                 }
