@@ -21,13 +21,13 @@ public class CheckFingerCards2 : MonoBehaviour
     // 박스에 들어온 증거물 확인(충돌로 검사)
     private void OnTriggerEnter(Collider obj)
     {
-        //if (obj.name == "")
+        if (obj.name == "Soju")
         {
             Card6_isChecked = true;
             Card6_eight_score = 5;
             Card6_Score8.text = Card6_eight_score.ToString();
         }
-        //if (obj.name == "")
+        if (obj.name == "WhiskyGlass")
         {
             Card7_isChecked = true;
             Card7_eight_score = 5;

@@ -58,7 +58,7 @@ public class BtnSettingClicked : MonoBehaviour
 
         yield return new WaitForSeconds(OFade.fadeTime);
 
-        SceneManager.LoadScene("Lab_Mina");
+        SceneManager.LoadScene("Opening");
     }
 
 
