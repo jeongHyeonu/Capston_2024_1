@@ -26,6 +26,30 @@ public class FingerPrintObject : MonoBehaviour
     [SerializeField] Material[] mat = new Material[3];
 
     // 소주병 지문에 트리거 Enter시 또는 흉기 지문에 트리거 Enter시 실행
+
+    //0515 양현용 프리테스트 NPC 텍스트 소환용으로 작성
+    public bool onFreeTest = false;//true일때만 사용되도록
+    public GameObject HandTrigger;
+    npcText failed;
+    private bool p_first_Failed = false; //한 번만 불러오도록
+   private bool p_second_Failed = false; //한 번만 불러오도록
+    public string failed_Text="";
+
+
+    CheckCamera_Freetest checkCamera;
+    void Start()
+    {
+        if (onFreeTest)
+        {
+            failed = HandTrigger.GetComponent<npcText>();
+            checkCamera= GetComponent<CheckCamera_Freetest>();
+        }
+    }
+
+    //
+
+
+
     private void OnTriggerEnter(Collider other)
     {
 
@@ -37,8 +61,57 @@ public class FingerPrintObject : MonoBehaviour
             // 점수1, 적절한 양의 분말을 묻혔는가?
             if (!brushObj.isStrong) targetScore1.text = "15";
 
+            // 0515 양현용 프리테스트 NPC 텍스트 소환 용도////////////////
+            
+            if(brushObj.isStrong)
+            {
+                if (brushObj.p_type != powderType.none && p_first_Failed == false  && onFreeTest==true)
+                {
+                    failed_Text += "분말의 양이 너무 많아요! 너무 많이 묻히면 지문의 융선에 분말이 껴서 분석하기 힘들어요!\n";
+                    p_first_Failed = true;
+                }
+            }
+            //////////////////////////////////////////////////////////
+            
+
             // 점수2, 알맞은 색 분말을 묻혔는가?
             if (brushObj.p_type == answerPowder) targetScore2.text = "15";
+
+
+
+            // 0515 양현용 프리테스트 NPC 텍스트 소환 용도//////////////
+            
+            if (brushObj.p_type != answerPowder)
+            {
+                if (brushObj.p_type != powderType.none && p_second_Failed == false && onFreeTest == true)
+                {
+                    if (answerPowder == powderType.ironPowder)
+                    {
+                        failed_Text += "이 재질은 검은색 분말을 써야할 것 같아요.";
+
+                    }
+                    if (answerPowder == powderType.fluorescencePowder)
+                    {
+                        failed_Text += "이 재질은 초록색 형광 분말을 써야할 것 같아요.\n";
+                    }
+                    if (answerPowder == powderType.fluorescenceRedPowder)
+                    {
+                        failed_Text += "이 재질은 빨간색 형광 분말을 써야할 것 같아요.\n";
+                    }
+                    p_second_Failed = true;
+                }
+            }
+
+            if(p_first_Failed == true||p_second_Failed==true) 
+            {
+                if(checkCamera.first_check != true)
+                {
+                    failed_Text = "증거물 사진부터 찍어야죠! 기록하는 게 중요하단 거 잊지 마세요!\n" + failed_Text;
+                }
+                failed.FailedPowder(failed_Text);
+            }
+
+            ///////////////////////////////////////////////////////////
 
             if (brushObj.p_type == powderType.ironPowder) // 철가루 묻혔으면, 매터리얼 변경
             {

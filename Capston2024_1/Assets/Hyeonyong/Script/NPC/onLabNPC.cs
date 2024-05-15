@@ -61,7 +61,7 @@ public Quaternion firstRot; //캔버스 처음 각도
             StopCoroutine(NpcScript());
             Canvas.transform.position = Canvas.transform.position + new Vector3(100f, 0f, 0f);
             ScriptNum--;
-            if (ScriptNum == 1)
+            if (ScriptNum == 5)
                 ScriptNum++;
 
         }
@@ -90,12 +90,14 @@ public Quaternion firstRot; //캔버스 처음 각도
                 if (ScriptNum == 0)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-                    npc1.text = "지문 감식이 다 끝나셨나요? 더 안 찾아보셔도 되겠어요?";//다 찾았어? 더 안찾아봐도 됨?
+                    npc1.text = "아직 할 일이 남았어!";//다 찾았어? 더 안찾아봐도 됨?
                 }
                 //else if (ScriptNum == 1 && onsubmit == false)
                 else if (ScriptNum == 1)
                 {
-                    Canvas.transform.position = Canvas.transform.position + new Vector3(100f, 0f, 0f);
+                    Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
+                    npc1.text = "아까 현장에서 가져온 증거물 있지? 그 증거물도 지문 검출을 해봐야 해!";//다 찾았어? 더 안찾아봐도 됨?
+                    //Canvas.transform.position = Canvas.transform.position + new Vector3(100f, 0f, 0f);
                 }
 
 
@@ -103,30 +105,48 @@ public Quaternion firstRot; //캔버스 처음 각도
                 else if (ScriptNum == 2)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-                    npc1.text = "전부 수사하셨나요? 알겠습니다.";//다 찾았어? 더 안찾아봐도 됨?
+                    npc1.text = "여긴 '증거 분석실'이라는 곳인데 현장에서 수집해 온 증거물들을 분석하고 감식하는 곳이야.\n현장에서 못하는 다양한 기법을 사용할 수 있지.";//다 찾았어? 더 안찾아봐도 됨?
                 }
 
                 //else if (ScriptNum == 3 && onsubmit == false)
                 else if (ScriptNum == 3)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-                    npc1.text = "수집한 증거물들은 제 오른쪽 박스에 조심히 넣어주신 후, 채취한 지문 전사판들은 제게 주세요.\n제출이 끝나면 제출완료 버튼을 눌러주세요.";//다 찾았어? 더 안찾아봐도 됨?
+                    npc1.text = "오른쪽 실험대에 자네가 수집해 온 증거물들 배치해뒀으니까, 가져가서 감식 진행해.";//다 찾았어? 더 안찾아봐도 됨?
                 }
 
                 //else if (ScriptNum == 4 && onsubmit == false)
                 else if (ScriptNum == 4)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-                    npc1.text = "제출이 끝나면 평가해 드릴 거에요. 평가표 확인이 끝나면 버튼을 눌러주세요.";//다 찾았어? 더 안찾아봐도 됨?
+                    npc1.text = "종이류는 최대한 핀셋으로 잡아야 하는 거 잊지 마!";//다 찾았어? 더 안찾아봐도 됨?
                     //버튼이 생성되는 코드, 평가표가 나타나는 코드
                 }
+
+
                 else if (ScriptNum == 5)
                 {
                     Canvas.transform.position = Canvas.transform.position + new Vector3(100f, 0f, 0f);
 
+                }
 
+                else if (ScriptNum == 6)
+                {
+                    Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
+                    npc1.text = "다 끝났으면 증거물 다시 잘 밀봉해서 오른쪽 보관 박스에 넣고, 지문 전사판도 넣어.";//다 찾았어? 더 안찾아봐도 됨?
+                }
+
+                else if (ScriptNum == 7)
+                {
+                    Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
+                    npc1.text = "넣고 나면 위에 뜬 버튼 클릭하면 될거야! 고생 많았어.";//다 찾았어? 더 안찾아봐도 됨?
                     //결과 확인버튼 활성화
                     CheckButton.SetActive(true);
+                }
+
+                else if (ScriptNum == 8)
+                {
+                    Canvas.transform.position = Canvas.transform.position + new Vector3(100f, 0f, 0f);
                 }
                 ScriptNum++;
 
