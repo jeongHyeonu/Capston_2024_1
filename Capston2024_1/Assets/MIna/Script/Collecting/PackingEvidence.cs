@@ -21,6 +21,7 @@ public class PackingEvidence : MonoBehaviour
             EvidenceObj.SetActive(false);
             PackedObj.SetActive(true);
 
+            SoundManager.Instance.PlaySFX(SoundManager.SFX_list.FLAP_2); // 사운드 추가 - 정현우
         }
     }
 

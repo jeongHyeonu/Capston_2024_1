@@ -312,7 +312,7 @@ MonoBehaviour:
   - sfx_name: 0
     audio: {fileID: 8300000, guid: a6b5fb9da01514245ac82b632803ee3e, type: 3}
   - sfx_name: 1
-    audio: {fileID: 8300000, guid: f6be91fbec3e07c47813f5bf4835aa8c, type: 3}
+    audio: {fileID: 8300000, guid: cc6eaaffb1298aa49b052960c5adace5, type: 3}
   - sfx_name: 2
     audio: {fileID: 8300000, guid: 469ae3d2807aa064fb4c0bcb54b824f9, type: 3}
   - sfx_name: 3
@@ -519,6 +519,8 @@ MonoBehaviour:
     audio: {fileID: 8300000, guid: af6c84556b122ec40b653c3bf6511336, type: 3}
   - sfx_name: 104
     audio: {fileID: 8300000, guid: 283084f80b4814c458df3ce14b62148d, type: 3}
+  - sfx_name: 105
+    audio: {fileID: 8300000, guid: b0c10452015f8cd44994b69e9dccff29, type: 3}
   BGM_Object: {fileID: 6559933909489678465}
   SFX_Object: {fileID: 4853145513621287346}
 --- !u!81 &3802133407266454903

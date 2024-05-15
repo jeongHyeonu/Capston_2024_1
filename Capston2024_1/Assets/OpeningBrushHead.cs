@@ -34,6 +34,7 @@ public class OpeningBrushHead : MonoBehaviour
             else if(countText1 == maxText1) { uxObject2_brush.SetActive(true); uxObject2_tape.SetActive(true); text2.SetActive(true); }
             other.GetComponent<MeshRenderer>().material.DOFade(1f,.5f);
             particles.Play();
+            SoundManager.Instance.PlaySFX(SoundManager.SFX_list.SPRAY);
         }
         else if(other.name == "printText2")
         {
@@ -43,7 +44,7 @@ public class OpeningBrushHead : MonoBehaviour
             else if (countText2 == maxText2) playButton.SetActive(true);
             other.GetComponent<MeshRenderer>().material.DOFade(1f, .5f);
             particles.Play();
-
+            SoundManager.Instance.PlaySFX(SoundManager.SFX_list.SPRAY);
         }
     }
 

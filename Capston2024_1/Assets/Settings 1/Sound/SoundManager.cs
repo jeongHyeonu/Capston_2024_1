@@ -75,10 +75,9 @@ public class SoundManager : Singleton<SoundManager>
         LIQUID_1,LIQUID_2, LIQUID_3,
         CONTAINER_OPEN, CONTAINER_CLOSE,
         TOOL_PICKUP, TOOL_PICKDOWN,
-        PINSET, PINSET_PICK
+        PINSET, PINSET_PICK,
 
-
-
+        SPRAY,
     }
 
     // 배경음 목록
