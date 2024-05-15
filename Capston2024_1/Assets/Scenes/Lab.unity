@@ -21538,6 +21538,9 @@ MonoBehaviour:
   - {fileID: 2100000, guid: cdba50f3436d0f440ba2fd5f3b027399, type: 2}
   - {fileID: 2100000, guid: 22c4ba4a94db3124f86226e715ea26da, type: 2}
   - {fileID: 2100000, guid: 825be726a8c32724c88f9febcf71e4b8, type: 2}
+  onFreeTest: 0
+  HandTrigger: {fileID: 0}
+  failed_Text: 
 --- !u!65 &924885678
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33586,6 +33589,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1244791214}
+  - component: {fileID: 1244791215}
   m_Layer: 0
   m_Name: ---2EvaluationUI_2
   m_TagString: Untagged
@@ -33609,6 +33613,61 @@ Transform:
   - {fileID: 1739929734}
   m_Father: {fileID: 1090978212}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &1244791215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244791213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de0e3ec0d45864f44a9763e531d1c371, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score1_1: {fileID: 859088185}
+  score1_2: {fileID: 511226136}
+  score1_3: {fileID: 800425578}
+  score1_4: {fileID: 1752058380}
+  score1_5: {fileID: 72689290}
+  score1_6: {fileID: 1653243592}
+  score1_7: {fileID: 1777716532}
+  score1_8: {fileID: 1415282154}
+  score2_1: {fileID: 1373040100}
+  score2_2: {fileID: 698636818}
+  score2_3: {fileID: 593393216}
+  score2_4: {fileID: 2142431437}
+  score2_5: {fileID: 382585088}
+  score2_6: {fileID: 191897615}
+  score2_7: {fileID: 297378100}
+  score2_8: {fileID: 2119529690}
+  score3_1: {fileID: 0}
+  score3_2: {fileID: 0}
+  score3_3: {fileID: 0}
+  score3_4: {fileID: 0}
+  score3_5: {fileID: 0}
+  score3_6: {fileID: 0}
+  score3_7: {fileID: 0}
+  score3_8: {fileID: 0}
+  score4_1: {fileID: 0}
+  score4_2: {fileID: 0}
+  score4_3: {fileID: 0}
+  score4_4: {fileID: 0}
+  score4_5: {fileID: 0}
+  score4_6: {fileID: 0}
+  score4_7: {fileID: 0}
+  score4_8: {fileID: 0}
+  score5_1: {fileID: 0}
+  score5_2: {fileID: 0}
+  score5_3: {fileID: 0}
+  score5_4: {fileID: 0}
+  score5_5: {fileID: 0}
+  score5_6: {fileID: 0}
+  score5_7: {fileID: 0}
+  score5_8: {fileID: 0}
+  totalScore: {fileID: 1315596630}
+  total: 0
+  onLab: 1
 --- !u!1 &1253635398
 GameObject:
   m_ObjectHideFlags: 0
@@ -36479,6 +36538,9 @@ MonoBehaviour:
   - {fileID: 2100000, guid: cdba50f3436d0f440ba2fd5f3b027399, type: 2}
   - {fileID: 2100000, guid: 22c4ba4a94db3124f86226e715ea26da, type: 2}
   - {fileID: 2100000, guid: 825be726a8c32724c88f9febcf71e4b8, type: 2}
+  onFreeTest: 0
+  HandTrigger: {fileID: 0}
+  failed_Text: 
 --- !u!65 &1345324554
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37580,6 +37642,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1405753344}
+  - component: {fileID: 1405753345}
   m_Layer: 0
   m_Name: ---2EvaluationUI_1
   m_TagString: Untagged
@@ -37603,6 +37666,61 @@ Transform:
   - {fileID: 441130115}
   m_Father: {fileID: 1090978212}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &1405753345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405753343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de0e3ec0d45864f44a9763e531d1c371, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score1_1: {fileID: 1564608628}
+  score1_2: {fileID: 233062543}
+  score1_3: {fileID: 2054588400}
+  score1_4: {fileID: 889965997}
+  score1_5: {fileID: 436822014}
+  score1_6: {fileID: 512568578}
+  score1_7: {fileID: 2051452572}
+  score1_8: {fileID: 1010612214}
+  score2_1: {fileID: 1947079134}
+  score2_2: {fileID: 1643162611}
+  score2_3: {fileID: 705102700}
+  score2_4: {fileID: 512776544}
+  score2_5: {fileID: 1015365088}
+  score2_6: {fileID: 2100740428}
+  score2_7: {fileID: 209128078}
+  score2_8: {fileID: 1060559879}
+  score3_1: {fileID: 0}
+  score3_2: {fileID: 0}
+  score3_3: {fileID: 0}
+  score3_4: {fileID: 0}
+  score3_5: {fileID: 0}
+  score3_6: {fileID: 0}
+  score3_7: {fileID: 0}
+  score3_8: {fileID: 0}
+  score4_1: {fileID: 0}
+  score4_2: {fileID: 0}
+  score4_3: {fileID: 0}
+  score4_4: {fileID: 0}
+  score4_5: {fileID: 0}
+  score4_6: {fileID: 0}
+  score4_7: {fileID: 0}
+  score4_8: {fileID: 0}
+  score5_1: {fileID: 0}
+  score5_2: {fileID: 0}
+  score5_3: {fileID: 0}
+  score5_4: {fileID: 0}
+  score5_5: {fileID: 0}
+  score5_6: {fileID: 0}
+  score5_7: {fileID: 0}
+  score5_8: {fileID: 0}
+  totalScore: {fileID: 968825269}
+  total: 0
+  onLab: 1
 --- !u!1 &1406393495
 GameObject:
   m_ObjectHideFlags: 0

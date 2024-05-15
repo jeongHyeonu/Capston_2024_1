@@ -40,7 +40,7 @@ public class npcText : MonoBehaviour
         StartCoroutine(Clean());
     }
 
-    // 증거물 사진을 촬영하지 않고 액체법을 시행했을 때
+    // 증거물 사진을 촬영하지 않고 액체법을 시행했을 때 (안쓸예정)
     public void FailedFirstCamera_Liquid() //CheckCamera관련
     {
         onFailed = true;
@@ -49,7 +49,7 @@ public class npcText : MonoBehaviour
         StartCoroutine(Clean());
     }
 
-    // 분말의 양이 적거나 많을 때
+    // 분말의 양이 적거나 많을 때 (안씀)
     public void FailedAmountPowder()
     {
         onFailed = true;
@@ -58,7 +58,7 @@ public class npcText : MonoBehaviour
         StartCoroutine(Clean());
     }
 
-    // 분말의 색상이 적절하지 않을 때
+    // 분말의 색상이 적절하지 않을 때 (안씀)
     public void FailedColorPowder()
     {
         onFailed = true;
@@ -66,6 +66,14 @@ public class npcText : MonoBehaviour
         npc.text = "Color Powder Failed";
         StartCoroutine(Clean());
     }
+    public void FailedPowder(string txt)
+    {
+        onFailed = true;
+        Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
+        npc.text = txt;
+        StartCoroutine(Clean());
+    }
+
 
 
     // 드러난 지문을 촬영하지 않고 테이프를 붙였을 때
@@ -74,11 +82,11 @@ public class npcText : MonoBehaviour
         Debug.Log("2번 카메라 실패");
         onFailed = true;
         Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-        npc.text = "Second Camera Failed";
+        npc.text = "지문이 검출된 결과도 사진을 찍어야죠! 현출된 결과는 중요한 기록이에요!";
         StartCoroutine(Clean());
     }
 
-    // 전사지를 촬영하지 않고 npc에게 제출했을 때
+    // 전사지를 촬영하지 않고 npc에게 제출했을 때 (안쓸예정)
     public void FailedThirdCamera() //fingerPrintPaper와 CheckCamera 관련
     {
         onFailed = true;

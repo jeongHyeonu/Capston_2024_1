@@ -53,6 +53,9 @@ public class TotalScore : MonoBehaviour
     public TextMeshProUGUI totalScore;
 
     public int total = 0;
+
+
+    public bool onLab = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -78,33 +81,36 @@ public class TotalScore : MonoBehaviour
         total += int.Parse(score2_7.text);
         total += int.Parse(score2_8.text);  //미나가 추가
 
-        total += int.Parse(score3_1.text);
-        total += int.Parse(score3_2.text);
-        total += int.Parse(score3_3.text);
-        total += int.Parse(score3_4.text);
-        total += int.Parse(score3_5.text);
-        total += int.Parse(score3_6.text);
-        total += int.Parse(score3_7.text);
-        total += int.Parse(score3_8.text);  //미나가 추가
 
-        total += int.Parse(score4_1.text);
-        total += int.Parse(score4_2.text);
-        total += int.Parse(score4_3.text);
-        total += int.Parse(score4_4.text);
-        total += int.Parse(score4_5.text);
-        total += int.Parse(score4_6.text);
-        total += int.Parse(score4_7.text);
-        total += int.Parse(score4_8.text);  //미나가 추가
+        if (onLab == false)
+        {
+            total += int.Parse(score3_1.text);
+            total += int.Parse(score3_2.text);
+            total += int.Parse(score3_3.text);
+            total += int.Parse(score3_4.text);
+            total += int.Parse(score3_5.text);
+            total += int.Parse(score3_6.text);
+            total += int.Parse(score3_7.text);
+            total += int.Parse(score3_8.text);  //미나가 추가
 
-        total += int.Parse(score5_1.text);
-        total += int.Parse(score5_2.text);
-        total += int.Parse(score5_3.text);
-        total += int.Parse(score5_4.text);
-        total += int.Parse(score5_5.text);
-        total += int.Parse(score5_6.text);
-        total += int.Parse(score5_7.text);
-        total += int.Parse(score5_8.text);  //미나가 추가
+            total += int.Parse(score4_1.text);
+            total += int.Parse(score4_2.text);
+            total += int.Parse(score4_3.text);
+            total += int.Parse(score4_4.text);
+            total += int.Parse(score4_5.text);
+            total += int.Parse(score4_6.text);
+            total += int.Parse(score4_7.text);
+            total += int.Parse(score4_8.text);  //미나가 추가
 
+            total += int.Parse(score5_1.text);
+            total += int.Parse(score5_2.text);
+            total += int.Parse(score5_3.text);
+            total += int.Parse(score5_4.text);
+            total += int.Parse(score5_5.text);
+            total += int.Parse(score5_6.text);
+            total += int.Parse(score5_7.text);
+            total += int.Parse(score5_8.text);  //미나가 추가
+        }
         totalScore.text = "" + total;
     }
 }

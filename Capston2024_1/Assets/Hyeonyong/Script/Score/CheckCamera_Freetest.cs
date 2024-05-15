@@ -14,12 +14,12 @@ public class CheckCamera_Freetest : MonoBehaviour
 
     FingerPrintObject fingerprintobject;
 
-    private bool first_check = false; //분말법을 하기 전에 사진을 찍었는지 확인
+    public bool first_check = false; //분말법을 하기 전에 사진을 찍었는지 확인
     private bool second_check = false;//분말법을 한 후에 사진을 찍었는지 확인
 
     public GameObject HandTrigger;
     npcText failed;
-    private bool first_Failed = false;
+    public bool first_Failed = false;
     private bool first_Failed_check = false; //분말 법 전 사진 x시의 경고 메시지를 한 번만 띄우기 위함
 
 
@@ -44,15 +44,16 @@ public class CheckCamera_Freetest : MonoBehaviour
     private float MaxDistance = 0.4f; //레이캐스트 거리(카메라  촬영 거리라고 생각해도 됨)
     void Update()
     {
+        
         if (fingerprintobject.isVisible == true && first_check != true && first_Failed == false)
         {
             first_Failed = true;
             //0424 분말법 전에 사진을 찍지 않았을 경우
-            failed.FailedFirstCamera();
+            //failed.FailedFirstCamera();
 
         }
         // 드러난 지문을 촬영하지 않고 테이프를 붙였을 때를 위함
-        /*
+        
             if (fingerprintobject.isVisible == true && fingerprinttape.onTape == true && second_check == false && second_Failed == false)
             {
                 Debug.Log("2번째 카메라 실패 in CheckCamera");
@@ -60,7 +61,7 @@ public class CheckCamera_Freetest : MonoBehaviour
                 //0424 분말법 전에 사진을 찍지 않았을 경우
                 failed.FailedSecondCamera();
                 //fingerprinttape.onTape = false;
-            }*/
+            }
 
 
         if (OVRInput.GetDown(OVRInput.Button.One)) //A버튼을 누를 경우
