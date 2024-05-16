@@ -43,10 +43,10 @@ public class ChangeGloves : MonoBehaviour
                 // 새로운 메테리얼로 변경
                 handRenderer.material = newMaterial;
                 handRenderer2.material = newMaterial;
-                Score1.text =""+ 10;
-                Score2.text = "" + 10;
-                Score3.text = "" + 10;
-                Score4.text = "" + 10;
+                Score1.text =""+ 5;
+                Score2.text = "" + 5;
+                Score3.text = "" + 5;
+                Score4.text = "" + 5;
             }
         }
     }
