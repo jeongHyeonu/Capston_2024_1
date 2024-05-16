@@ -44,8 +44,9 @@ public class TextureChange_image : MonoBehaviour
     {
         //Debug.Log(index.ToString());
 
+        /*
         string fileName = index.ToString() + ".png"; // 파일 이름 생성
-        byte[] fileData = File.ReadAllBytes(Path.Combine(texturePath, fileName));
+        byte[] fileData = File.ReadAllBytes(Path.Combine(texturePath, fileName));*/
         //위의 파일 이름을 가진 파일을 불러옴
 
         // Texture2D를 생성하고 읽어온 이미지를 적용

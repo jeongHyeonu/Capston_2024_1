@@ -413,7 +413,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -512,5 +512,6 @@ MonoBehaviour:
   Cam: {fileID: 0}
   RightHand: {fileID: 0}
   HandTrigger: {fileID: 0}
+  Near: {fileID: 0}
   onCheckCard: 0
   score: {fileID: 0}

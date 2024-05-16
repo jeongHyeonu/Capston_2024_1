@@ -77,6 +77,7 @@ public class ScreenTexture_VR_image : MonoBehaviour
         if (OVRInput.GetDown(OVRInput.Button.One) && GrabCamera.onCamera == true)
             {//카메라를 손에 쥐고 있고 A 버튼을 누를 경우 실행
             camera_light.SetActive(true);//라이트 키기
+            SoundManager.Instance.PlaySFX(SoundManager.SFX_list.CAMERA);
             ClickScreenShot();
             Create3();
             camera_light.SetActive(false);//라이트 끄기
@@ -92,14 +93,15 @@ public class ScreenTexture_VR_image : MonoBehaviour
 
     public void ClickScreenShot() //카메라에 나온 화면을 png 파일로 저장하는 코드
     {
+        /*
         DirectoryInfo dir = new DirectoryInfo(path);
         if (!dir.Exists)
         {
             Directory.CreateDirectory(path);
         }
-        string name;
+        string name;*/
         //name = path + System.DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss") + ".png";
-        name = path + pngNum.ToString() + ".png";//사진 이름
+       // name = path + pngNum.ToString() + ".png";//사진 이름
         pngNum++; // 1부터 1씩 증가하는 이름을 가지도록 저장
         RenderTexture rt = new RenderTexture(resWidth, resHeight, 24);
         camera.targetTexture = rt;
@@ -110,9 +112,10 @@ public class ScreenTexture_VR_image : MonoBehaviour
         screenShot.ReadPixels(new Rect(0, 0, resWidth, resHeight), 0, 0);
         screenShot.Apply();
         //screenShot이 Texture2D
+        /*
         byte[] bytes = screenShot.EncodeToPNG();
         File.WriteAllBytes(name, bytes);
-
+        */
         //다시 기본 카메라로 되돌림
         camera.targetTexture = cameraPos;
         camera.Render();
