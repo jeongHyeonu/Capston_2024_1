@@ -27,12 +27,18 @@ public class ScreenTexture_VR_image : MonoBehaviour
     //카메라 라이트 기능
     public GameObject camera_light;
 
+
+
+    //0516 추가
+    Texture2D screenShot;
     void Start()
     {
         resWidth = Screen.width;
         //resHeight = Screen.height;
         resHeight = Screen.width;// 0301자 변경사항 정사각형 이미지 저장을 위함
         path = Application.dataPath + "/ScreenShot/";
+        //path = "jar:file://"+Application.dataPath + "/ScreenShot/";
+        
         Debug.Log(path);
 
         //원래 카메라의 위치를 가져옴
@@ -97,13 +103,13 @@ public class ScreenTexture_VR_image : MonoBehaviour
         pngNum++; // 1부터 1씩 증가하는 이름을 가지도록 저장
         RenderTexture rt = new RenderTexture(resWidth, resHeight, 24);
         camera.targetTexture = rt;
-        Texture2D screenShot = new Texture2D(resWidth, resHeight, TextureFormat.RGB24, false);
+        screenShot = new Texture2D(resWidth, resHeight, TextureFormat.RGB24, false);
         Rect rec = new Rect(0, 0, screenShot.width, screenShot.height);
         camera.Render();
         RenderTexture.active = rt;
         screenShot.ReadPixels(new Rect(0, 0, resWidth, resHeight), 0, 0);
         screenShot.Apply();
-
+        //screenShot이 Texture2D
         byte[] bytes = screenShot.EncodeToPNG();
         File.WriteAllBytes(name, bytes);
 
@@ -168,7 +174,7 @@ public class ScreenTexture_VR_image : MonoBehaviour
         //Image 가 아닌 것을 원한다면 TextureChange_image를 TextureChange로 변경
         TextureChange_image textureChanger = newMirror.GetComponent<TextureChange_image>();
         //newMirror.TextureChange.ChangeTexture();
-        textureChanger.ChangeTexture();
+        textureChanger.ChangeTexture(screenShot);
         textureChanger = null;
 
     }

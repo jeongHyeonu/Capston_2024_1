@@ -18,7 +18,7 @@ public class TextureChange_image : MonoBehaviour
         // ChangeTexture();
         //}
     }
-
+    /*
     public void ChangeTexture()
     {
         //Debug.Log(index.ToString());
@@ -36,6 +36,27 @@ public class TextureChange_image : MonoBehaviour
             new Vector2(0.5f, 0.5f));
         Image s_rend = GetComponent<Image>();
         s_rend.sprite= sprite;
+
+        index++;
+    }*/
+
+    public void ChangeTexture(Texture2D sc)
+    {
+        //Debug.Log(index.ToString());
+
+        string fileName = index.ToString() + ".png"; // 파일 이름 생성
+        byte[] fileData = File.ReadAllBytes(Path.Combine(texturePath, fileName));
+        //위의 파일 이름을 가진 파일을 불러옴
+
+        // Texture2D를 생성하고 읽어온 이미지를 적용
+        Texture2D textureToApply = sc;
+        //textureToApply.LoadImage(fileData);
+
+
+        Sprite sprite = Sprite.Create(textureToApply, new Rect(0, 0, textureToApply.width, textureToApply.height),
+            new Vector2(0.5f, 0.5f));
+        Image s_rend = GetComponent<Image>();
+        s_rend.sprite = sprite;
 
         index++;
     }
