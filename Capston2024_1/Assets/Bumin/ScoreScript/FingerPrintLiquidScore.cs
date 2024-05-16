@@ -36,7 +36,7 @@ public class FingerPrintLiquidScore : MonoBehaviour
 
     private IEnumerator CheckHairTrigger()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(10f);
         hairLiquidTriggered = true;
         if (hairLiquidTriggered == true)
         {

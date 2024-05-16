@@ -85,6 +85,7 @@ public class FingerPrintObject : MonoBehaviour
             {
                 if (brushObj.p_type != powderType.none && p_second_Failed == false && onFreeTest == true)
                 {
+                    /*
                     if (answerPowder == powderType.ironPowder)
                     {
                         failed_Text += "이 재질은 검은색 분말을 써야할 것 같아요.";
@@ -97,7 +98,8 @@ public class FingerPrintObject : MonoBehaviour
                     if (answerPowder == powderType.fluorescenceRedPowder)
                     {
                         failed_Text += "이 재질은 빨간색 형광 분말을 써야할 것 같아요.\n";
-                    }
+                    }*/
+                    failed_Text += "검체랑 비슷한 색을 쓰면 지문이 잘 안보여서 사진에 안 담겨요!\n";
                     p_second_Failed = true;
                 }
             }

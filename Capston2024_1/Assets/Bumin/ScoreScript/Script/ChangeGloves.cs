@@ -16,6 +16,7 @@ public class ChangeGloves : MonoBehaviour
     public TextMeshProUGUI Score2;
     public TextMeshProUGUI Score3;
     public TextMeshProUGUI Score4;
+    public TextMeshProUGUI Score5;
 
     private void Start()
     {
@@ -47,6 +48,8 @@ public class ChangeGloves : MonoBehaviour
                 Score2.text = "" + 5;
                 Score3.text = "" + 5;
                 Score4.text = "" + 5;
+                Score5.text = "" + 5;
+                SoundManager.Instance.PlaySFX(SoundManager.SFX_list.PUT_ON_1);
             }
         }
     }
