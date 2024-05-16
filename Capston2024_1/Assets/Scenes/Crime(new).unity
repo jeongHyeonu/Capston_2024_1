@@ -14284,15 +14284,15 @@ MonoBehaviour:
   score1_5: {fileID: 888380965}
   score1_6: {fileID: 219445251}
   score1_7: {fileID: 1397370745}
-  score1_8: {fileID: 0}
+  score1_8: {fileID: 906378403}
   score2_1: {fileID: 106422571}
-  score2_2: {fileID: 686738884}
+  score2_2: {fileID: 906378403}
   score2_3: {fileID: 333633081}
   score2_4: {fileID: 881627886}
   score2_5: {fileID: 560066266}
   score2_6: {fileID: 788694713}
   score2_7: {fileID: 1003721555}
-  score2_8: {fileID: 0}
+  score2_8: {fileID: 381151859}
   score3_1: {fileID: 1630402577}
   score3_2: {fileID: 1220255709}
   score3_3: {fileID: 1983371790}
@@ -14300,7 +14300,7 @@ MonoBehaviour:
   score3_5: {fileID: 926138772}
   score3_6: {fileID: 1937353082}
   score3_7: {fileID: 995506902}
-  score3_8: {fileID: 0}
+  score3_8: {fileID: 1048678843}
   score4_1: {fileID: 201916655}
   score4_2: {fileID: 448416679}
   score4_3: {fileID: 62180786}
@@ -14308,7 +14308,7 @@ MonoBehaviour:
   score4_5: {fileID: 1162509812}
   score4_6: {fileID: 2031882596}
   score4_7: {fileID: 1918174300}
-  score4_8: {fileID: 0}
+  score4_8: {fileID: 1987864550}
   score5_1: {fileID: 44554684}
   score5_2: {fileID: 1397424429}
   score5_3: {fileID: 1062053804}
@@ -14316,7 +14316,7 @@ MonoBehaviour:
   score5_5: {fileID: 1593956249}
   score5_6: {fileID: 1928577845}
   score5_7: {fileID: 650614813}
-  score5_8: {fileID: 0}
+  score5_8: {fileID: 1325528932}
   totalScore: {fileID: 473316673}
   total: 0
   onLab: 0
