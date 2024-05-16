@@ -4,7 +4,7 @@ using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SoundManager : Singleton<SoundManager>
+public class SoundManager : MonoBehaviour
 {
     [SerializeField] Dictionary<BGM_list, AudioClip> BGM_audioclips = new Dictionary<BGM_list, AudioClip>();
     [SerializeField] Dictionary<SFX_list, AudioClip> SFX_audioclips = new Dictionary<SFX_list, AudioClip>();
@@ -21,6 +21,8 @@ public class SoundManager : Singleton<SoundManager>
     // ∏ÿ√‚ »ø∞˙¿Ω
     private SFX_list toStopSfx;
     private BGM_list toStopBGM;
+
+    public static SoundManager Instance;
 
     private enum SoundType {
         BGM,
@@ -84,6 +86,12 @@ public class SoundManager : Singleton<SoundManager>
     public enum BGM_list
     {
         Home_BGM,
+    }
+
+    private void Awake()
+    {
+        Instance = this;
+        DontDestroyOnLoad(this.gameObject);
     }
 
     void Start()
