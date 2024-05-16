@@ -4011,6 +4011,86 @@ Transform:
   m_Children: []
   m_Father: {fileID: 722128303}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &403218038
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6164597545383420892, guid: cd43f82f9e76d22409f5a6cb5e5b3088,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.053945065
+      objectReference: {fileID: 0}
+    - target: {fileID: 6164597545383420892, guid: cd43f82f9e76d22409f5a6cb5e5b3088,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.0186245
+      objectReference: {fileID: 0}
+    - target: {fileID: 6164597545383420892, guid: cd43f82f9e76d22409f5a6cb5e5b3088,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.70524645
+      objectReference: {fileID: 0}
+    - target: {fileID: 6164597545383420892, guid: cd43f82f9e76d22409f5a6cb5e5b3088,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6164597545383420892, guid: cd43f82f9e76d22409f5a6cb5e5b3088,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6164597545383420892, guid: cd43f82f9e76d22409f5a6cb5e5b3088,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6164597545383420892, guid: cd43f82f9e76d22409f5a6cb5e5b3088,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6164597545383420892, guid: cd43f82f9e76d22409f5a6cb5e5b3088,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6164597545383420892, guid: cd43f82f9e76d22409f5a6cb5e5b3088,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6164597545383420892, guid: cd43f82f9e76d22409f5a6cb5e5b3088,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208060388837965992, guid: cd43f82f9e76d22409f5a6cb5e5b3088,
+        type: 3}
+      propertyPath: m_Name
+      value: SoundManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cd43f82f9e76d22409f5a6cb5e5b3088, type: 3}
+--- !u!114 &403218039 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7528173628816712352, guid: cd43f82f9e76d22409f5a6cb5e5b3088,
+    type: 3}
+  m_PrefabInstance: {fileID: 403218038}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13053be7ac8963d459c57b893421d1bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &407567015
 GameObject:
   m_ObjectHideFlags: 0
@@ -25700,8 +25780,8 @@ Transform:
   m_GameObject: {fileID: 2093420075}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.1, y: 1.489, z: -5.145}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 5.1, y: 1.637, z: -4.96}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1475720947}
@@ -26489,7 +26569,7 @@ MonoBehaviour:
   _whenSelect:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 403218039}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: PlaySFX
         m_Mode: 3
@@ -26504,7 +26584,7 @@ MonoBehaviour:
   _whenUnselect:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 403218039}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: PlaySFX
         m_Mode: 3
@@ -26691,3 +26771,4 @@ SceneRoots:
   - {fileID: 560347786}
   - {fileID: 762745253}
   - {fileID: 1635989138}
+  - {fileID: 403218038}
