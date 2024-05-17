@@ -99,7 +99,7 @@ public class FingerPrintObject : MonoBehaviour
                     {
                         failed_Text += "이 재질은 빨간색 형광 분말을 써야할 것 같아요.\n";
                     }*/
-                    failed_Text += "검체랑 비슷한 색을 쓰면 지문이 잘 안보여서 사진에 안 담겨요!\n";
+                    failed_Text += "검체랑 비슷한 색을 쓰면 지문이 잘 안보여서 사진에 안 담겨요! 반대되는 색을 써야해요!\n";
                     p_second_Failed = true;
                 }
             }

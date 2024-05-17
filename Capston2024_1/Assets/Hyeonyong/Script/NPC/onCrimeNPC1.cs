@@ -128,7 +128,7 @@ public Quaternion firstRot; //캔버스 처음 각도
                 else if (ScriptNum == 9)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-                    npc1.text = "착용하려면 grab으로 잡고 몸 가까이 가져가서 놓으면 자동으로 입혀질 거야.";//현장 NPC에게 확인받으라고 설명
+                    npc1.text = "착용하려면 손을 보호복에 가까이 대면 자동으로 입혀질 거야.";//현장 NPC에게 확인받으라고 설명 0517 변경
 
                 }
                 else if (ScriptNum == 10)
@@ -211,28 +211,36 @@ public Quaternion firstRot; //캔버스 처음 각도
                     npc1.text = "수집하기 어려운 것들은 현장에서 지문을 채취하고, 수집할 수 있는 증거물들은 경찰청 내 분석실로 가져가서 감식해야 해.";//현장 NPC에게 확인받으라고 설명
 
                 }
-                else if (ScriptNum == 23)
+
+                else if (ScriptNum == 23) //0517 추가
+                {
+                    Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
+                    npc1.text = "그러니까 지문이 묻어있을 것으로 보이는 증거물은 확인 후 사진 찍고 바로 수집해.\nGrab으로 잡고 Y버튼을 클릭하면 수집될 거야.";//현장 NPC에게 확인받으라고 설명
+
+                }
+
+                else if (ScriptNum == 24)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
                     npc1.text = "다 수사했다고 생각하면 현장에 있는 선배한테 가서 확인받아.";//현장 NPC에게 확인받으라고 설명
 
                 }
-                else if (ScriptNum == 24)
+                else if (ScriptNum == 25)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
                     npc1.text = "다시 한번 말하지만, 사진 정말 중요해! \n지문 발견하면 사진! 지문이 검출되면 사진! 채취한 후에도 사진!";//현장 NPC에게 확인받으라고 설명
 
                 }
-                else if (ScriptNum == 25)
+                else if (ScriptNum == 26)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
                     npc1.text = "실수 하나하나가 범인을 놓칠 수도 있다는 거 명심하도록!";//현장 NPC에게 확인받으라고 설명
 
                 }
-                else if (ScriptNum == 26)
+                else if (ScriptNum == 27)
                 {
                     Canvas.transform.position = Canvas.transform.position + new Vector3(100f, 0f, 0f);
-                    ScriptNum = 10; // 다시 대화를 걸면 3번부터 시작하고 반복
+                    ScriptNum = 10; // 다시 대화를 걸면 10번부터 시작하고 반복
                 }
                 ScriptNum++;
 

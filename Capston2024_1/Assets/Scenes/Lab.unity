@@ -18422,7 +18422,7 @@ Transform:
   m_GameObject: {fileID: 781817995}
   serializedVersion: 2
   m_LocalRotation: {x: 0.086634114, y: 0.000000059604638, z: -0, w: 0.9962402}
-  m_LocalPosition: {x: -0.7679978, y: 1.08, z: 0.48000172}
+  m_LocalPosition: {x: -0.66, y: 0.924, z: 0.453}
   m_LocalScale: {x: 144.944, y: 144.944, z: 144.944}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18461,7 +18461,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.01, y: 0.01, z: 0.02}
+  m_Size: {x: 0.015, y: 0.015, z: 0.02}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &797483936
 GameObject:
@@ -41768,6 +41768,30 @@ MonoBehaviour:
       - m_Target: {fileID: 692273832}
         m_TargetAssemblyTypeName: PullScoreBoard, Assembly-CSharp
         m_MethodName: Pull
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1405753345}
+        m_TargetAssemblyTypeName: TotalScore, Assembly-CSharp
+        m_MethodName: GetTotalScore
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1244791215}
+        m_TargetAssemblyTypeName: TotalScore, Assembly-CSharp
+        m_MethodName: GetTotalScore
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

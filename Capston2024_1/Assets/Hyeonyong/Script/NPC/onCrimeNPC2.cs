@@ -112,7 +112,7 @@ public Quaternion firstRot; //캔버스 처음 각도
                 else if (ScriptNum == 3)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-                    npc1.text = "수집한 증거물들은 제 오른쪽 박스에 조심히 넣어주신 후, 채취한 지문 전사판들은 제게 주세요.\n제출이 끝나면 제출완료 버튼을 눌러주세요.";//다 찾았어? 더 안찾아봐도 됨?
+                    npc1.text = "수집한 증거물들은 제 오른쪽 박스에 조심히 넣어주신 후, 채취한 지문 전사판들은 제게 주세요.\n제출이 끝나면 제출완료 버튼을 눌러주세요.";
                 }
 
                 //else if (ScriptNum == 4 && onsubmit == false)

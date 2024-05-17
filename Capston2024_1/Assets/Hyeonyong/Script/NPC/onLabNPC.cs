@@ -61,7 +61,7 @@ public Quaternion firstRot; //캔버스 처음 각도
             StopCoroutine(NpcScript());
             Canvas.transform.position = Canvas.transform.position + new Vector3(100f, 0f, 0f);
             ScriptNum--;
-            if (ScriptNum == 5)
+            if (ScriptNum == 6)
                 ScriptNum++;
 
         }
@@ -115,8 +115,14 @@ public Quaternion firstRot; //캔버스 처음 각도
                     npc1.text = "오른쪽 실험대에 자네가 수집해 온 증거물들 배치해뒀으니까, 가져가서 감식 진행해.";//다 찾았어? 더 안찾아봐도 됨?
                 }
 
+                else if (ScriptNum == 4)//0517 추가
+                {
+                    Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
+                    npc1.text = "현장에서 처럼 마스크랑 장갑 착용하는 거 잊지말고! 손을 가져다 대면 착용될 거야.";//다 찾았어? 더 안찾아봐도 됨?
+                }
+
                 //else if (ScriptNum == 4 && onsubmit == false)
-                else if (ScriptNum == 4)
+                else if (ScriptNum == 5)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
                     npc1.text = "종이류는 최대한 핀셋으로 잡아야 하는 거 잊지 마!";//다 찾았어? 더 안찾아봐도 됨?
@@ -124,19 +130,19 @@ public Quaternion firstRot; //캔버스 처음 각도
                 }
 
 
-                else if (ScriptNum == 5)
+                else if (ScriptNum == 6)
                 {
                     Canvas.transform.position = Canvas.transform.position + new Vector3(100f, 0f, 0f);
 
                 }
 
-                else if (ScriptNum == 6)
+                else if (ScriptNum == 7)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
                     npc1.text = "다 끝났으면 증거물 다시 잘 밀봉해서 오른쪽 보관 박스에 넣고, 지문 전사판도 넣어.";//다 찾았어? 더 안찾아봐도 됨?
                 }
 
-                else if (ScriptNum == 7)
+                else if (ScriptNum == 8)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
                     npc1.text = "넣고 나면 위에 뜬 버튼 클릭하면 될거야! 고생 많았어.";//다 찾았어? 더 안찾아봐도 됨?
@@ -144,7 +150,7 @@ public Quaternion firstRot; //캔버스 처음 각도
                     CheckButton.SetActive(true);
                 }
 
-                else if (ScriptNum == 8)
+                else if (ScriptNum == 9)
                 {
                     Canvas.transform.position = Canvas.transform.position + new Vector3(100f, 0f, 0f);
                 }

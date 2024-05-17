@@ -16,6 +16,8 @@ public class NameChange : MonoBehaviour
             Debug.Log("변경");
             other.GetComponent<SubName>().subName = onName; //서브 네임으로 설정
             onChanged = true;
+
+            Destroy(gameObject);
         }
     }
     public void OnTriggerStay(Collider other)
@@ -25,6 +27,8 @@ public class NameChange : MonoBehaviour
             Debug.Log("변경");
             other.GetComponent<SubName>().subName = onName; //서브 네임으로 설정
             onChanged = true;
+
+            Destroy(gameObject);
         }
     }
     public void OnTriggerExit(Collider other)
@@ -34,6 +38,8 @@ public class NameChange : MonoBehaviour
             Debug.Log("변경");
             other.GetComponent<SubName>().subName = onName; //서브 네임으로 설정
             onChanged = true;
+
+            Destroy(gameObject);
         }
     }
 }
