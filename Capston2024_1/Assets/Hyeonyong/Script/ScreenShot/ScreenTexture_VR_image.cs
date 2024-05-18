@@ -70,25 +70,29 @@ public class ScreenTexture_VR_image : MonoBehaviour
         }
     }*/
 
+    
 
     IEnumerator CheckCamera()
     {
-        //if (OVRInput.GetDown(OVRInput.Button.One) && pull == false && GrabCamera.onCamera == true)
-        if (OVRInput.GetDown(OVRInput.Button.One) && GrabCamera.onCamera == true)
+        Debug.Log("cheakCam");
+        //////
+        while (true)
+        {
+            //////
+            if (OVRInput.GetDown(OVRInput.Button.One) && GrabCamera.onCamera == true)
             {//카메라를 손에 쥐고 있고 A 버튼을 누를 경우 실행
-            camera_light.SetActive(true);//라이트 키기
-            SoundManager.Instance.PlaySFX(SoundManager.SFX_list.CAMERA);
-            ClickScreenShot();
-            Create3();
-            camera_light.SetActive(false);//라이트 끄기
+                camera_light.SetActive(true);//라이트 키기
+                SoundManager.Instance.PlaySFX(SoundManager.SFX_list.CAMERA);
+                ClickScreenShot();
+                Create3();
+                camera_light.SetActive(false);//라이트 끄기
+            }
+            //yield return new WaitForSeconds(0); // _time 만큼 쉬었다가
+
+            yield return null;
+
         }
-        /*
-        if (OVRInput.GetDown(OVRInput.Button.Two))
-        {//B 버튼을 누를 경우 실행
-            PullAlbum2();
-        }*/
-        yield return new WaitForSeconds(0); // _time 만큼 쉬었다가
-        StartCoroutine(CheckCamera()); // 재귀적으로 코루틴 실행
+        //StartCoroutine(CheckCamera()); // 재귀적으로 코루틴 실행
     }
 
     public void ClickScreenShot() //카메라에 나온 화면을 png 파일로 저장하는 코드
