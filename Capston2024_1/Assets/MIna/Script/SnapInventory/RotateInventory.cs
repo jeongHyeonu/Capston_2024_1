@@ -6,11 +6,24 @@ public class RotateInventory : MonoBehaviour
 {
     public GameObject Inventory;
     
-    public void Rotate()
+    public void ToolsRotateR()
     {
-        Inventory.transform.Rotate(new Vector3(0, 180.0f, 0));
+        Inventory.transform.Rotate(new Vector3(0, 90.0f, 0));
     }
 
+    public void ToolsRotateL()
+    {
+        Inventory.transform.Rotate(new Vector3(0, -90.0f, 0));
+    }
+    public void EvidenceRotateL()
+    {
+        Inventory.transform.Rotate(new Vector3(0, -90.0f, 0));
+    }
+    public void EvidenceRotateR()
+    {
+        Inventory.transform.Rotate(new Vector3(0, +90.0f, 0));
+    }
+    
 
     void Update()
     {
