@@ -32340,7 +32340,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactorFilters: []
-  _maxInteractors: 2
+  _maxInteractors: 10
   _maxSelectingInteractors: 10
   _data: {fileID: 0}
   _rigidbody: {fileID: 1333197997}
@@ -66779,7 +66779,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactorFilters: []
-  _maxInteractors: 2
+  _maxInteractors: 10
   _maxSelectingInteractors: 10
   _data: {fileID: 0}
   _rigidbody: {fileID: 1732041716}
@@ -69641,7 +69641,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactorFilters: []
-  _maxInteractors: 2
+  _maxInteractors: 10
   _maxSelectingInteractors: 10
   _data: {fileID: 0}
   _rigidbody: {fileID: 1545011075}
