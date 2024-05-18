@@ -20208,6 +20208,31 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 142415159}
     m_Modifications:
+    - target: {fileID: 613484040674451452, guid: bb749e99b8078084cad52f0175736bc2,
+        type: 3}
+      propertyPath: m_Range
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 613484040674451452, guid: bb749e99b8078084cad52f0175736bc2,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 613484040674451452, guid: bb749e99b8078084cad52f0175736bc2,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 613484040674451452, guid: bb749e99b8078084cad52f0175736bc2,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 613484040674451452, guid: bb749e99b8078084cad52f0175736bc2,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4052599425584628791, guid: bb749e99b8078084cad52f0175736bc2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20267,6 +20292,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Flashlight
+      objectReference: {fileID: 0}
+    - target: {fileID: 6203531042481627067, guid: bb749e99b8078084cad52f0175736bc2,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 6203531042481627067, guid: bb749e99b8078084cad52f0175736bc2,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 6203531042481627067, guid: bb749e99b8078084cad52f0175736bc2,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 6203531042481627067, guid: bb749e99b8078084cad52f0175736bc2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.142
+      objectReference: {fileID: 0}
+    - target: {fileID: 6203531042481627067, guid: bb749e99b8078084cad52f0175736bc2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8651029272619897754, guid: bb749e99b8078084cad52f0175736bc2,
         type: 3}
