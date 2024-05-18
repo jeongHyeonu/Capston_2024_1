@@ -15,8 +15,18 @@ public class PackingEvidence : MonoBehaviour
         {
             Debug.Log("Y 버튼 눌림, 증거물 밀봉 시작");
 
+            // 임시 변수를 사용하여 위치와 회전 저장
+            Vector3 tempPosition = PackedObj.transform.position;
+            Quaternion tempRotation = PackedObj.transform.rotation;
+
+            // PackedObj에 EvidenceObj의 위치와 회전 적용
             PackedObj.transform.position = EvidenceObj.transform.position;
             PackedObj.transform.rotation = EvidenceObj.transform.rotation;
+
+            // EvidenceObj에 임시 변수에 저장된 위치와 회전 적용
+            EvidenceObj.transform.position = tempPosition;
+            EvidenceObj.transform.rotation = tempRotation;
+
 
             EvidenceObj.SetActive(false);
             Debug.Log("EvidenceObj 비활성화");
