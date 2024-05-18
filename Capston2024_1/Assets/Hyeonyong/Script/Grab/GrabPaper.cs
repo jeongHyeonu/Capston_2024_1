@@ -122,7 +122,7 @@ public class GrabPaper : MonoBehaviour
     */
 
 
-    private void GrabOnHand() // 카메라를 오른손의 자식으로 두고 위치를 이동시킨다.
+    private void GrabOnHand() 
     {
         Debug.Log("종이를 잡겠다.");
         onPaper = true;
