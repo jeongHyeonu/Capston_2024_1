@@ -16077,6 +16077,11 @@ MonoBehaviour:
   Score3: {fileID: 859088185}
   Score4: {fileID: 1373040100}
   Score5: {fileID: 0}
+  EVi1: {fileID: 1535729715}
+  EVi2: {fileID: 848417160}
+  EVi3: {fileID: 1124624859}
+  EVi4: {fileID: 1056910688}
+  onLab: 1
 --- !u!65 &602226031
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34141,6 +34146,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1244791214}
   - component: {fileID: 1244791215}
+  - component: {fileID: 1244791216}
   m_Layer: 0
   m_Name: ---2EvaluationUI_2
   m_TagString: Untagged
@@ -34219,6 +34225,22 @@ MonoBehaviour:
   totalScore: {fileID: 1315596630}
   total: 0
   onLab: 1
+--- !u!114 &1244791216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244791213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 727c976e402944f4997c38c5620f8e43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EVi3: {fileID: 1124624859}
+  EVi4: {fileID: 1056910688}
+  Score3: {fileID: 800425578}
+  Score4: {fileID: 593393216}
 --- !u!1 &1253635398
 GameObject:
   m_ObjectHideFlags: 0
@@ -42126,6 +42148,18 @@ MonoBehaviour:
       - m_Target: {fileID: 692273832}
         m_TargetAssemblyTypeName: PullScoreBoard, Assembly-CSharp
         m_MethodName: Pull
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1244791216}
+        m_TargetAssemblyTypeName: CheckActive, Assembly-CSharp
+        m_MethodName: ActiveCheck
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

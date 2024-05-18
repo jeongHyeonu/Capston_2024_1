@@ -18,6 +18,12 @@ public class ChangeGloves : MonoBehaviour
     public TextMeshProUGUI Score4;
     public TextMeshProUGUI Score5;
 
+
+    public GameObject EVi1;
+    public GameObject EVi2;
+    public GameObject EVi3;
+    public GameObject EVi4;
+    public bool onLab = false;
     private void Start()
     {
         // 시작할 때 원래의 메테리얼을 저장
@@ -44,16 +50,69 @@ public class ChangeGloves : MonoBehaviour
                 // 새로운 메테리얼로 변경
                 handRenderer.material = newMaterial;
                 handRenderer2.material = newMaterial;
-                Score1.text =""+ 5;
+                Score1.text = "" + 5;
                 Score2.text = "" + 5;
                 Score3.text = "" + 5;
                 Score4.text = "" + 5;
-                Score5.text = "" + 5;
+                if (onLab == false)
+                {
+                    Score5.text = "" + 5;
+                }
                 SoundManager.Instance.PlaySFX(SoundManager.SFX_list.PUT_ON_1);
+
+                if (onLab == true)
+                {
+                    Debug.Log("랩씬이다.");
+                    if (EVi1.activeSelf == false)
+                    {
+                        Score1.text = "" + 0;
+                    }
+                    if (EVi2.activeSelf == false)
+                    {
+                        Score2.text = "" + 0;
+                    }
+                    if (EVi3.activeSelf == false)
+                    {
+                        Score3.text = "" + 0;
+                    }
+                    if (EVi4.activeSelf == false)
+                    {
+                        Score4.text = "" + 0;
+                    }
+                }
+
             }
         }
     }
 
+    /*
+    public void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "Hand")
+        {
+                if (onLab == true)
+                {
+                    Debug.Log("랩씬이다.");
+                    if (EVi1.activeSelf == false)
+                    {
+                        Score1.text = "" + 0;
+                    }
+                    if (EVi2.activeSelf == false)
+                    {
+                        Score2.text = "" + 0;
+                    }
+                    if (EVi3.activeSelf == false)
+                    {
+                        Score3.text = "" + 0;
+                    }
+                    if (EVi4.activeSelf == false)
+                    {
+                        Score4.text = "" + 0;
+                    }
+                }
+        }
+    }
+    */
     private void OnDestroy()
     {
         // 스크립트가 파괴될 때, 씬이 끝날 때 원래의 메테리얼로 복구
