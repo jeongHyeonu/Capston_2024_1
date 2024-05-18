@@ -109,9 +109,9 @@ public class FingerPrintObject : MonoBehaviour
             
             if(onFreeTest==true) 
             {
-                if (checkCamera.first_check != true || p_first_Failed == true || p_second_Failed == true)
+                if (checkCamera.first_check == false || p_first_Failed == true || p_second_Failed == true)
                 {
-                    if (checkCamera.first_check != true)
+                    if (checkCamera.first_check==false)
                     {
                         //failed_Text = ErrorNum + ". " + "증거물 사진부터 찍어야죠! 기록하는 게 중요하단 거 잊지 마세요!\n" + failed_Text;
                         failed_Text = ErrorNum + ". " + "증거물 사진부터 찍어야죠! 기록하는 게 중요하단 거 잊지 마세요!";
