@@ -15,7 +15,7 @@ public class CheckCamera_Freetest : MonoBehaviour
     FingerPrintObject fingerprintobject;
 
     public bool first_check = false; //분말법을 하기 전에 사진을 찍었는지 확인
-    private bool second_check = false;//분말법을 한 후에 사진을 찍었는지 확인
+    public bool second_check = false;//분말법을 한 후에 사진을 찍었는지 확인
 
     public GameObject HandTrigger;
     npcText failed;
@@ -30,6 +30,11 @@ public class CheckCamera_Freetest : MonoBehaviour
 
     public GameObject other;
 
+    public GameObject Near;
+    public GameObject Near2;
+    public GameObject Near3;
+    public GameObject Near4;
+    public GameObject Near5;
 
     private int number = 1;
     void Start()
@@ -56,14 +61,14 @@ public class CheckCamera_Freetest : MonoBehaviour
         }
         // 드러난 지문을 촬영하지 않고 테이프를 붙였을 때를 위함
         
-            if (fingerprintobject.isVisible == true && fingerprinttape.onTape == true && second_check == false && second_Failed == false)
-            {
-                Debug.Log("2번째 카메라 실패 in CheckCamera");
-                second_Failed = true;
+            //if (fingerprintobject.isVisible == true && fingerprinttape.onTape == true && second_check == false && second_Failed == false)
+            //{
+              //  Debug.Log("2번째 카메라 실패 in CheckCamera");
+                //second_Failed = true;
                 //0424 분말법 전에 사진을 찍지 않았을 경우
-                failed.FailedSecondCamera();
+                //failed.FailedSecondCamera();
                 //fingerprinttape.onTape = false;
-            }
+            //}
 
 
         if (OVRInput.GetDown(OVRInput.Button.One)) //A버튼을 누를 경우
@@ -87,11 +92,12 @@ public class CheckCamera_Freetest : MonoBehaviour
                     //카메라와 객체 사이에 무언가 부딪힐 경우z
                     {
                         //인식하고자 하는 객체와 카메라, 플레이어 오브젝트가 가리는 것은 제외
-                        if (hit.collider.gameObject != cameraToCheck.gameObject && hit.collider.gameObject != gameObject && hit.collider.gameObject != Player && hit.collider.gameObject != gameObject && hit.collider.gameObject != Cam && hit.collider.gameObject != RightHand && hit.collider.gameObject != other)
+                        if (hit.collider.gameObject != cameraToCheck.gameObject && hit.collider.gameObject != gameObject && hit.collider.gameObject != Player && hit.collider.gameObject != gameObject && hit.collider.gameObject != Cam && hit.collider.gameObject != RightHand && hit.collider.gameObject != other && hit.collider.gameObject != Near
+                            && hit.collider.gameObject != Near2 && hit.collider.gameObject != Near3 && hit.collider.gameObject != Near4 && hit.collider.gameObject != Near5)
                         {
                             // 다른 객체로 가려져 있으면 "False" 출력
                             string hiddenObjectName = hit.collider.gameObject.name;
-                            Debug.Log("다른 객체로 가려져 있다." + hiddenObjectName);
+                            Debug.Log(gameObject.name+" 다른 객체로 가려져 있다." + hiddenObjectName);
                             return;
                         }
                     }
@@ -105,15 +111,16 @@ public class CheckCamera_Freetest : MonoBehaviour
                 // 2번째 시도에서는 근접에서 촬영하므로 거리 체크 O
                 if (fingerprintobject.isVisible == true)
                 {
-                    if (Physics.Raycast(transform.position, rayDirection, out hit, MaxDistance))
+                    if (Physics.Raycast(transform.position, rayDirection, out hit))
                     //카메라와 객체 사이에 무언가 부딪힐 경우z
                     {
                         //인식하고자 하는 객체와 카메라, 플레이어 오브젝트가 가리는 것은 제외
-                        if (hit.collider.gameObject != cameraToCheck.gameObject && hit.collider.gameObject != gameObject && hit.collider.gameObject != Player && hit.collider.gameObject != gameObject && hit.collider.gameObject != Cam && hit.collider.gameObject != RightHand && hit.collider.gameObject != other)
+                        if (hit.collider.gameObject != cameraToCheck.gameObject && hit.collider.gameObject != gameObject && hit.collider.gameObject != Player && hit.collider.gameObject != gameObject && hit.collider.gameObject != Cam && hit.collider.gameObject != RightHand && hit.collider.gameObject != other && hit.collider.gameObject != Near
+                            && hit.collider.gameObject != Near2 && hit.collider.gameObject != Near3 && hit.collider.gameObject != Near4 && hit.collider.gameObject != Near5)
                         {
                             // 다른 객체로 가려져 있으면 "False" 출력
                             string hiddenObjectName = hit.collider.gameObject.name;
-                            Debug.Log("다른 객체로 가려져 있다." + hiddenObjectName);
+                            Debug.Log(gameObject.name + " 다른 객체로 가려져 있다." + hiddenObjectName);
                             return;
                         }
                     }
@@ -149,7 +156,7 @@ public class CheckCamera_Freetest : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log("객체가 카메라 안에 없다.");
+                    Debug.Log(gameObject.name+" 객체가 카메라 안에 없다.");
 
                 }
             }
