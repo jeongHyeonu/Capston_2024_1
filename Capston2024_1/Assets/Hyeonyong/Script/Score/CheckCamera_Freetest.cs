@@ -30,6 +30,8 @@ public class CheckCamera_Freetest : MonoBehaviour
 
     public GameObject other;
 
+
+    private int number = 1;
     void Start()
     {
         fingerprintobject = GetComponent<FingerPrintObject>();

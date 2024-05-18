@@ -67,7 +67,7 @@ public class checkCamera_Liquid2_2 : MonoBehaviour
         {
             first_Failed = true;
             //액체에 담구기 전에 사진을 찍지 않았을 경우
-            failed.FailedFirstCamera_Liquid();
+            //failed.FailedFirstCamera_Liquid();
         }
 
         if (OVRInput.GetDown(OVRInput.Button.One)) //A버튼을 누를 경우
