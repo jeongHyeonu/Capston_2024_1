@@ -1514,7 +1514,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -10543,7 +10543,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a84af11ad20d3e544901324b3628a437,
         type: 3}
       propertyPath: m_Name
-      value: uploads_files_943271_sechet(Ev3) (1)
+      value: uploads_files_943271_sechet(Ev3) (fix)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a84af11ad20d3e544901324b3628a437,
         type: 3}
@@ -10606,7 +10606,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -19607,7 +19607,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -20037,7 +20037,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -34820,7 +34820,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -40292,6 +40292,11 @@ PrefabInstance:
         type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 558131573940079064, guid: a897af575d48f0a4f9b129e12522a2ca,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3510579398970270106, guid: a897af575d48f0a4f9b129e12522a2ca,
         type: 3}
@@ -58420,6 +58425,11 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4064175503197048799, guid: 29ad3a69a2cfa1843b934d1e838eed29,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4353122565176767815, guid: 29ad3a69a2cfa1843b934d1e838eed29,
         type: 3}
       propertyPath: m_IsTrigger
       value: 1
