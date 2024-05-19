@@ -32153,7 +32153,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!114 &788435308
 MonoBehaviour:
@@ -57697,6 +57697,21 @@ PrefabInstance:
       propertyPath: m_player
       value: 
       objectReference: {fileID: 1437367568}
+    - target: {fileID: 6901903191482986118, guid: ce816f2e6abb0504092c23ed9b970dfd,
+        type: 3}
+      propertyPath: TTS_datas.Array.data[12].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: 9566a73f2df5df643907d7915a0d3bd4, type: 3}
+    - target: {fileID: 6901903191482986118, guid: ce816f2e6abb0504092c23ed9b970dfd,
+        type: 3}
+      propertyPath: TTS_datas.Array.data[13].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: bc2a96a58290d2e42a278c1f4ef5280b, type: 3}
+    - target: {fileID: 6901903191482986118, guid: ce816f2e6abb0504092c23ed9b970dfd,
+        type: 3}
+      propertyPath: TTS_datas.Array.data[20].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: 9566a73f2df5df643907d7915a0d3bd4, type: 3}
     - target: {fileID: 8455786948003233208, guid: ce816f2e6abb0504092c23ed9b970dfd,
         type: 3}
       propertyPath: _interactableFilters.Array.size

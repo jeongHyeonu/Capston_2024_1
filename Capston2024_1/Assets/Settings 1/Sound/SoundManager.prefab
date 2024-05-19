@@ -256,6 +256,134 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &8509917947487255034
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4225662650154813353}
+  - component: {fileID: 1104058684949865151}
+  m_Layer: 0
+  m_Name: TTS
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4225662650154813353
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8509917947487255034}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6164597545383420892}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1104058684949865151
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8509917947487255034}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &9208060388837965992
 GameObject:
   m_ObjectHideFlags: 0
@@ -289,6 +417,7 @@ Transform:
   m_Children:
   - {fileID: 5936432537439815246}
   - {fileID: 7845206224086094881}
+  - {fileID: 4225662650154813353}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7528173628816712352
@@ -521,8 +650,144 @@ MonoBehaviour:
     audio: {fileID: 8300000, guid: 283084f80b4814c458df3ce14b62148d, type: 3}
   - sfx_name: 105
     audio: {fileID: 8300000, guid: b0c10452015f8cd44994b69e9dccff29, type: 3}
+  TTS_datas:
+  - tts_name: 0
+    audio: {fileID: 8300000, guid: 04e3b00376eb1c144ac93a97c7f50830, type: 3}
+  - tts_name: 1
+    audio: {fileID: 8300000, guid: 47e6385aa1fea16419db917459794852, type: 3}
+  - tts_name: 2
+    audio: {fileID: 8300000, guid: 6190ca428ef3244459603a0576d23979, type: 3}
+  - tts_name: 3
+    audio: {fileID: 8300000, guid: 4b1a2807ebaad2c4baf0549701e2ab55, type: 3}
+  - tts_name: 4
+    audio: {fileID: 8300000, guid: b149dc25c779b9b46bff075f8e20ebd0, type: 3}
+  - tts_name: 5
+    audio: {fileID: 8300000, guid: cf957d2707787dd4f9cfc30e69e1995c, type: 3}
+  - tts_name: 6
+    audio: {fileID: 8300000, guid: 79fd8a1f70f5f9b49b77cfc7524a2b89, type: 3}
+  - tts_name: 7
+    audio: {fileID: 8300000, guid: ca9c2ac9ddde5854795579c1cb7d79f2, type: 3}
+  - tts_name: 8
+    audio: {fileID: 8300000, guid: fd8a4a8d8ee3fe9459dee4c9581c040e, type: 3}
+  - tts_name: 9
+    audio: {fileID: 8300000, guid: 16cc484dedd447c4ba711a1f22c4602c, type: 3}
+  - tts_name: 10
+    audio: {fileID: 8300000, guid: 722f0340d798d524c88c92b80d1cb1a3, type: 3}
+  - tts_name: 11
+    audio: {fileID: 8300000, guid: e688f7e1a5302a34f8c627be4ee26ee7, type: 3}
+  - tts_name: 12
+    audio: {fileID: 8300000, guid: bc2a96a58290d2e42a278c1f4ef5280b, type: 3}
+  - tts_name: 13
+    audio: {fileID: 8300000, guid: 9566a73f2df5df643907d7915a0d3bd4, type: 3}
+  - tts_name: 14
+    audio: {fileID: 8300000, guid: eab65de3c69c4ed4b91eb28811dd6343, type: 3}
+  - tts_name: 15
+    audio: {fileID: 8300000, guid: 0262016f1b6a67445bf0a8014920f01c, type: 3}
+  - tts_name: 16
+    audio: {fileID: 8300000, guid: a56037f0b190e7648ab5919d46fe9a1b, type: 3}
+  - tts_name: 17
+    audio: {fileID: 8300000, guid: f6be91fbec3e07c47813f5bf4835aa8c, type: 3}
+  - tts_name: 18
+    audio: {fileID: 8300000, guid: f6be91fbec3e07c47813f5bf4835aa8c, type: 3}
+  - tts_name: 19
+    audio: {fileID: 8300000, guid: dc883064aef35854ba622a2342bff82c, type: 3}
+  - tts_name: 20
+    audio: {fileID: 8300000, guid: f6be91fbec3e07c47813f5bf4835aa8c, type: 3}
+  - tts_name: 21
+    audio: {fileID: 8300000, guid: da4fd36e7c2c73e42ab3e3e2f849040e, type: 3}
+  - tts_name: 22
+    audio: {fileID: 8300000, guid: 42f17756bb44a1343a832b2a051893b7, type: 3}
+  - tts_name: 23
+    audio: {fileID: 8300000, guid: dc883064aef35854ba622a2342bff82c, type: 3}
+  - tts_name: 24
+    audio: {fileID: 8300000, guid: 2cb7093510b52464da049d72743a0d1f, type: 3}
+  - tts_name: 25
+    audio: {fileID: 8300000, guid: 0c37c4b1db9c4f141b9b359961a4a58d, type: 3}
+  - tts_name: 26
+    audio: {fileID: 8300000, guid: 04cfd9f3986aff84db2ae79b20512558, type: 3}
+  - tts_name: 27
+    audio: {fileID: 8300000, guid: 778c320e48e24b548838e73846eeb833, type: 3}
+  - tts_name: 28
+    audio: {fileID: 8300000, guid: 1591bf5c0792d1843ae0aee120dbeeac, type: 3}
+  - tts_name: 29
+    audio: {fileID: 8300000, guid: b5b56d4a5ab234f4ea8433ca9aa30803, type: 3}
+  - tts_name: 30
+    audio: {fileID: 8300000, guid: 316fa9d419245a4499edc8966a83a94f, type: 3}
+  - tts_name: 31
+    audio: {fileID: 8300000, guid: f2ed126cf9ae7b94b8b13e4b4842179c, type: 3}
+  - tts_name: 32
+    audio: {fileID: 8300000, guid: 668792c982ab8344aabe604db8680e73, type: 3}
+  - tts_name: 33
+    audio: {fileID: 8300000, guid: bc1ea2903ffbf394d9915374299969ad, type: 3}
+  - tts_name: 34
+    audio: {fileID: 8300000, guid: ece9cb8e3069c0f45a0eadfc38327a6b, type: 3}
+  - tts_name: 35
+    audio: {fileID: 8300000, guid: 342c317afed479946b5ce8bcabbcbbff, type: 3}
+  - tts_name: 36
+    audio: {fileID: 8300000, guid: 0078bdbab121e2f41bc06572282b7aac, type: 3}
+  - tts_name: 37
+    audio: {fileID: 8300000, guid: 2f1592c1e90fb484a9859b55941877d6, type: 3}
+  - tts_name: 38
+    audio: {fileID: 8300000, guid: a53a0e36247a89d4f89f13512552821a, type: 3}
+  - tts_name: 39
+    audio: {fileID: 8300000, guid: 13b5715632d13f646b317ce31cded17e, type: 3}
+  - tts_name: 40
+    audio: {fileID: 8300000, guid: b24765994d40d2247aa058c567a66b09, type: 3}
+  - tts_name: 41
+    audio: {fileID: 8300000, guid: 43095e5fc9d6f2c46ac08c18d9f23944, type: 3}
+  - tts_name: 42
+    audio: {fileID: 8300000, guid: 3b25c01c2c18d114ebc9fd4bbbdb9837, type: 3}
+  - tts_name: 43
+    audio: {fileID: 8300000, guid: 6ef50bba6b8d88a48a3051bde6065bed, type: 3}
+  - tts_name: 44
+    audio: {fileID: 8300000, guid: d1e49c20180a61d468eab00f25a92d5d, type: 3}
+  - tts_name: 45
+    audio: {fileID: 8300000, guid: a6170bf5028684247a09f75cbd5b958a, type: 3}
+  - tts_name: 46
+    audio: {fileID: 8300000, guid: cb2cef3f70587464b8d18f05c1058e8b, type: 3}
+  - tts_name: 47
+    audio: {fileID: 8300000, guid: 6405e7b37faa6d645b33b0b4ef236c13, type: 3}
+  - tts_name: 48
+    audio: {fileID: 8300000, guid: 81974416a21a619468b0359e393993f1, type: 3}
+  - tts_name: 49
+    audio: {fileID: 8300000, guid: 0188550e22fd79d43b8c85e497241773, type: 3}
+  - tts_name: 50
+    audio: {fileID: 8300000, guid: 6815a501d5e4184498fc1bed265d767a, type: 3}
+  - tts_name: 51
+    audio: {fileID: 8300000, guid: 2093466b5ea13894eb623d594dca092f, type: 3}
+  - tts_name: 52
+    audio: {fileID: 8300000, guid: a407fb404867e904fb98ac99cebb6b6c, type: 3}
+  - tts_name: 53
+    audio: {fileID: 8300000, guid: 17e164c98a8523f4199fbe08e81aa427, type: 3}
+  - tts_name: 54
+    audio: {fileID: 8300000, guid: 64bd9a428f99c4a489234ef317e7259d, type: 3}
+  - tts_name: 55
+    audio: {fileID: 8300000, guid: ba8b6bfb04c4e664986b698c24530e9e, type: 3}
+  - tts_name: 56
+    audio: {fileID: 8300000, guid: b80122b7e47af1d48b5b61dd1798feea, type: 3}
+  - tts_name: 57
+    audio: {fileID: 8300000, guid: 9d2c91a74825e0544ac182f73b8f1f28, type: 3}
+  - tts_name: 58
+    audio: {fileID: 8300000, guid: 97e3df509eedeb64d9fd1fda609a237e, type: 3}
+  - tts_name: 59
+    audio: {fileID: 8300000, guid: cacea35b9b841f34a9c1e7c81fb7d068, type: 3}
+  - tts_name: 60
+    audio: {fileID: 8300000, guid: 535777313062b9d4f8928e44c5b49c97, type: 3}
+  - tts_name: 61
+    audio: {fileID: 8300000, guid: 6c157b61c57d6224e8db1f2e7a1161d7, type: 3}
+  - tts_name: 62
+    audio: {fileID: 8300000, guid: 4ed05d69fe755964380fe4095861d5a9, type: 3}
+  - tts_name: 63
+    audio: {fileID: 8300000, guid: b2ebb3c5a94601e4fbedc1925d4f984b, type: 3}
+  - tts_name: 64
+    audio: {fileID: 8300000, guid: 2cb54708c4770974f93489fa7fc92fc5, type: 3}
+  - tts_name: 65
+    audio: {fileID: 8300000, guid: d6ce6dd51b022db4684a67bd4f5fc03e, type: 3}
+  - tts_name: 66
+    audio: {fileID: 8300000, guid: 7a1c73e71b84f1348be980fb9c0851ea, type: 3}
   BGM_Object: {fileID: 6559933909489678465}
   SFX_Object: {fileID: 4853145513621287346}
+  TTS_Object: {fileID: 8509917947487255034}
 --- !u!81 &3802133407266454903
 AudioListener:
   m_ObjectHideFlags: 0
