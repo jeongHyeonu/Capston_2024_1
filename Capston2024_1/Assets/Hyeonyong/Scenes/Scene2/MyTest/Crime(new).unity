@@ -13419,6 +13419,12 @@ MonoBehaviour:
   Score2: {fileID: 0}
   Score3: {fileID: 0}
   Score4: {fileID: 0}
+  Score5: {fileID: 0}
+  EVi1: {fileID: 0}
+  EVi2: {fileID: 0}
+  EVi3: {fileID: 0}
+  EVi4: {fileID: 0}
+  onLab: 0
 --- !u!1 &301406072
 GameObject:
   m_ObjectHideFlags: 0
@@ -16153,10 +16159,16 @@ MonoBehaviour:
   Cam: {fileID: 1960198354}
   RightHand: {fileID: 556044557}
   first_check: 0
+  second_check: 0
   HandTrigger: {fileID: 556044557}
   first_Failed: 0
   tape: {fileID: 590947541}
   other: {fileID: 1916960682}
+  Near: {fileID: 0}
+  Near2: {fileID: 0}
+  Near3: {fileID: 0}
+  Near4: {fileID: 0}
+  Near5: {fileID: 0}
 --- !u!1 &420245192
 GameObject:
   m_ObjectHideFlags: 0
@@ -32432,6 +32444,7 @@ RectTransform:
   m_Children:
   - {fileID: 1801328560}
   - {fileID: 254698447}
+  - {fileID: 1419761473}
   m_Father: {fileID: 209118640}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -33690,6 +33703,7 @@ RectTransform:
   m_Children:
   - {fileID: 940658340}
   - {fileID: 1171123045}
+  - {fileID: 905207161}
   m_Father: {fileID: 187697335}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -38411,10 +38425,16 @@ MonoBehaviour:
   Cam: {fileID: 1960198354}
   RightHand: {fileID: 556044557}
   first_check: 0
+  second_check: 0
   HandTrigger: {fileID: 556044557}
   first_Failed: 0
   tape: {fileID: 590947541}
   other: {fileID: 1268126732}
+  Near: {fileID: 0}
+  Near2: {fileID: 0}
+  Near3: {fileID: 0}
+  Near4: {fileID: 0}
+  Near5: {fileID: 0}
 --- !u!1 &796456727
 GameObject:
   m_ObjectHideFlags: 0
@@ -42008,6 +42028,90 @@ Transform:
   - {fileID: 690965476}
   m_Father: {fileID: 1679940880}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &905207160
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 905207161}
+  - component: {fileID: 905207162}
+  m_Layer: 0
+  m_Name: CLOVA_dubbing_watermark_white
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &905207161
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905207160}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 250, y: 73, z: 0}
+  m_LocalScale: {x: 50, y: 50, z: 50}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 632540032}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &905207162
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905207160}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 2fa7c72c42b877a45b4c1167e9dd0465, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.11, y: 0.34}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &906378401
 GameObject:
   m_ObjectHideFlags: 0
@@ -56276,6 +56380,12 @@ MonoBehaviour:
   Desk: {fileID: 1979553524}
   DeskCheck: {fileID: 2091986449}
   checkDesk: 0
+  Drawer: {fileID: 0}
+  DrawerCheck: {fileID: 0}
+  checkDrawer: 0
+  WaterTap: {fileID: 0}
+  WaterTapCheck: {fileID: 0}
+  checkWaterTap: 0
   HandTrigger: {fileID: 556044557}
 --- !u!1001 &1266996969
 PrefabInstance:
@@ -65391,6 +65501,90 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1418906039}
   m_CullTransparentMesh: 1
+--- !u!1 &1419761472
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1419761473}
+  - component: {fileID: 1419761474}
+  m_Layer: 0
+  m_Name: CLOVA_dubbing_watermark_white
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1419761473
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419761472}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 250, y: 73, z: -0}
+  m_LocalScale: {x: 50, y: 50, z: 50}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 603402463}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1419761474
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419761472}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 2fa7c72c42b877a45b4c1167e9dd0465, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.11, y: 0.34}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1421117722
 GameObject:
   m_ObjectHideFlags: 0
@@ -77414,10 +77608,16 @@ MonoBehaviour:
   Cam: {fileID: 1960198354}
   RightHand: {fileID: 556044557}
   first_check: 0
+  second_check: 0
   HandTrigger: {fileID: 556044557}
   first_Failed: 0
   tape: {fileID: 590947541}
   other: {fileID: 1012840983}
+  Near: {fileID: 0}
+  Near2: {fileID: 0}
+  Near3: {fileID: 0}
+  Near4: {fileID: 0}
+  Near5: {fileID: 0}
 --- !u!1001 &1874500200
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -78299,10 +78499,16 @@ MonoBehaviour:
   Cam: {fileID: 1960198354}
   RightHand: {fileID: 556044557}
   first_check: 0
+  second_check: 0
   HandTrigger: {fileID: 556044557}
   first_Failed: 0
   tape: {fileID: 590947541}
   other: {fileID: 370274667}
+  Near: {fileID: 0}
+  Near2: {fileID: 0}
+  Near3: {fileID: 0}
+  Near4: {fileID: 0}
+  Near5: {fileID: 0}
 --- !u!1 &1913749137
 GameObject:
   m_ObjectHideFlags: 0
@@ -81299,10 +81505,16 @@ MonoBehaviour:
   Cam: {fileID: 1960198354}
   RightHand: {fileID: 556044557}
   first_check: 0
+  second_check: 0
   HandTrigger: {fileID: 556044557}
   first_Failed: 0
   tape: {fileID: 590947541}
   other: {fileID: 1960315795}
+  Near: {fileID: 0}
+  Near2: {fileID: 0}
+  Near3: {fileID: 0}
+  Near4: {fileID: 0}
+  Near5: {fileID: 0}
 --- !u!1 &1983112017
 GameObject:
   m_ObjectHideFlags: 0

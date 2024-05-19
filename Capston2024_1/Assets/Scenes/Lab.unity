@@ -20488,6 +20488,26 @@ PrefabInstance:
       propertyPath: m_Intensity
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 613484040674451452, guid: bb749e99b8078084cad52f0175736bc2,
+        type: 3}
+      propertyPath: m_SpotAngle
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 613484040674451452, guid: bb749e99b8078084cad52f0175736bc2,
+        type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 613484040674451452, guid: bb749e99b8078084cad52f0175736bc2,
+        type: 3}
+      propertyPath: m_Lightmapping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 613484040674451452, guid: bb749e99b8078084cad52f0175736bc2,
+        type: 3}
+      propertyPath: m_InnerSpotAngle
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 4052599425584628791, guid: bb749e99b8078084cad52f0175736bc2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20538,6 +20558,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5156648502920521403, guid: bb749e99b8078084cad52f0175736bc2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.118
+      objectReference: {fileID: 0}
+    - target: {fileID: 5156648502920521403, guid: bb749e99b8078084cad52f0175736bc2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
     - target: {fileID: 5178082627456303480, guid: bb749e99b8078084cad52f0175736bc2,
         type: 3}
       propertyPath: m_IsTrigger
@@ -20566,7 +20596,7 @@ PrefabInstance:
     - target: {fileID: 6203531042481627067, guid: bb749e99b8078084cad52f0175736bc2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.142
+      value: 2.015
       objectReference: {fileID: 0}
     - target: {fileID: 6203531042481627067, guid: bb749e99b8078084cad52f0175736bc2,
         type: 3}
@@ -50404,7 +50434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _transferOnSecondSelection: 0
+  _transferOnSecondSelection: 1
   _addNewPointsToFront: 0
   _forwardElement: {fileID: 0}
   _oneGrabTransformer: {fileID: 0}
