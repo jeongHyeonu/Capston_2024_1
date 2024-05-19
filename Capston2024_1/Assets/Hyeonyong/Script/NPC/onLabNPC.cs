@@ -139,13 +139,13 @@ public Quaternion firstRot; //캔버스 처음 각도
                 else if (ScriptNum == 7)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-                    npc1.text = "다 끝났으면 증거물 다시 잘 밀봉해서 오른쪽 보관 박스에 넣고, 지문 전사판도 넣어.";//다 찾았어? 더 안찾아봐도 됨?
+                    npc1.text = "다 끝났으면 증거물을 다시 잘 밀봉해서 오른쪽 보관 박스에 확인하고 넣고, 지문 전사지도 넣어.";//다 찾았어? 더 안찾아봐도 됨?
                 }
 
                 else if (ScriptNum == 8)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-                    npc1.text = "넣고 나면 위에 뜬 버튼 클릭하면 될거야! 고생 많았어.";//다 찾았어? 더 안찾아봐도 됨?
+                    npc1.text = "넣고 나면 위에 뜬 버튼을 클릭하면 될거야! 고생 많았어!";//다 찾았어? 더 안찾아봐도 됨?
                     //결과 확인버튼 활성화
                     CheckButton.SetActive(true);
                 }

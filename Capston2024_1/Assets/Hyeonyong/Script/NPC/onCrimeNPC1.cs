@@ -104,13 +104,13 @@ public Quaternion firstRot; //캔버스 처음 각도
                 else if (ScriptNum == 5)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-                    npc1.text = "지금은 피해자를 병원으로 이송시킨 후야. \n피해자가 60대로 나이가 있어서 충격이 심했을 것으로 예상해.";//현장 NPC에게 확인받으라고 설명
+                    npc1.text = "지금은 피해자를 병원으로 이송시킨 후야. \n피해자가 50대로 나이가 있어서 충격이 심했을 것으로 예상해.";//현장 NPC에게 확인받으라고 설명
 
                 }
                 else if (ScriptNum == 6)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-                    npc1.text = "일단 우리는 이 사건을 강도 침입과 면식범과의 다툼, 두 가지 가능성을 열어두고 수사할 거야.";//현장 NPC에게 확인받으라고 설명
+                    npc1.text = "일단 우리는 이 사건을 강도 침입 또는 면식범의 범행, 두 가지 가능성을 열어두고 수사할 거야.";//현장 NPC에게 확인받으라고 설명
 
                 }
                 else if (ScriptNum == 7)
@@ -148,7 +148,7 @@ public Quaternion firstRot; //캔버스 처음 각도
                 else if (ScriptNum == 12)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-                    npc1.text = "왼손 컨트롤러의 X버튼을 누르면 왼쪽 손목에 메뉴가 나올 거야.\n거기에 있는 카메라, 손전등 아이콘은 누르면 돼.";//현장 NPC에게 확인받으라고 설명
+                    npc1.text = "왼손 컨트롤러의 X버튼을 누르면 왼쪽 손목에 메뉴가 나올 거야.\n거기에 있는 카메라나 손전등 아이콘을 누르면 돼.";//현장 NPC에게 확인받으라고 설명
 
                 }
                 else if (ScriptNum == 13)
@@ -166,7 +166,7 @@ public Quaternion firstRot; //캔버스 처음 각도
                 else if (ScriptNum == 15)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-                    npc1.text = "주머니 개수가 많지 않으니까 필요한 것들만 들고 다니다가 가끔 도구 교체하러 오고.";//현장 NPC에게 확인받으라고 설명
+                    npc1.text = "주머니 개수가 많지 않으니까 필요한 것들만 들고 다니다가 가끔 도구 교체하러 오고!";//현장 NPC에게 확인받으라고 설명
 
                 }
                 else if (ScriptNum == 16)
@@ -184,7 +184,7 @@ public Quaternion firstRot; //캔버스 처음 각도
                 else if (ScriptNum == 18)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-                    npc1.text = "중요한 건, 바로 기법을 쓰지 말고 그 주위 비슷한 곳에 기법을 먼저 써보는 거야. 이걸 우린 \"프리 테스트\"라고 하지.";//현장 NPC에게 확인받으라고 설명
+                    npc1.text = "중요한 건, 바로 기법을 쓰지 말고 그 주위 비슷한 곳에 기법을 먼저 써보는 거야. 이걸 우린 \"프리테스트\"라고 하지.";//현장 NPC에게 확인받으라고 설명
 
                 }
                 else if (ScriptNum == 19)
@@ -196,7 +196,7 @@ public Quaternion firstRot; //캔버스 처음 각도
                 else if (ScriptNum == 20)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-                    npc1.text = "프리 테스트 위치는 현장에 들어가서 수사하다 보면 알게 될 거야.";//현장 NPC에게 확인받으라고 설명
+                    npc1.text = "프리테스트 위치는 현장에 들어가서 수사하다 보면 알게 될 거야.";//현장 NPC에게 확인받으라고 설명
 
                 }
                 else if (ScriptNum == 21)
