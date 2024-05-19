@@ -81,11 +81,13 @@ public class ScreenTexture_VR_image : MonoBehaviour
             //////
             if (OVRInput.GetDown(OVRInput.Button.One) && GrabCamera.onCamera == true)
             {//카메라를 손에 쥐고 있고 A 버튼을 누를 경우 실행
-                camera_light.SetActive(true);//라이트 키기
+                //camera_light.SetActive(true);//라이트 키기
                 SoundManager.Instance.PlaySFX(SoundManager.SFX_list.CAMERA);
                 ClickScreenShot();
                 Create3();
-                camera_light.SetActive(false);//라이트 끄기
+                //camera_light.SetActive(false);//라이트 끄기
+
+                yield return new WaitForSeconds(5f);
             }
             //yield return new WaitForSeconds(0); // _time 만큼 쉬었다가
 

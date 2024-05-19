@@ -70,6 +70,8 @@ public class CheckCard : MonoBehaviour
                 if (Physics.Raycast(transform.position, rayDirection, out hit))
                 //카메라와 객체 사이에 무언가 부딪힐 경우z
                 {
+
+                    
                     //인식하고자 하는 객체와 카메라, 플레이어 오브젝트가 가리는 것은 제외
                     if (hit.collider.gameObject != cameraToCheck.gameObject && hit.collider.gameObject != gameObject && hit.collider.gameObject != Player && hit.collider.gameObject != gameObject && hit.collider.gameObject != Cam && hit.collider.gameObject != RightHand && hit.collider.gameObject != Near)
                     {
@@ -79,6 +81,7 @@ public class CheckCard : MonoBehaviour
                         Debug.Log("CheckCard 다른 객체로 가려져 있다." + hiddenObjectName);
                         return;
                     }
+                    
                 }
                 else
                 {
@@ -163,7 +166,7 @@ public class CheckCard : MonoBehaviour
 
                     if (gameObject.name == "Soju")
                     {
-                        GameObject onscore = GameObject.Find("1-7");
+                        GameObject onscore = GameObject.Find("9-7");
                         score = (TextMeshProUGUI)onscore.GetComponent("TextMeshProUGUI");
                         if (score != null)
                         {
@@ -178,7 +181,7 @@ public class CheckCard : MonoBehaviour
 
                     if (gameObject.name == "WhiskyGlass")
                     {
-                        GameObject onscore = GameObject.Find("2-7");
+                        GameObject onscore = GameObject.Find("10-7");
                         score = (TextMeshProUGUI)onscore.GetComponent("TextMeshProUGUI");
                         if (score != null)
                         {
