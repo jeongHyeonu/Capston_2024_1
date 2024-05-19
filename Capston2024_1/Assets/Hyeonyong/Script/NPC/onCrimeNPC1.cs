@@ -83,46 +83,46 @@ public Quaternion firstRot; //캔버스 처음 각도
                 else if (ScriptNum == 1)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-                    npc1.text = "시간이 없으니 사건부터 설명할게. 집중해서 듣도록 해.";//보호복 착용 지시
+                    npc1.text = "시간이 없으니 사건부터 설명할게.\n집중해서 듣도록 해.";//보호복 착용 지시
                 }
                 else if (ScriptNum == 2)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-                    npc1.text = "담당 경찰관의 보고에 의하면, 오후 4시 15분경에 한 남성이 쓰러져있다는 신고가 들어왔다고 해.\n신고자는 남성의 가족으로 추정이 되고.";
+                    npc1.text = "담당 경찰관의 보고에 의하면,\n오후 4시 15분경에 한 남성이 쓰러져있다는 신고가 들어왔다고 해.\n신고자는 남성의 가족으로 추정이 되고.";
                 }
                 else if (ScriptNum == 3)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-                    npc1.text = "집에 오니 문이 열려있었고 피해자가 거실 중앙에 의식을 잃은 채 쓰러져있었다고 해.";//현장 감식방법 설명
+                    npc1.text = "집에 오니 문이 열려있었고\n피해자가 거실 중앙에 의식을 잃은 채 쓰러져있었다고 해.";//현장 감식방법 설명
                 }
                 else if (ScriptNum == 4)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-                    npc1.text = "출동 직후 발견한 피해자는 의식이 없고 왼쪽 머리에 둔기로 가격 당한 상처가 있었다고 하더라고.";//현장 NPC에게 확인받으라고 설명
+                    npc1.text = "출동 직후 발견한 피해자는 의식이 없고\n왼쪽 머리에 둔기로 가격 당한 상처가 있었다고 하더라고.";//현장 NPC에게 확인받으라고 설명
 
                 }
                 else if (ScriptNum == 5)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-                    npc1.text = "지금은 피해자를 병원으로 이송시킨 후야. \n피해자가 50대로 나이가 있어서 충격이 심했을 것으로 예상해.";//현장 NPC에게 확인받으라고 설명
+                    npc1.text = "지금은 피해자를 병원으로 이송시킨 후야.\n피해자가 50대로 나이가 있어서 충격이 심했을 것으로 예상해.";//현장 NPC에게 확인받으라고 설명
 
                 }
                 else if (ScriptNum == 6)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-                    npc1.text = "일단 우리는 이 사건을 강도 침입 또는 면식범의 범행, 두 가지 가능성을 열어두고 수사할 거야.";//현장 NPC에게 확인받으라고 설명
+                    npc1.text = "일단 우리는 이 사건을 강도 침입 또는 면식범의 범행,\n두 가지 가능성을 열어두고 수사할 거야.";//현장 NPC에게 확인받으라고 설명
 
                 }
                 else if (ScriptNum == 7)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-                    npc1.text = "사건 설명은 끝났고, 본격적으로 현장감식을 진행하려면 보호복부터 착용해야지?";//현장 NPC에게 확인받으라고 설명
+                    npc1.text = "사건 설명은 끝났고,\n본격적으로 현장감식을 진행하려면 보호복부터 착용해야지?";//현장 NPC에게 확인받으라고 설명
 
                 }
                 else if (ScriptNum == 8)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-                    npc1.text = "내 왼쪽에 있는 장비 키트에서 보호복, 마스크, 장갑을 꺼내서 입고 다시 와.";//현장 NPC에게 확인받으라고 설명
+                    npc1.text = "내 왼쪽에 있는 장비 키트에서\n보호복, 마스크, 장갑을 꺼내서 입고 다시 와.";//현장 NPC에게 확인받으라고 설명
 
                 }
                 else if (ScriptNum == 9)
@@ -142,7 +142,7 @@ public Quaternion firstRot; //캔버스 처음 각도
                 else if (ScriptNum == 11)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-                    npc1.text = "수사할 때 카메라와 손전등은 수시로 사용해야 해. 사전 교육을 받을 때 배웠지?";//현장 NPC에게 확인받으라고 설명
+                    npc1.text = "수사할 때 카메라와 손전등은 수시로 사용해야 해.\n사전 교육을 받을 때 배웠지?";//현장 NPC에게 확인받으라고 설명
 
                 }
                 else if (ScriptNum == 12)
@@ -166,31 +166,31 @@ public Quaternion firstRot; //캔버스 처음 각도
                 else if (ScriptNum == 15)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-                    npc1.text = "주머니 개수가 많지 않으니까 필요한 것들만 들고 다니다가 가끔 도구 교체하러 오고!";//현장 NPC에게 확인받으라고 설명
+                    npc1.text = "주머니 개수가 많지 않으니까\n필요한 것들만 들고 다니다가 가끔 도구 교체하러 오고!";//현장 NPC에게 확인받으라고 설명
 
                 }
                 else if (ScriptNum == 16)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-                    npc1.text = "들어가서 최대한 찾을 수 있는 지문은 모두 찾고, 사건과 관련 있어 보이는 증거물들은 모두 수집해야 해.";//현장 NPC에게 확인받으라고 설명
+                    npc1.text = "들어가서 최대한 찾을 수 있는 지문은 모두 찾고,\n사건과 관련 있어 보이는 증거물들은 모두 수집해야 해.";//현장 NPC에게 확인받으라고 설명
 
                 }
                 else if (ScriptNum == 17)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-                    npc1.text = "손전등으로 잘 비춰보면서 희미하게 지문이 보이면 그곳을 집중적으로 수사해.";//현장 NPC에게 확인받으라고 설명
+                    npc1.text = "손전등으로 잘 비춰보면서 희미하게 지문이 보이면\n그곳을 집중적으로 수사해.";//현장 NPC에게 확인받으라고 설명
 
                 }
                 else if (ScriptNum == 18)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-                    npc1.text = "중요한 건, 바로 기법을 쓰지 말고 그 주위 비슷한 곳에 기법을 먼저 써보는 거야. 이걸 우린 \"프리테스트\"라고 하지.";//현장 NPC에게 확인받으라고 설명
+                    npc1.text = "중요한 건,\n바로 기법을 쓰지 말고 그 주위 비슷한 곳에 기법을 먼저 써보는 거야.\n이걸 우린 \"프리테스트\"라고 하지.";//현장 NPC에게 확인받으라고 설명
 
                 }
                 else if (ScriptNum == 19)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-                    npc1.text = "바로 기법을 시도했다가 중요한 단서를 망쳐 '치명적인 실수'가 될 수 있으니, 미리 간단하게 테스트하는 거야.";//현장 NPC에게 확인받으라고 설명
+                    npc1.text = "바로 기법을 시도했다가 중요한 단서를 망쳐\n'치명적인 실수'가 될 수 있으니, 미리 간단하게 테스트하는 거야.";//현장 NPC에게 확인받으라고 설명
 
                 }
                 else if (ScriptNum == 20)
@@ -202,20 +202,20 @@ public Quaternion firstRot; //캔버스 처음 각도
                 else if (ScriptNum == 21)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-                    npc1.text = "두 번째로 중요한 건, 들고 갈 수 있는 증거물들은 현장에서 감식하지 않아.";//현장 NPC에게 확인받으라고 설명
+                    npc1.text = "두 번째로 중요한 건,\n들고 갈 수 있는 증거물들은 현장에서 감식하지 않아.";//현장 NPC에게 확인받으라고 설명
 
                 }
                 else if (ScriptNum == 22)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-                    npc1.text = "수집하기 어려운 것들은 현장에서 지문을 채취하고, 수집할 수 있는 증거물들은 경찰청 내 분석실로 가져가서 감식해야 해.";//현장 NPC에게 확인받으라고 설명
+                    npc1.text = "수집하기 어려운 것들은 현장에서 지문을 채취하고,\n수집할 수 있는 증거물들은 경찰청 내 분석실로 가져가서 감식해야 해.";//현장 NPC에게 확인받으라고 설명
 
                 }
 
                 else if (ScriptNum == 23) //0517 추가
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-                    npc1.text = "그러니까 지문이 묻어있을 것으로 보이는 증거물은 확인 후 사진 찍고 바로 수집해.\nGrab으로 잡고 Y버튼을 클릭하면 수집될 거야.";//현장 NPC에게 확인받으라고 설명
+                    npc1.text = "그러니까 지문이 묻어있을 것으로 보이는 증거물은\n확인 후 사진 찍고 바로 수집해.\nGrab으로 잡고 Y버튼을 클릭하면 수집될 거야.";//현장 NPC에게 확인받으라고 설명
 
                 }
 

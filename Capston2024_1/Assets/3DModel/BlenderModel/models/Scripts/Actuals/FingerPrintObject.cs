@@ -114,7 +114,7 @@ public class FingerPrintObject : MonoBehaviour
                     if (checkCamera.first_check==false)
                     {
                         //failed_Text = ErrorNum + ". " + "증거물 사진부터 찍어야죠! 기록하는 게 중요하단 거 잊지 마세요!\n" + failed_Text;
-                        failed_Text = ErrorNum + ". " + "증거물 사진부터 찍어야죠! 기록하는 게 중요하단 거 잊지 마세요!";
+                        failed_Text = ErrorNum + ". " + "증거물 사진부터 찍어야죠!\n기록하는 게 중요하단 거 잊지 마세요!";
                         ErrorNum++;
                         if (p_first_Failed == true || p_second_Failed == true)
                         {
@@ -126,7 +126,7 @@ public class FingerPrintObject : MonoBehaviour
                     {
 
 
-                        failed_Text += ErrorNum + ". " + "분말의 양이 너무 많아요! 너무 많이 묻히면 지문의 융선에 분말이 껴서 분석하기 힘들어요!";
+                        failed_Text += ErrorNum + ". " + "분말의 양이 너무 많아요!\n너무 많이 묻히면 지문의 융선에 분말이 껴서 분석하기 힘들어요!";
                         ErrorNum++;
                         if (p_second_Failed == true)
                         {
@@ -136,7 +136,7 @@ public class FingerPrintObject : MonoBehaviour
 
                     if (p_second_Failed == true)
                     {
-                        failed_Text += ErrorNum + ". " + "검체랑 비슷한 색을 쓰면 지문이 잘 안보여서 사진에 안 담겨요! 반대되는 색을 써야해요!";
+                        failed_Text += ErrorNum + ". " + "검체랑 비슷한 색을 쓰면 지문이 잘 안보여서 사진에 안 담겨요!\n반대되는 색을 써야해요!";
                         ErrorNum++;
                     }
                     failed.FailedPowder(failed_Text);

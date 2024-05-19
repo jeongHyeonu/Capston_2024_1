@@ -101,7 +101,7 @@ public class onTutorialNPC : MonoBehaviour
                 if (ScriptNum == 0)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-                    npc1.text = "안녕하세요. 이곳은 신입 과학수사요원을 교육하기 위한 장소입니다. \n당신은 지문 감식요원으로서 현장에서 잠재지문을 검출하는 업무를 배정받게 될 거예요.";
+                    npc1.text = "안녕하세요. 이곳은 신입 과학수사요원을 교육하기 위한 장소입니다.\n당신은 지문 감식요원으로서 현장에서 잠재지문을 검출하는 업무를\n배정받게 될 거예요.";
                 }
                 else if (ScriptNum == 1)
                 {
@@ -111,35 +111,35 @@ public class onTutorialNPC : MonoBehaviour
                 else if (ScriptNum == 2)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-                    npc1.text = "모든 사람은 각자 고유한 지문의 형태를 갖고 있어요.\n그래서 현장에 남겨진 지문은 범인을 정확하게 색출해낼 수 있는 아주 중요한 단서가 되죠.";
+                    npc1.text = "모든 사람은 각자 고유한 지문의 형태를 갖고 있어요.\n그래서 현장에 남겨진 지문은 범인을 정확하게 색출해낼 수 있는\n아주 중요한 단서가 되죠.";
                 }
                 else if (ScriptNum == 3)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-                    npc1.text = "특히 우리나라는 \"주민등록증\"을 국민 모두가 만들기 때문에 지문 감식이 아주 효과적이에요.";//현장 감식방법 설명
+                    npc1.text = "특히 우리나라는 \"주민등록증\"을 국민 모두가 만들기 때문에\n지문 감식이 아주 효과적이에요.";//현장 감식방법 설명
                 }
                 else if (ScriptNum == 4)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-                    npc1.text = "당신이 담당하게 될 \"잠재지문 현출\"이란, 눈으로 확인이 어려운 지문을 다양한 과학적 기법을 사용해서 현장에서 바로 검출하는 과정을 말해요.";//현장 NPC에게 확인받으라고 설명
+                    npc1.text = "당신이 담당하게 될 \"잠재지문 현출\"이란,\n눈으로 확인이 어려운 지문을 다양한 과학적 기법을 사용해서\n현장에서 바로 검출하는 과정을 말해요.";//현장 NPC에게 확인받으라고 설명
 
                 }
                 else if (ScriptNum == 5)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-                    npc1.text = "현장에서는 다양한 색과 종류의 분말을 사용하는 \"분말법\", 닌히드린 시약을 묻혀 화학반응으로 검출해 내는 \"닌히드린 용액법\"을 주로 사용해요.";//현장 NPC에게 확인받으라고 설명
+                    npc1.text = "현장에서는 다양한 색과 종류의 분말을 사용하는 \"분말법\",\n닌히드린 시약을 묻혀 화학반응으로 검출해 내는 \"닌히드린 용액법\"을\n주로 사용해요.";//현장 NPC에게 확인받으라고 설명
 
                 }
                 else if (ScriptNum == 6)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-                    npc1.text = "실제 현장으로 투입되기 전에 먼저 이곳에서 지문 감식 기법들을 배우고 연습해 보세요.";//현장 NPC에게 확인받으라고 설명
+                    npc1.text = "실제 현장으로 투입되기 전에 먼저\n이곳에서 지문 감식 기법들을 배우고 연습해 보세요.";//현장 NPC에게 확인받으라고 설명
 
                 }
                 else if (ScriptNum == 7)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-                    npc1.text = "왼쪽 구역에선 \"분말법\", 오른쪽 구역에선 \"닌히드린 용액법\"을 연습할 수 있어요.";//현장 NPC에게 확인받으라고 설명
+                    npc1.text = "왼쪽 구역에선 \"분말법\", 오른쪽 구역에선 \"닌히드린 용액법\"을\n연습할 수 있어요.";//현장 NPC에게 확인받으라고 설명
 
                 }
                 else if (ScriptNum == 8)
@@ -159,7 +159,7 @@ public class onTutorialNPC : MonoBehaviour
                 else if (ScriptNum == 10)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-                    npc1.text = "잘 연습해 보셨나요? 그럼 현장에 투입되기 전에 마지막으로 확인해 볼게요.";
+                    npc1.text = "잘 연습해 보셨나요?\n그럼 현장에 투입되기 전에 마지막으로 확인해 볼게요.";
 
                 }
 
@@ -173,7 +173,7 @@ public class onTutorialNPC : MonoBehaviour
                 else if (ScriptNum == 12)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-                    npc1.text = "\"1. 분말의 색상은 검체(지문이 묻어있는 증거물)와 같은 색상이어야 한다?\"";//현장 NPC에게 확인받으라고 설명
+                    npc1.text = "\"1. 분말의 색상은 검체(지문이 묻어있는 증거물)와\n같은 색상이어야 한다?\"";//현장 NPC에게 확인받으라고 설명
                     Quiz1_O.SetActive(true);
                     Quiz1_X.SetActive(true);
                     quiz_Check = false;
@@ -204,7 +204,7 @@ public class onTutorialNPC : MonoBehaviour
                 else if (ScriptNum == 16)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-                    npc1.text = "\"2. 닌히드린 용액으로 적시고 가만히 내버려두면 알아서 지문이 나온다?\"";//현장 NPC에게 확인받으라고 설명
+                    npc1.text = "\"2. 닌히드린 용액으로 적시고 가만히 내버려두면\n알아서 지문이 나온다?\"";//현장 NPC에게 확인받으라고 설명
                     Quiz4_O.SetActive(true);
                     Quiz4_X.SetActive(true);
                     quiz_Check = false;
@@ -212,7 +212,7 @@ public class onTutorialNPC : MonoBehaviour
                 else if (ScriptNum == 17)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-                    npc1.text = "잘 교육이 된 것 같네요!\n그럼 이제 실제 현장으로 출동해 봅시다. 지문 감식요원으로서의 첫 활약을 기대합니다!";//현장 NPC에게 확인받으라고 설명
+                    npc1.text = "잘 교육이 된 것 같네요!\n그럼 이제 실제 현장으로 출동해 봅시다.\n지문 감식요원으로서의 첫 활약을 기대합니다!";//현장 NPC에게 확인받으라고 설명
 
                     nextScene.SetActive(true);
                 }
@@ -231,7 +231,7 @@ public class onTutorialNPC : MonoBehaviour
     public void pressQuiz1_O() {
 
         Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-        npc1.text = "틀렸어요! 효과적인 검출을 위해선 분말의 색상은 검체의 색과 반대되는 게 좋아요!\n\"보색 관계(반대되는 색)\"를 잘 생각해보는 게 도움이 될거예요.";
+        npc1.text = "틀렸어요!\n효과적인 검출을 위해선 분말의 색상은 검체의 색과 반대되는 게 좋아요!\n\"보색 관계(반대되는 색)\"를 잘 생각해보는 게 도움이 될거예요.";
         Quiz1_O.SetActive(false);
         Quiz1_X.SetActive(false);
 
@@ -263,7 +263,7 @@ public class onTutorialNPC : MonoBehaviour
     public void pressQuiz2_X()
     {
         Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-        npc1.text = "틀렸어요! 너무 많이 묻히게 되면 융선(지문의 무늬를 구성하는 선)에 가루가 껴서 누구의 지문인지 식별하기 어려워져요!\n한 번 정도 털어내는 게 적당합니다.";
+        npc1.text = "틀렸어요!\n너무 많이 묻히게 되면 융선(지문의 무늬를 구성하는 선)에 가루가 껴서\n누구의 지문인지 식별하기 어려워져요! 한 번 정도 털어내는 게 적당합니다.";
         Quiz2_O.SetActive(false);
         Quiz2_X.SetActive(false);
 
@@ -285,7 +285,7 @@ public class onTutorialNPC : MonoBehaviour
     public void pressQuiz3_X()
     {
         Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-        npc1.text = "틀렸어요! 닌히드린 용액법은 주로 흡수가 잘 되는 종이류에 사용해요!\nA4용지, 영수증, 종이봉투 등에 사용되죠. 그러나 명함처럼 코팅된 종이에는 적합하지 않아요.";
+        npc1.text = "틀렸어요!\n닌히드린 용액법은 주로 흡수가 잘 되는 종이류에 사용해요!\nA4용지, 영수증, 종이봉투 등에 사용되죠. 그러나 명함처럼 코팅된 종이에는 적합하지 않아요.";
         Quiz3_O.SetActive(false);
         Quiz3_X.SetActive(false);
 
@@ -297,7 +297,7 @@ public class onTutorialNPC : MonoBehaviour
     {
 
         Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-        npc1.text = "틀렸어요! 물론 가만히 내버려두면 시간이 오래 걸리고 지문이 또렷하게 검출되지 않아요!\n그래서 드라이기, 다리미, 오븐 등과 같은 빠르고 확실한 가열 방법을 사용해요.";
+        npc1.text = "틀렸어요!\n가만히 내버려두면 시간이 오래 걸리고 지문이 또렷하게 검출되지 않아요!\n그래서 드라이기, 다리미, 오븐 등과 같은 빠르고 확실한 가열 방법을 사용해요.";
         Quiz4_O.SetActive(false);
         Quiz4_X.SetActive(false);
 
