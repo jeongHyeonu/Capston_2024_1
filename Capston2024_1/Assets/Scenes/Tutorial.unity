@@ -31149,6 +31149,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1550535207}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 95c52ceb0f4ea56478c100c9200a466a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1550535213}
   m_SourcePrefab: {fileID: 100100000, guid: 95c52ceb0f4ea56478c100c9200a466a, type: 3}
 --- !u!1 &746942595
 GameObject:
@@ -62791,6 +62795,19 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 746314787}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1550535213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1550535206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba44d4c976cce5c4faf831203f072b17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fingerprintobject: {fileID: 0}
 --- !u!1 &1551663389
 GameObject:
   m_ObjectHideFlags: 0
