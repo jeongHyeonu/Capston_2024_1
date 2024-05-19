@@ -1,3 +1,4 @@
+using Oculus.Interaction;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -57,9 +58,13 @@ public class TutorialFlash : MonoBehaviour
             hologramLight.SetActive(false);
             tutoBoard1.SetActive(true);
             cameraHologram.SetActive(true);
+
+            tutoCam.GetComponent<GrabInteractable>().enabled = true;
+            tutoCam.GetComponent<Grabbable>().enabled = true;
+            tutoCam.GetComponent<TutorialCamera>().enabled = true;
         }
-        
-        if(isFirstStep) StartCoroutine(FirstCheck());
+
+        if (isFirstStep) StartCoroutine(FirstCheck());
     }
 
     IEnumerator SecondCheck()

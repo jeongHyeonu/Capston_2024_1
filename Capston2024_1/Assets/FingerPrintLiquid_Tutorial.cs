@@ -13,7 +13,7 @@ public class FingerPrintLiquid_Tutorial : MonoBehaviour
     [SerializeField] TutorialCamera_Liquid tutoCam;
     [SerializeField] GameObject paper;
 
-    [SerializeField] public int maxDryCnt = 20;
+    [SerializeField] public int maxDryCnt = 10;
     int dryCnt = 0;
 
     static bool isTutorialUX = false;
@@ -23,7 +23,7 @@ public class FingerPrintLiquid_Tutorial : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Paper"))
         {
-            SoundManager.Instance.PlaySFX(SoundManager.SFX_list.WOOSH_1);
+            //SoundManager.Instance.PlaySFX(SoundManager.SFX_list.WOOSH_1);
             paperTriggered = true; // Paper와의 충돌이 발생했음을 표시
         }
         else if (other.gameObject.layer == LayerMask.NameToLayer("Hair"))
@@ -51,7 +51,7 @@ public class FingerPrintLiquid_Tutorial : MonoBehaviour
     // 페이드 인 효과를 적용하는 코루틴 메서드
     private IEnumerator TriggerEffect()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(maxDryCnt);
         if (dryCnt < maxDryCnt) dryCnt++;
         else
         {

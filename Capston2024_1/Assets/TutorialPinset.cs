@@ -17,10 +17,34 @@ public class TutorialPinset : MonoBehaviour
     [SerializeField] GameObject receiptPaperTarget;
     [SerializeField] GameObject paper;
 
+    bool isGrabAble = false;
+    bool isGrabbing = false;
+
     private void Start() // 원래 물체 존재했던 위치 기억
     {
         originPos = transform.position;
         originRot = transform.rotation;
+    }
+
+    void Update()
+    {
+
+        if (OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger) && isGrabAble == true)
+        {
+            GrabOnHand();
+        }
+        if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger) && isGrabAble == true)
+        {
+            GrabOnHand();
+        }
+        if (OVRInput.GetUp(OVRInput.Button.SecondaryIndexTrigger) && isGrabbing == true)
+        {
+            PutDownPaper();
+        }
+        if (OVRInput.GetUp(OVRInput.Button.PrimaryIndexTrigger) && isGrabbing == true)
+        {
+            PutDownPaper();
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -28,10 +52,7 @@ public class TutorialPinset : MonoBehaviour
         if (other.gameObject == receipt)
         {
             SoundManager.Instance.PlaySFX(SoundManager.SFX_list.WOOSH_3);
-            t_ux.TutorialStep(1);
-            receipt.transform.SetParent(transform);
-            receipt.transform.localPosition = new Vector3(0, 0, -0.1f);
-            receipt.transform.localRotation = Quaternion.Euler(new Vector3(0,0,-90f));
+            isGrabAble = true;
         }
         if (other.gameObject == liquid)
         {
@@ -51,6 +72,31 @@ public class TutorialPinset : MonoBehaviour
             paper.transform.DOMove(receiptPaperTarget.transform.position,2f).SetDelay(1f);
             t_ux.TutorialStep(3);
         }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject == receipt)
+        {
+            isGrabAble = false;
+        }
+    }
+
+    private void GrabOnHand() 
+    {
+        t_ux.TutorialStep(1);
+        receipt.transform.SetParent(transform);
+        receipt.transform.localPosition = new Vector3(0, 0, -0.1f);
+        receipt.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, -90f));
+        isGrabbing = true;
+        SoundManager.Instance.PlaySFX(SoundManager.SFX_list.PINSET_PICK);
+    }
+
+    private void PutDownPaper()
+    {
+        receipt.transform.SetParent(null);
+        isGrabbing = false;
+        SoundManager.Instance.PlaySFX(SoundManager.SFX_list.FLAP_1);
     }
 
     // 손 놓으면 원래 위치로 이동
