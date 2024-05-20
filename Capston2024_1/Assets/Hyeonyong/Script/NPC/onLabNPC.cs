@@ -91,13 +91,18 @@ public Quaternion firstRot; //캔버스 처음 각도
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
                     npc1.text = "아직 할 일이 남았어!";//다 찾았어? 더 안찾아봐도 됨?
+
+
+                    SoundManager.Instance.PlayTTS(SoundManager.TTS_list.LAB_DESCRIPTION_1);
                 }
                 //else if (ScriptNum == 1 && onsubmit == false)
                 else if (ScriptNum == 1)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
                     npc1.text = "아까 현장에서 가져온 증거물 있지?\n그 증거물도 지문 검출을 해봐야 해!";//다 찾았어? 더 안찾아봐도 됨?
-                    //Canvas.transform.position = Canvas.transform.position + new Vector3(100f, 0f, 0f);
+                                                                            //Canvas.transform.position = Canvas.transform.position + new Vector3(100f, 0f, 0f);
+
+                    SoundManager.Instance.PlayTTS(SoundManager.TTS_list.LAB_DESCRIPTION_2);
                 }
 
 
@@ -106,6 +111,8 @@ public Quaternion firstRot; //캔버스 처음 각도
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
                     npc1.text = "여긴 '증거 분석실'이라는 곳인데\n현장에서 수집해 온 증거물들을 분석하고 감식하는 곳이야.\n현장에서 못하는 다양한 기법을 사용할 수 있지.";//다 찾았어? 더 안찾아봐도 됨?
+                    
+                    SoundManager.Instance.PlayTTS(SoundManager.TTS_list.LAB_DESCRIPTION_3);
                 }
 
                 //else if (ScriptNum == 3 && onsubmit == false)
@@ -113,12 +120,16 @@ public Quaternion firstRot; //캔버스 처음 각도
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
                     npc1.text = "오른쪽 실험대에 자네가 수집해 온 증거물들 배치해뒀으니까,\n가져가서 감식 진행해.";//다 찾았어? 더 안찾아봐도 됨?
+
+                    SoundManager.Instance.PlayTTS(SoundManager.TTS_list.LAB_DESCRIPTION_4);
                 }
 
                 else if (ScriptNum == 4)//0517 추가
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
                     npc1.text = "현장에서 처럼 마스크랑 장갑 착용하는 거 잊지말고!\n손을 가져다 대면 착용될 거야.";//다 찾았어? 더 안찾아봐도 됨?
+
+                    SoundManager.Instance.PlayTTS(SoundManager.TTS_list.LAB_DESCRIPTION_5);
                 }
 
                 //else if (ScriptNum == 4 && onsubmit == false)
@@ -126,7 +137,9 @@ public Quaternion firstRot; //캔버스 처음 각도
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
                     npc1.text = "종이류는 최대한 핀셋으로 잡아야 하는 거 잊지 마!";//다 찾았어? 더 안찾아봐도 됨?
-                    //버튼이 생성되는 코드, 평가표가 나타나는 코드
+                                                               //버튼이 생성되는 코드, 평가표가 나타나는 코드
+
+                    SoundManager.Instance.PlayTTS(SoundManager.TTS_list.LAB_DESCRIPTION_6);
                 }
 
 
@@ -140,6 +153,8 @@ public Quaternion firstRot; //캔버스 처음 각도
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
                     npc1.text = "다 끝났으면 증거물을 다시 잘 밀봉해서\n오른쪽 보관 박스에 확인하고 넣고, 지문 전사지도 넣어.";//다 찾았어? 더 안찾아봐도 됨?
+
+                    SoundManager.Instance.PlayTTS(SoundManager.TTS_list.LAB_DESCRIPTION_7);
                 }
 
                 else if (ScriptNum == 8)
@@ -148,6 +163,8 @@ public Quaternion firstRot; //캔버스 처음 각도
                     npc1.text = "넣고 나면 위에 뜬 버튼을 클릭하면 될거야!\n고생 많았어!";//다 찾았어? 더 안찾아봐도 됨?
                     //결과 확인버튼 활성화
                     CheckButton.SetActive(true);
+
+                    SoundManager.Instance.PlayTTS(SoundManager.TTS_list.LAB_DESCRIPTION_8);
                 }
 
                 else if (ScriptNum == 9)

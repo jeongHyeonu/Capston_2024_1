@@ -93,6 +93,7 @@ public Quaternion firstRot; //캔버스 처음 각도
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
                     npc1.text = "지문 감식이 다 끝나셨나요?\n더 안 찾아보셔도 되겠어요?";//다 찾았어? 더 안찾아봐도 됨?
+                    SoundManager.Instance.PlayTTS(SoundManager.TTS_list.CRIME_RECHECK);
                 }
                 //else if (ScriptNum == 1 && onsubmit == false)
                 else if (ScriptNum == 1)
@@ -106,6 +107,7 @@ public Quaternion firstRot; //캔버스 처음 각도
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
                     npc1.text = "전부 수사하셨나요?\n알겠습니다.";//다 찾았어? 더 안찾아봐도 됨?
+                    SoundManager.Instance.PlayTTS(SoundManager.TTS_list.CRIME_RATE1);
                 }
 
                 //else if (ScriptNum == 3 && onsubmit == false)
@@ -113,6 +115,8 @@ public Quaternion firstRot; //캔버스 처음 각도
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
                     npc1.text = "수집한 증거물들과 지문을 채취한 전사지들은\n제 오른쪽 박스에 잘 분류해서 넣어주세요.";
+                    SoundManager.Instance.PlayTTS(SoundManager.TTS_list.CRIME_RATE_2);
+
                 }
 
                 //else if (ScriptNum == 4 && onsubmit == false)
@@ -121,6 +125,7 @@ public Quaternion firstRot; //캔버스 처음 각도
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
                     npc1.text = "제출이 끝나면 평가해 드릴 거에요.\n평가표 확인이 끝나면 버튼을 눌러주세요.";//다 찾았어? 더 안찾아봐도 됨?
                     //버튼이 생성되는 코드, 평가표가 나타나는 코드
+                    SoundManager.Instance.PlayTTS(SoundManager.TTS_list.CRIME_RATE_3);
                 }
                 else if (ScriptNum == 5)
                 {
