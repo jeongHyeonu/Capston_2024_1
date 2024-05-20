@@ -82,7 +82,9 @@ public class npcText : MonoBehaviour
         Debug.Log("2번 카메라 실패");
         onFailed = true;
         Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-        npc.text = "지문이 검출된 결과도 사진을 찍어야죠!\n현출된 결과는 중요한 기록이에요!";
+        //npc.text = "지문이 검출된 결과도 사진을 찍어야죠!\n현출된 결과는 중요한 기록이에요!";
+        npc.text = "지문이 검출된 결과도 사진을 찍어야죠!\n현출된 결과는 법적 효력이 있는 기록이에요!";
+
 
         SoundManager.Instance.PlayTTS(SoundManager.TTS_list.CRIME_PRE_4);
 

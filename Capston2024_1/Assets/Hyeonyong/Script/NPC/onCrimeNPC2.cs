@@ -199,4 +199,22 @@ public Quaternion firstRot; //캔버스 처음 각도
         SceneManager.LoadScene("Lab");
     }
 
+
+    public void SceneFade_Test()
+    {
+        Debug.Log("씬 이동 시작");
+        OFade = CenterEyeObj.transform.GetComponent<OVRScreenFade>();
+        StartCoroutine(SceneFadeCoroutine_Test());
+    }
+    IEnumerator SceneFadeCoroutine_Test()
+    {
+        OFade.FadeOut();
+
+        yield return new WaitForSeconds(OFade.fadeTime);
+
+        //SceneManager.LoadScene("Lab_Hyeonyong");
+        SceneManager.LoadScene("Lab_Camera");
+    }
+
+
 }
