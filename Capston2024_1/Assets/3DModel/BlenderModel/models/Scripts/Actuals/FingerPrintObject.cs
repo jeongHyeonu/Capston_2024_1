@@ -116,7 +116,7 @@ public class FingerPrintObject : MonoBehaviour
                         //failed_Text = ErrorNum + ". " + "증거물 사진부터 찍어야죠! 기록하는 게 중요하단 거 잊지 마세요!\n" + failed_Text;
                         failed_Text = ErrorNum + ". " + "증거물 사진부터 찍어야죠!\n기록하는 게 중요하단 거 잊지 마세요!";
 
-                        SoundManager.Instance.PlayTTS(SoundManager.TTS_list.CRIME_PRE1);
+                        //SoundManager.Instance.PlayTTS(SoundManager.TTS_list.CRIME_PRE1);
 
                         ErrorNum++;
                         if (p_first_Failed == true || p_second_Failed == true)
@@ -131,7 +131,7 @@ public class FingerPrintObject : MonoBehaviour
 
                         failed_Text += ErrorNum + ". " + "분말의 양이 너무 많아요!\n너무 많이 묻히면 지문의 융선에 분말이 껴서 분석하기 힘들어요!";
 
-                        SoundManager.Instance.PlayTTS(SoundManager.TTS_list.CRIME_PRE_2);
+                        //SoundManager.Instance.PlayTTS(SoundManager.TTS_list.CRIME_PRE_2);
                         ErrorNum++;
                         if (p_second_Failed == true)
                         {
@@ -143,13 +143,15 @@ public class FingerPrintObject : MonoBehaviour
                     {
                         failed_Text += ErrorNum + ". " + "검체랑 비슷한 색을 쓰면 지문이 잘 안보여서 사진에 안 담겨요!\n반대되는 색을 써야해요!";
 
-                        SoundManager.Instance.PlayTTS(SoundManager.TTS_list.CRIME_PRE_3);
+                        //SoundManager.Instance.PlayTTS(SoundManager.TTS_list.CRIME_PRE_3);
 
 
                         ErrorNum++;
                     }
                     failed.FailedPowder(failed_Text);
                 }
+
+                StartCoroutine(PreTestTTS());
             }
             
             ///////////////////////////////////////////////////////////
@@ -178,6 +180,37 @@ public class FingerPrintObject : MonoBehaviour
             rulerAndCard?.SetActive(true); // 지문 보이면 자/카드 등장
 
             SoundManager.Instance.PlaySFX(SoundManager.SFX_list.FLAP_3); // 사운드
+
+
         }
+    }
+
+
+
+
+    IEnumerator PreTestTTS()
+    {
+
+        Debug.Log("프리테스트0");
+        if (checkCamera.first_check == false)
+        {
+            Debug.Log("프리테스트1");
+            SoundManager.Instance.PlayTTS(SoundManager.TTS_list.CRIME_PRE1);
+            yield return new WaitForSeconds(5f);
+        }
+
+        if (p_first_Failed == true)
+        {
+            Debug.Log("프리테스트2");
+            SoundManager.Instance.PlayTTS(SoundManager.TTS_list.CRIME_PRE_2);
+            yield return new WaitForSeconds(6f);
+        }
+
+        if (p_second_Failed == true)
+        {
+            Debug.Log("프리테스트3");
+            SoundManager.Instance.PlayTTS(SoundManager.TTS_list.CRIME_PRE_3);
+        }
+
     }
 }
