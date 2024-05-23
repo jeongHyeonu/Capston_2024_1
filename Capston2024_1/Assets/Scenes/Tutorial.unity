@@ -2891,7 +2891,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -56.000008}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 140, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &94169412
 MonoBehaviour:
@@ -57702,7 +57702,7 @@ PrefabInstance:
         type: 3}
       propertyPath: TTS_datas.Array.data[20].audio
       value: 
-      objectReference: {fileID: 8300000, guid: 9566a73f2df5df643907d7915a0d3bd4, type: 3}
+      objectReference: {fileID: 8300000, guid: 7212e0fbf9ea55146bddf7b7fc951dd6, type: 3}
     - target: {fileID: 8455786948003233208, guid: ce816f2e6abb0504092c23ed9b970dfd,
         type: 3}
       propertyPath: _interactableFilters.Array.size
@@ -66308,7 +66308,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uD604\uC7A5\uC73C\uB85C \uCD9C\uB3D9!"
+  m_text: "\uC2DC\uC791 \uD654\uBA74"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 551f6ec843e28154a8d3a5f3348dd392, type: 2}
   m_sharedMaterial: {fileID: -6999102197941046165, guid: 551f6ec843e28154a8d3a5f3348dd392,

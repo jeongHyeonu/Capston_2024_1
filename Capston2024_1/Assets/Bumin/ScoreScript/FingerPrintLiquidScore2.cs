@@ -23,6 +23,7 @@ public class FingerPrintLiquidScore2 : MonoBehaviour
             LiquidScoreBoard liquidScoreBoard = FindObjectOfType<LiquidScoreBoard>();
             if (liquidScoreBoard != null)
             {
+                if (liquidScoreBoard.score11.text != "15") { SoundManager.Instance.PlaySFX(SoundManager.SFX_list.LIQUID_2); }; //»ç¿îµå
                 liquidScoreBoard.score11.text = "15";
             }
         }

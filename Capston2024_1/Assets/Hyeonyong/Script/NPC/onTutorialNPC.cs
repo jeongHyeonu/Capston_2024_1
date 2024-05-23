@@ -10,7 +10,7 @@ public class onTutorialNPC : MonoBehaviour
     public string playerTag = "Player";
     private bool npc = false; //npc와 충돌했는지
     public TextMeshProUGUI npc1; //npc1에 대한 텍스트
-    private static int ScriptNum = 0; //대화 순서 번호
+    private int ScriptNum = 0; //대화 순서 번호
 
     public Transform TextPos; //텍스트 위치
     public Transform Canvas; //텍스트 캔버스
@@ -220,7 +220,7 @@ public class onTutorialNPC : MonoBehaviour
                 else if (ScriptNum == 17)
                 {
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-                    npc1.text = "잘 교육이 된 것 같네요!\n그럼 이제 실제 현장으로 출동해 봅시다.\n지문 감식요원으로서의 첫 활약을 기대합니다!";//현장 NPC에게 확인받으라고 설명
+                    npc1.text = "잘 교육이 된 것 같네요!\n지문 감식요원으로서의 첫 활약을 기대합니다!";//현장 NPC에게 확인받으라고 설명
                     SoundManager.Instance.PlayTTS(SoundManager.TTS_list.TUTORIAL_WATER_QUIZ_4);
                     nextScene.SetActive(true);
                 }
@@ -342,7 +342,8 @@ public class onTutorialNPC : MonoBehaviour
 
         yield return new WaitForSeconds(OFade.fadeTime);
 
-        SceneManager.LoadScene("Crime(new)");
+        //SceneManager.LoadScene("Crime(new)");
+        SceneManager.LoadScene("Opening");
     }
 
 
