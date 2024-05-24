@@ -1,3 +1,5 @@
+<p align="center"><img src="https://github.com/minalee0628/Capston2024_1/assets/58770233/229f12d4-16a6-4d2f-8f72-d2e03cbd7c1b" width ="100" height ="100"></p>
+
 # Project : 지문을 찾아서
 
 ### :page_with_curl:프로젝트 소개
@@ -16,11 +18,11 @@
 
 
 
-☑️ 미드 < CSI >, < 도시경찰 : KCSI > 와 같은 영상에서 본 과학수사를 체험해보고 싶은 사람
+> 미드 < CSI:과학수사대 >, < 도시경찰 : KCSI > 와 같은 영상에서 본 과학수사를 체험해보고 싶은 사람
 
-☑️ 과학수사에 관심이 있는 사람
+> 과학수사에 관심이 있는 사람
 
-☑️ 실제 현장 수사를 체험해보고 싶은 사람
+> 실제 현장 수사를 체험해보고 싶은 사람
 
 
 
@@ -28,7 +30,7 @@
 
 ---
 
-### :mag:근데 잠재지문이 뭐야?
+### 잠재지문이란?
 
 
 
@@ -44,13 +46,22 @@
 
 ### :clapper:소개 영상
 
-![VideoTilteImg](https://github.com/minalee0628/Capston2024_1/assets/58770233/7c212142-959a-4b0b-97f9-a45790921d69)
+<p align="center"><img src= "https://github.com/minalee0628/Capston2024_1/assets/58770233/7c212142-959a-4b0b-97f9-a45790921d69" width="600">(https://youtu.be/_FyVNA-6RXU)</p>
+
+> 이미지 클릭 시 유튜브 주소로 이동
+---
+
+
+### 기술 구조
+
+<img src= "https://github.com/minalee0628/Capston2024_1/assets/58770233/5bf52981-24f5-44ff-b8e1-ac98c6ff5b2b" width="800">
 
 ---
 ### 지원하는 플랫폼
 
-#### VR
-메타 퀘스트2 사용을 권장합니다.
+- VR
+
+> 메타 퀘스트2 사용을 권장합니다.
 
 
 ---
@@ -61,18 +72,54 @@
 <table>
   <tbody>
     <tr>
-      <td align="center"><a href="https://github.com/minalee0628"><img src="![LeeMinaProfile](https://github.com/minalee0628/Capston2024_1/assets/58770233/db24e2fc-0b91-429b-b808-e679ac11b0e2)" width="100px;" alt=""/><br /><sub><b> 이미나(팀장) </b></sub></a><br /></td>
-      <td align="center"><a href="https://github.com/kimbumin"><img src="![kimbuminProfile](https://github.com/minalee0628/Capston2024_1/assets/58770233/55510dbf-8c82-4356-bcfc-288a3442d1a4)" width="100px;" alt=""/><br /><sub><b> 김부민 </b></sub></a><br /></td>
-      <td align="center"><a href="https://github.com/Yanghyeonyong"><img src="![YanghyeonyongProfile](https://github.com/minalee0628/Capston2024_1/assets/58770233/17a2cda6-b9e1-4b60-8ae4-50f328d2b4e9)" width="100px;" alt=""/><br /><sub><b> 양현용 </b></sub></a><br /></td>
-      <td align="center"><a href="https://github.com/jeongHyeonu"><img src="![jeongHyeonuProfile](https://github.com/minalee0628/Capston2024_1/assets/58770233/a8dabd7a-1e0a-4715-b4fe-f50c54f56393)" width="100px;" alt=""/><br /><sub><b> 정현우 </b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/minalee0628"><img src="https://github.com/minalee0628/Capston2024_1/assets/58770233/db24e2fc-0b91-429b-b808-e679ac11b0e2" width="100" height="100"/><br /><sub><b> 이미나(팀장) </b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/kimbumin"><img src="https://github.com/minalee0628/Capston2024_1/assets/58770233/55510dbf-8c82-4356-bcfc-288a3442d1a4" width="100" height="100"/><br /><sub><b> 김부민 </b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/Yanghyeonyong"><img src="https://github.com/minalee0628/Capston2024_1/assets/58770233/17a2cda6-b9e1-4b60-8ae4-50f328d2b4e9" width="100" height="100"/><br /><sub><b> 양현용 </b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/jeongHyeonu"><img src="https://github.com/minalee0628/Capston2024_1/assets/58770233/a8dabd7a-1e0a-4715-b4fe-f50c54f56393" width="100" height="100"/><br /><sub><b> 정현우 </b></sub></a><br /></td>
      <tr/>
   </tbody>
 </table>
 
 
 
-
-
-
 ---
 
+#### 에셋 출처
+
+#### 에셋 출처
+
+- 3D MODEL
+
+  -  Crime Scene 맵
+
+    > 
+
+  - Lab Scene 맵
+
+    > 
+
+  - Tutorial Scene 맵
+
+    >  
+
+  - 감식 도구
+
+    > 
+
+  - 증거물
+
+    > 
+
+- 폰트
+
+  - **나눔바른고딕**
+
+    > 이 프로젝트에는 네이버에서 제공한 나눔바른고딕 글꼴이 적용되어 있습니다.
+
+- 오디오
+
+  - **네이버 클로바 더빙**
+
+    > 이 프로젝트에는 클로바더빙(CLOVA Dubbing)의 AI 보이스가 사용되었습니다.
+    >
+    > 바로 가기 URL: [https://clovadubbing.naver.com](
