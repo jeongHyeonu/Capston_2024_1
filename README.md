@@ -2,7 +2,7 @@
 
 # Project : 지문을 찾아서
 
-### :page_with_curl:프로젝트 소개
+### 프로젝트 소개
 
 ---
 
@@ -44,9 +44,9 @@
 
 ---
 
-### :clapper:소개 영상
+### 소개 영상
 
-<p align="center"><img src= "https://github.com/minalee0628/Capston2024_1/assets/58770233/7c212142-959a-4b0b-97f9-a45790921d69" width="600">(https://youtu.be/_FyVNA-6RXU)</p>
+[![VideoTilteImg](https://github.com/minalee0628/Capston2024_1/assets/58770233/8d492032-ab83-4adb-ba5c-959d6cfa475c)](https://youtu.be/_FyVNA-6RXU)
 
 > 이미지 클릭 시 유튜브 주소로 이동
 ---
@@ -86,8 +86,6 @@
 
 #### 에셋 출처
 
-#### 에셋 출처
-
 - 3D MODEL
 
   -  Crime Scene 맵
@@ -121,5 +119,8 @@
   - **네이버 클로바 더빙**
 
     > 이 프로젝트에는 클로바더빙(CLOVA Dubbing)의 AI 보이스가 사용되었습니다.
-    >
-    > 바로 가기 URL: [https://clovadubbing.naver.com](
+    > 바로 가기 URL: [https://clovadubbing.naver.com]
+    
+- 이미지
+   - **Freepik**
+     > 이 프로젝트에는 Freepik의 무료 이미지가 사용되었습니다.
