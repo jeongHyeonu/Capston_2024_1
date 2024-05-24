@@ -48,7 +48,7 @@
 
 ### 소개 영상
 
-[![VideoTilteImg](https://github.com/minalee0628/Capston2024_1/assets/58770233/8d492032-ab83-4adb-ba5c-959d6cfa475c)](https://youtu.be/_FyVNA-6RXU)
+[![VideoTilteImg](https://github.com/minalee0628/Capston2024_1/assets/58770233/8d492032-ab83-4adb-ba5c-959d6cfa475c)](https://youtu.be/5Tv8ZVnrYd0)
 
 > 이미지 클릭 시 유튜브 주소로 이동
 ---
