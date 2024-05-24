@@ -44,7 +44,7 @@
 
 ### :clapper:소개 영상
 
-
+![VideoTilteImg](https://github.com/minalee0628/Capston2024_1/assets/58770233/7c212142-959a-4b0b-97f9-a45790921d69)
 
 ---
 ### 지원하는 플랫폼
@@ -61,10 +61,10 @@
 <table>
   <tbody>
     <tr>
-      <td align="center"><a href="https://github.com/minalee0628"><img src="" width="100px;" alt=""/><br /><sub><b> 이미나(팀장) </b></sub></a><br /></td>
-      <td align="center"><a href="https://github.com/kimbumin"><img src="" width="100px;" alt=""/><br /><sub><b> 김부민 </b></sub></a><br /></td>
-      <td align="center"><a href="https://github.com/Yanghyeonyong"><img src="" width="100px;" alt=""/><br /><sub><b> 양현용 </b></sub></a><br /></td>
-      <td align="center"><a href="https://github.com/jeongHyeonu"><img src="" width="100px;" alt=""/><br /><sub><b> 정현우 </b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/minalee0628"><img src="![LeeMinaProfile](https://github.com/minalee0628/Capston2024_1/assets/58770233/db24e2fc-0b91-429b-b808-e679ac11b0e2)" width="100px;" alt=""/><br /><sub><b> 이미나(팀장) </b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/kimbumin"><img src="![kimbuminProfile](https://github.com/minalee0628/Capston2024_1/assets/58770233/55510dbf-8c82-4356-bcfc-288a3442d1a4)" width="100px;" alt=""/><br /><sub><b> 김부민 </b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/Yanghyeonyong"><img src="![YanghyeonyongProfile](https://github.com/minalee0628/Capston2024_1/assets/58770233/17a2cda6-b9e1-4b60-8ae4-50f328d2b4e9)" width="100px;" alt=""/><br /><sub><b> 양현용 </b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/jeongHyeonu"><img src="![jeongHyeonuProfile](https://github.com/minalee0628/Capston2024_1/assets/58770233/a8dabd7a-1e0a-4715-b4fe-f50c54f56393)" width="100px;" alt=""/><br /><sub><b> 정현우 </b></sub></a><br /></td>
      <tr/>
   </tbody>
 </table>
