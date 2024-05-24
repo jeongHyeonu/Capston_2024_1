@@ -47,18 +47,29 @@
 
 
 ---
+### 지원하는 플랫폼
+
+#### VR
+메타 퀘스트2 사용을 권장합니다.
+
+
+---
 ### Team 소개
+
+
 
 <table>
   <tbody>
     <tr>
-      <td align="center"><a href=""><img src="width="100px;" alt="https://github.com/minalee0628"/><br /><sub><b> 이미나(팀장) </b></sub></a><br /></td>
-      <td align="center"><a href=""><img src="" width="100px;" alt="https://github.com/kimbumin"/><br /><sub><b> 김부민 </b></sub></a><br /></td>
-      <td align="center"><a href=""><img src="" width="100px;" alt="https://github.com/Yanghyeonyong"/><br /><sub><b> 양현용 </b></sub></a><br /></td>
-      <td align="center"><a href=""><img src="" width="100px;" alt="https://github.com/jeongHyeonu"/><br /><sub><b> 정현우 </b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/minalee0628"><img src="" width="100px;" alt=""/><br /><sub><b> 이미나(팀장) </b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/kimbumin"><img src="" width="100px;" alt=""/><br /><sub><b> 김부민 </b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/Yanghyeonyong"><img src="" width="100px;" alt=""/><br /><sub><b> 양현용 </b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/jeongHyeonu"><img src="" width="100px;" alt=""/><br /><sub><b> 정현우 </b></sub></a><br /></td>
      <tr/>
   </tbody>
 </table>
+
+
 
 
 
