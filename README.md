@@ -124,3 +124,7 @@
 - 이미지
    - **Freepik**
      > 이 프로젝트에는 Freepik의 무료 이미지가 사용되었습니다.
+     > <a href="https://kr.freepik.com/free-vector/medical-bottles-elements-collection-medical-bottles_3791023.htm#fromView=search&page=3&position=22&uuid=de8af3ca-2017-40f3-aa44-6d650f59712a">작가 macrovector 출처 Freepik</a>
+     > <a href="https://kr.freepik.com/free-photo/beautiful-landscape-pattaya-city-chonburi_6143736.htm">작가 lifeforstock 출처 Freepik</a>
+
+
