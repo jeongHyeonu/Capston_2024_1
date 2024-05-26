@@ -853,7 +853,8 @@ MonoBehaviour:
   m_text: "<size=170>CREDIT</size>\r\n|\uAC1C\uBC1C\uC790|\r\n\uD55C\uC131\uB300\uD559\uAD50
     Trace\uD300 \r\n\uC774\uBBF8\uB098\r\n\uAE40\uBD80\uBBFC\r\n\uC591\uD604\uC6A9\r\n\uC815\uD604\uC6B0\r\n\r\n\r\n\r\n|\uC624\uB514\uC624|\r\n\uC74C\uC131\t\t\uB124\uC774\uBC84
     \uD074\uB85C\uBC14\uB354\uBE59\r\n\uD6A8\uACFC\uC74C\t  Unity Asset Store\r\n\r\n\r\n\r\n|\uCD9C\uCC98|\r\n\uC774\uBBF8\uC9C0    
-    \t Designed by Freepik\r\n\uD3F0\uD2B8      \uB124\uC774\uBC84 \uAE00\uAF34(\uB098\uB214
+    \t Designed by Freepik\r\n\t\t\uC791\uAC00 macrovector \uCD9C\uCC98 Freepik\n\t\t\uC791\uAC00
+    lifeforstock \uCD9C\uCC98 Freepik\n\uD3F0\uD2B8      \uB124\uC774\uBC84 \uAE00\uAF34(\uB098\uB214
     \uACE0\uB515 \uAE00\uAF34)\n3D Model\t\t Unity Asset Store"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 551f6ec843e28154a8d3a5f3348dd392, type: 2}
