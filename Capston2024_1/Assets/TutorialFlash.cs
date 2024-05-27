@@ -31,10 +31,9 @@ public class TutorialFlash : MonoBehaviour
     public void GrabFlashLight()
     {
         flashLight.SetActive(true);
-        hologramLight.SetActive(true);
 
-        if (isFirstStep) { StartCoroutine(FirstCheck()); }
-        if (isSecondStep) { StartCoroutine(SecondCheck()); }
+        if (isFirstStep) { StartCoroutine(FirstCheck()); hologramLight.SetActive(true); }
+        if (isSecondStep) { StartCoroutine(SecondCheck()); hologramLight.SetActive(true); }
         isGrabbing = true;
     }
 
@@ -54,7 +53,7 @@ public class TutorialFlash : MonoBehaviour
         if (Vector3.Distance(hologramLight.transform.position, this.transform.position) < .1f)
         {
             isFirstStep = false;
-            isSecondStep = true;
+            //isSecondStep = true;
             hologramLight.SetActive(false);
             tutoBoard1.SetActive(true);
             cameraHologram.SetActive(true);
@@ -82,4 +81,6 @@ public class TutorialFlash : MonoBehaviour
 
         if (isSecondStep) StartCoroutine(SecondCheck());
     }
+
+    public void SecondStepOn() { isSecondStep = true; }
 }
