@@ -30,21 +30,21 @@ public class FingerPrintTape : MonoBehaviour
             //철가루 지문을 테이프로 채취한 경우
             if (fp_obj.obj_type == FingerPrintObject.ObjectType.iron)
             {
-                GameObject fp_tape = Instantiate(fingerPrintTapePrefab_iron, fp_obj.transform.position, fp_obj.transform.rotation);
+                GameObject fp_tape = Instantiate(fingerPrintTapePrefab_iron, fp_obj.transform.position, Quaternion.Euler(new Vector3(-90,0,0)));
                 fp_tape.name = "iron_tape";
             }
 
             //형광가루 지문을 테이프로 채취한 경우
             if (fp_obj.obj_type == FingerPrintObject.ObjectType.flour)
             {
-                GameObject fp_tape = Instantiate(fingerPrintTapePrefab_flour, fp_obj.transform.position, fp_obj.transform.rotation);
+                GameObject fp_tape = Instantiate(fingerPrintTapePrefab_flour, fp_obj.transform.position, Quaternion.Euler(new Vector3(-90, 0, 0)));
                 fp_tape.name = "flour_tape";
             }
 
             //적색형광가루 지문을 테이프로 채취한 경우
             if (fp_obj.obj_type == FingerPrintObject.ObjectType.redFlour)
             {
-                GameObject fp_tape = Instantiate(fingerPrintTapePrefab_red, fp_obj.transform.position, fp_obj.transform.rotation);
+                GameObject fp_tape = Instantiate(fingerPrintTapePrefab_red, fp_obj.transform.position, Quaternion.Euler(new Vector3(-90, 0, 0)));
                 fp_tape.name = "red_tape";
             }
 

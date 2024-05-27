@@ -16,7 +16,7 @@ public class FingerPrintPaper : MonoBehaviour
         {
             other.GetComponent<Collider>().enabled = false; // 더이상 테이프 반응 안하게
             Vector3 spawnPoint = this.transform.position + new Vector3(0, .02f, 0);
-            GameObject fp_paper = Instantiate(fingerPrintPaperIron, spawnPoint, other.transform.rotation);
+            GameObject fp_paper = Instantiate(fingerPrintPaperIron, spawnPoint, Quaternion.Euler(Vector3.zero));
             fp_paper.name = other.GetComponent<SubName>().subName;
             Destroy(other.gameObject);
 
@@ -29,7 +29,7 @@ public class FingerPrintPaper : MonoBehaviour
         {
             other.GetComponent<Collider>().enabled = false; // 더이상 테이프 반응 안하게
             Vector3 spawnPoint = this.transform.position + new Vector3(0, .02f, 0);
-            GameObject fp_paper = Instantiate(fingerPrintPaperFlour, spawnPoint, other.transform.rotation);
+            GameObject fp_paper = Instantiate(fingerPrintPaperFlour, spawnPoint, Quaternion.Euler(Vector3.zero));
             fp_paper.name = other.GetComponent<SubName>().subName;
             Destroy(other.gameObject);
 
@@ -42,7 +42,7 @@ public class FingerPrintPaper : MonoBehaviour
         {
             other.GetComponent<Collider>().enabled = false; // 더이상 테이프 반응 안하게
             Vector3 spawnPoint = this.transform.position + new Vector3(0, .02f, 0);
-            GameObject fp_paper = Instantiate(fingerPrintPaperRed, spawnPoint, other.transform.rotation);
+            GameObject fp_paper = Instantiate(fingerPrintPaperRed, spawnPoint, Quaternion.Euler(Vector3.zero));
             fp_paper.name = other.GetComponent<SubName>().subName;
             Destroy(other.gameObject);
 

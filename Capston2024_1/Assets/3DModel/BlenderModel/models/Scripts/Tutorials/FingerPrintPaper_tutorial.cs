@@ -1,3 +1,4 @@
+using Oculus.Interaction;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -25,7 +26,11 @@ public class FingerPrintPaper_tutorial : MonoBehaviour
             lastTutoBoard?.SetActive(true);
             tutoCam?.GetComponent<TutorialCamera>().lastStep_ON();
             Destroy(fingerPrintTape_soju);
-            Instantiate(fingerPrintPaperBlack, spawnPoint, Quaternion.Euler(Vector3.zero));
+
+            // 튜토리얼 - 전사지 못잡게끔
+            GameObject fp_paper = Instantiate(fingerPrintPaperBlack, spawnPoint, Quaternion.Euler(Vector3.zero));
+            fp_paper.GetComponent<Grabbable>().enabled = false;
+            fp_paper.GetComponent<GrabInteractable>().enabled = false;
         }
 
         if (other.gameObject == fingerPrintTape_knife) // 흉기 위에 있는 지문일때
