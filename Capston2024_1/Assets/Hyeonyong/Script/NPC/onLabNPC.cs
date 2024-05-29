@@ -63,7 +63,8 @@ public Quaternion firstRot; //캔버스 처음 각도
             ScriptNum--;
             if (ScriptNum == 6)
                 ScriptNum++;
-
+            if (ScriptNum == 9)
+                ScriptNum++;
         }
     }
     // Update is called once per frame
@@ -162,7 +163,7 @@ public Quaternion firstRot; //캔버스 처음 각도
                     Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
                     npc1.text = "넣고 나면 위에 뜬 버튼을 클릭하면 될거야!\n고생 많았어!";//다 찾았어? 더 안찾아봐도 됨?
                     //결과 확인버튼 활성화
-                    CheckButton.SetActive(true);
+
 
                     SoundManager.Instance.PlayTTS(SoundManager.TTS_list.LAB_DESCRIPTION_8);
                 }
@@ -170,6 +171,7 @@ public Quaternion firstRot; //캔버스 처음 각도
                 else if (ScriptNum == 9)
                 {
                     Canvas.transform.position = Canvas.transform.position + new Vector3(100f, 0f, 0f);
+                    CheckButton.SetActive(true);
                 }
                 ScriptNum++;
 

@@ -65,6 +65,8 @@ public Quaternion firstRot; //캔버스 처음 각도
             ScriptNum--;
             if (ScriptNum == 1)
                 ScriptNum++;
+            if (ScriptNum == 5)
+                ScriptNum++;
 
         }
     }
