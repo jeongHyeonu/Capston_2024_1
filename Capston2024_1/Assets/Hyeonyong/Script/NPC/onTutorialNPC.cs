@@ -232,7 +232,8 @@ public class onTutorialNPC : MonoBehaviour
                 buttonPreviouslyPressed = false;
             }
 
-            yield return null;
+            //yield return null;
+            yield return new WaitForSeconds(0f);
         }
     }
 

@@ -182,8 +182,8 @@ public Quaternion firstRot; //캔버스 처음 각도
             {
                 buttonPreviouslyPressed = false;
             }
-
-            yield return null;
+            //yield return null;
+            yield return new WaitForSeconds(0f);
         }
     }
 
