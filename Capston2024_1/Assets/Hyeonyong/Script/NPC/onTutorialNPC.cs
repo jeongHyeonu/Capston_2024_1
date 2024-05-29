@@ -295,7 +295,7 @@ public class onTutorialNPC : MonoBehaviour
     public void pressQuiz3_X()
     {
         Canvas.transform.localPosition = new Vector3(0f, 1f, 0f);
-        npc1.text = "틀렸어요!\n닌히드린 용액법은 주로 흡수가 잘 되는 종이류에 사용해요!\nA4용지, 영수증, 종이봉투 등에 사용되죠. 그러나 명함처럼 코팅된 종이에는 적합하지 않아요.";
+        npc1.text = "틀렸어요!\n닌히드린 용액법은 주로 흡수가 잘 되는 종이류에 사용해요!\nA4용지, 영수증, 종이봉투 등에 사용되죠. \n그러나 명함처럼 코팅된 종이에는 적합하지 않아요.";
         Quiz3_O.SetActive(false);
         Quiz3_X.SetActive(false);
 

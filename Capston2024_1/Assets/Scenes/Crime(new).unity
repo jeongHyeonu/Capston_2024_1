@@ -23283,6 +23283,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fingerprintobject: {fileID: 0}
+  ft: {fileID: 0}
+  FingerPrint: {fileID: 0}
+  onTutorial: 0
 --- !u!65 &416033187
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30356,6 +30359,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fingerprintobject: {fileID: 0}
+  ft: {fileID: 0}
+  FingerPrint: {fileID: 0}
+  onTutorial: 0
 --- !u!65 &463322712
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41029,6 +41035,7 @@ MonoBehaviour:
   fp_paper: {fileID: 1718772905}
   onTape: 0
   name: 
+  onLab: 0
 --- !u!114 &590947552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43456,6 +43463,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fingerprintobject: {fileID: 0}
+  ft: {fileID: 0}
+  FingerPrint: {fileID: 0}
+  onTutorial: 0
 --- !u!65 &626982049
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -44355,6 +44365,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fingerprintobject: {fileID: 0}
+  ft: {fileID: 0}
+  FingerPrint: {fileID: 0}
+  onTutorial: 0
 --- !u!65 &634222427
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -51031,6 +51044,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fingerprintobject: {fileID: 0}
+  ft: {fileID: 0}
+  FingerPrint: {fileID: 0}
+  onTutorial: 0
 --- !u!65 &794652768
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -63169,6 +63185,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fingerprintobject: {fileID: 0}
+  ft: {fileID: 0}
+  FingerPrint: {fileID: 0}
+  onTutorial: 0
 --- !u!65 &982494594
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -94112,6 +94131,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fingerprintobject: {fileID: 0}
+  ft: {fileID: 0}
+  FingerPrint: {fileID: 0}
+  onTutorial: 0
 --- !u!114 &1578289688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104777,6 +104799,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fingerprintobject: {fileID: 0}
+  ft: {fileID: 0}
+  FingerPrint: {fileID: 0}
+  onTutorial: 0
 --- !u!114 &1872274099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109592,6 +109617,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fingerprintobject: {fileID: 0}
+  ft: {fileID: 0}
+  FingerPrint: {fileID: 0}
+  onTutorial: 0
 --- !u!65 &1967212377
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -110383,6 +110411,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fingerprintobject: {fileID: 0}
+  ft: {fileID: 0}
+  FingerPrint: {fileID: 0}
+  onTutorial: 0
 --- !u!65 &1979553527
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -119392,7 +119423,7 @@ GameObject:
   - component: {fileID: 2084174339}
   - component: {fileID: 2084174338}
   - component: {fileID: 2084174337}
-  - component: {fileID: 2084174336}
+  - component: {fileID: 2084174340}
   m_Layer: 5
   m_Name: restartBtn
   m_TagString: Untagged
@@ -119420,18 +119451,6 @@ RectTransform:
   m_AnchoredPosition: {x: 155, y: -26.400047}
   m_SizeDelta: {x: 90, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2084174336
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2084174334}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ebff108b3d8fea43a7db4b17bd6ee32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2084174337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119476,9 +119495,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2084174336}
+      - m_Target: {fileID: 2084174340}
         m_TargetAssemblyTypeName: RestartBtn, Assembly-CSharp
-        m_MethodName: GoToStartScene
+        m_MethodName: SceneFade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -119526,6 +119545,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2084174334}
   m_CullTransparentMesh: 1
+--- !u!114 &2084174340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084174334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 953fa6a67e424794788af4610c32ce56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CenterEyeObj: {fileID: 7180308}
 --- !u!1001 &2084407696
 PrefabInstance:
   m_ObjectHideFlags: 0
