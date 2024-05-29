@@ -9,6 +9,8 @@ public class NameChange : MonoBehaviour
     public string onName;
 
     public bool onChanged = false;
+    
+    
     public void OnTriggerEnter(Collider other)
     {
         if (other.name == "iron_tape"|| other.name == "flour_tape" || other.name == "red_tape" &&onChanged==false)
@@ -17,9 +19,12 @@ public class NameChange : MonoBehaviour
             other.GetComponent<SubName>().subName = onName; //서브 네임으로 설정
             onChanged = true;
 
-            Destroy(gameObject);
+            //Destroy(gameObject);
+            this.gameObject.transform.position += new Vector3(0f, 1000f, 0f);
         }
     }
+
+    
     public void OnTriggerStay(Collider other)
     {
         if (other.name == "iron_tape" || other.name == "flour_tape" || other.name == "red_tape" && onChanged == false)
@@ -28,7 +33,7 @@ public class NameChange : MonoBehaviour
             other.GetComponent<SubName>().subName = onName; //서브 네임으로 설정
             onChanged = true;
 
-            Destroy(gameObject);
+            this.gameObject.transform.position += new Vector3(0f, 1000f, 0f);
         }
     }
     public void OnTriggerExit(Collider other)
@@ -39,7 +44,9 @@ public class NameChange : MonoBehaviour
             other.GetComponent<SubName>().subName = onName; //서브 네임으로 설정
             onChanged = true;
 
-            Destroy(gameObject);
+            // Destroy(this.gameObject);
+            this.gameObject.transform.position += new Vector3(0f, 1000f, 0f);
         }
     }
+    
 }

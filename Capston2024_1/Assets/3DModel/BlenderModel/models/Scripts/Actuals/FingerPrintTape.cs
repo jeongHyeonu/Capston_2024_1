@@ -16,6 +16,8 @@ public class FingerPrintTape : MonoBehaviour
     public bool onTape = false; //0426자 양현용 : 테이프 생성 판단용으로 추가
     public string name;
 
+
+    public bool onLab=false;
     private void Start() // 원래 물체 존재했던 위치 기억
     {
         originPos = transform.position;
@@ -27,10 +29,15 @@ public class FingerPrintTape : MonoBehaviour
         {
             if (fp_obj.isVisible == false) return; // 지문이 아직 드러나지 않았다면 실행X
 
+
+            if (onLab == true)
+            {
+                fp_obj.transform.position = new Vector3(fp_obj.transform.position.x, fp_obj.transform.position.y + 0.05f, fp_obj.transform.position.z);
+            }
             //철가루 지문을 테이프로 채취한 경우
             if (fp_obj.obj_type == FingerPrintObject.ObjectType.iron)
             {
-                GameObject fp_tape = Instantiate(fingerPrintTapePrefab_iron, fp_obj.transform.position, Quaternion.Euler(new Vector3(-90,0,0)));
+                GameObject fp_tape = Instantiate(fingerPrintTapePrefab_iron, fp_obj.transform.position, Quaternion.Euler(new Vector3(-90, 0, 0)));
                 fp_tape.name = "iron_tape";
             }
 
