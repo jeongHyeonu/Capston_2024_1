@@ -822,10 +822,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 24674306}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 95c52ceb0f4ea56478c100c9200a466a,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 24674311}
   m_SourcePrefab: {fileID: 100100000, guid: 95c52ceb0f4ea56478c100c9200a466a, type: 3}
 --- !u!4 &24674304 stripped
 Transform:
@@ -905,22 +901,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &24674311
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 24674305}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba44d4c976cce5c4faf831203f072b17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fingerprintobject: {fileID: 0}
-  ft: {fileID: 0}
-  FingerPrint: {fileID: 24674305}
-  onTutorial: 1
 --- !u!1 &27563869
 GameObject:
   m_ObjectHideFlags: 0
@@ -1109,7 +1089,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 22c4ba4a94db3124f86226e715ea26da, type: 2}
+      objectReference: {fileID: 2100000, guid: dcedcef0c50a5a242be18e3a98af77d8, type: 2}
     - target: {fileID: 919132149155446097, guid: 95c52ceb0f4ea56478c100c9200a466a,
         type: 3}
       propertyPath: m_Name

@@ -60,6 +60,10 @@ public class testcs : MonoBehaviour
                 if (other.gameObject.layer == LayerMask.NameToLayer("UV_Light"))
                     this.transform.gameObject.GetComponent<MeshRenderer>().materials[0].DOFade(0f, 0.4f);
             }
+            if (ft.isVisible == true)
+            {
+                this.transform.gameObject.GetComponent<MeshRenderer>().materials[0].DOFade(0f, 0.4f);
+            }
         }
     }
 
