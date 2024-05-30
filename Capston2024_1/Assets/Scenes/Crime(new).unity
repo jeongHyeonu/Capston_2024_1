@@ -20651,7 +20651,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _canvasRenderTexture: {fileID: 436321355}
   _meshRenderer: {fileID: 360462357}
-  _renderingMode: 1
+  _renderingMode: 0
   _useAlphaToMask: 1
   _alphaCutoutThreshold: 0.5
   _canvasMesh: {fileID: 360462359}
@@ -22457,7 +22457,7 @@ GameObject:
   - component: {fileID: 398617630}
   - component: {fileID: 398617632}
   - component: {fileID: 398617631}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33224,7 +33224,7 @@ GameObject:
   - component: {fileID: 523038645}
   - component: {fileID: 523038647}
   - component: {fileID: 523038646}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP) (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38442,7 +38442,7 @@ GameObject:
   - component: {fileID: 530851946}
   - component: {fileID: 530851948}
   - component: {fileID: 530851947}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP) (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40858,7 +40858,7 @@ GameObject:
   - component: {fileID: 590918902}
   - component: {fileID: 590918904}
   - component: {fileID: 590918903}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Image (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41993,7 +41993,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _canvasRenderTexture: {fileID: 1270039619}
   _meshRenderer: {fileID: 601302076}
-  _renderingMode: 1
+  _renderingMode: 0
   _useAlphaToMask: 1
   _alphaCutoutThreshold: 0.5
   _canvasMesh: {fileID: 601302078}
@@ -43375,7 +43375,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _canvasRenderTexture: {fileID: 1127207918}
   _meshRenderer: {fileID: 625002158}
-  _renderingMode: 1
+  _renderingMode: 0
   _useAlphaToMask: 1
   _alphaCutoutThreshold: 0.5
   _canvasMesh: {fileID: 625002160}
@@ -46501,7 +46501,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _canvasRenderTexture: {fileID: 603402453}
   _meshRenderer: {fileID: 680130768}
-  _renderingMode: 1
+  _renderingMode: 0
   _useAlphaToMask: 1
   _alphaCutoutThreshold: 0.5
   _canvasMesh: {fileID: 680130770}
@@ -51836,7 +51836,7 @@ GameObject:
   - component: {fileID: 817663707}
   - component: {fileID: 817663709}
   - component: {fileID: 817663708}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP) (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71326,7 +71326,7 @@ GameObject:
   - component: {fileID: 1197694789}
   - component: {fileID: 1197694791}
   - component: {fileID: 1197694790}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP) (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84510,7 +84510,7 @@ GameObject:
   - component: {fileID: 1372992037}
   - component: {fileID: 1372992039}
   - component: {fileID: 1372992038}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90627,7 +90627,7 @@ GameObject:
   - component: {fileID: 1505274720}
   - component: {fileID: 1505274722}
   - component: {fileID: 1505274721}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP) (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90898,7 +90898,7 @@ GameObject:
   - component: {fileID: 1507488502}
   - component: {fileID: 1507488504}
   - component: {fileID: 1507488503}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92371,7 +92371,7 @@ GameObject:
   - component: {fileID: 1527885418}
   - component: {fileID: 1527885420}
   - component: {fileID: 1527885419}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Image (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99250,7 +99250,7 @@ GameObject:
   - component: {fileID: 1698987659}
   - component: {fileID: 1698987661}
   - component: {fileID: 1698987660}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP) (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99510,7 +99510,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _canvasRenderTexture: {fileID: 891012095}
   _meshRenderer: {fileID: 1701181800}
-  _renderingMode: 1
+  _renderingMode: 0
   _useAlphaToMask: 1
   _alphaCutoutThreshold: 0.5
   _canvasMesh: {fileID: 1701181802}
@@ -104170,7 +104170,7 @@ GameObject:
   - component: {fileID: 1836606799}
   - component: {fileID: 1836606801}
   - component: {fileID: 1836606800}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP) (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106054,7 +106054,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _canvasRenderTexture: {fileID: 1246330343}
   _meshRenderer: {fileID: 1898558966}
-  _renderingMode: 1
+  _renderingMode: 0
   _useAlphaToMask: 1
   _alphaCutoutThreshold: 0.5
   _canvasMesh: {fileID: 1898558968}
@@ -108269,7 +108269,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _canvasRenderTexture: {fileID: 632540022}
   _meshRenderer: {fileID: 1946739545}
-  _renderingMode: 1
+  _renderingMode: 0
   _useAlphaToMask: 1
   _alphaCutoutThreshold: 0.5
   _canvasMesh: {fileID: 1946739547}
@@ -108713,6 +108713,11 @@ PrefabInstance:
         type: 3}
       propertyPath: near clip plane
       value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2547059054758580199, guid: e9a4f22a5cd65ce449de1ba56faf43e1,
+        type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 4294967263
       objectReference: {fileID: 0}
     - target: {fileID: 2910032594566894995, guid: e9a4f22a5cd65ce449de1ba56faf43e1,
         type: 3}
@@ -112176,7 +112181,7 @@ GameObject:
   - component: {fileID: 1998995094}
   - component: {fileID: 1998995096}
   - component: {fileID: 1998995095}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113310,7 +113315,7 @@ GameObject:
   - component: {fileID: 2033897634}
   - component: {fileID: 2033897636}
   - component: {fileID: 2033897635}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP) (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -114321,7 +114326,7 @@ GameObject:
   - component: {fileID: 2062441296}
   - component: {fileID: 2062441298}
   - component: {fileID: 2062441297}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP) (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
