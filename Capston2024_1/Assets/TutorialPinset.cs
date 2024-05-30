@@ -59,7 +59,7 @@ public class TutorialPinset : MonoBehaviour
             SoundManager.Instance.PlaySFX(SoundManager.SFX_list.LIQUID_1);
             t_ux.TutorialStep(2);
         }
-        if (other.gameObject == targetPos)
+        if (other.gameObject == targetPos && isGrabbing)
         {
             SoundManager.Instance.PlaySFX(SoundManager.SFX_list.WOOSH_2);
             GetComponent<GrabInteractable>().enabled = false;
