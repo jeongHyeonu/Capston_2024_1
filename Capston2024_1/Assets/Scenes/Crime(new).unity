@@ -20300,7 +20300,7 @@ MonoBehaviour:
   score1_7: {fileID: 1397370745}
   score1_8: {fileID: 906378403}
   score2_1: {fileID: 106422571}
-  score2_2: {fileID: 906378403}
+  score2_2: {fileID: 686738884}
   score2_3: {fileID: 333633081}
   score2_4: {fileID: 881627886}
   score2_5: {fileID: 560066266}
@@ -23266,7 +23266,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 95c52ceb0f4ea56478c100c9200a466a,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -30491,6 +30491,7 @@ MonoBehaviour:
   hand: {fileID: 556044557}
   find: 0
   NP: {fileID: 1252321197}
+  FreeTestFingerPrint: {fileID: 1979553524}
 --- !u!114 &463322719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43595,6 +43596,7 @@ MonoBehaviour:
   hand: {fileID: 556044557}
   find: 0
   NP: {fileID: 1403505979}
+  FreeTestFingerPrint: {fileID: 982494591}
 --- !u!114 &626982056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44497,6 +44499,7 @@ MonoBehaviour:
   hand: {fileID: 556044557}
   find: 0
   NP: {fileID: 2124523590}
+  FreeTestFingerPrint: {fileID: 794652762}
 --- !u!1 &634446923
 GameObject:
   m_ObjectHideFlags: 0
@@ -51027,7 +51030,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 95c52ceb0f4ea56478c100c9200a466a,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -63231,7 +63234,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 95c52ceb0f4ea56478c100c9200a466a,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -74719,18 +74722,23 @@ MonoBehaviour:
   Door: {fileID: 1872274093}
   DoorCheck: {fileID: 1964394010}
   checkDoor: 0
+  FindDoor: 0
   Chair: {fileID: 982494591}
   ChairCheck: {fileID: 624815214}
   checkChair: 0
+  FindChair: 0
   Desk: {fileID: 1979553524}
   DeskCheck: {fileID: 2091986449}
   checkDesk: 0
+  FindDesk: 0
   Drawer: {fileID: 416033181}
   DrawerCheck: {fileID: 523935199}
   checkDrawer: 0
+  FindDrawer: 0
   WaterTap: {fileID: 794652762}
   WaterTapCheck: {fileID: 406530865}
   checkWaterTap: 0
+  FindWaterTap: 0
   HandTrigger: {fileID: 556044557}
 --- !u!1001 &1261063645
 PrefabInstance:
@@ -83910,7 +83918,7 @@ GameObject:
   - component: {fileID: 1360537561}
   - component: {fileID: 1360537563}
   - component: {fileID: 1360537562}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94375,6 +94383,7 @@ MonoBehaviour:
   hand: {fileID: 556044557}
   find: 0
   NP: {fileID: 1738002511}
+  FreeTestFingerPrint: {fileID: 1872274093}
 --- !u!114 &1578289692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104925,7 +104934,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 95c52ceb0f4ea56478c100c9200a466a,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -109995,6 +110004,7 @@ MonoBehaviour:
   hand: {fileID: 556044557}
   find: 0
   NP: {fileID: 1087972905}
+  FreeTestFingerPrint: {fileID: 416033181}
 --- !u!1001 &1969163127
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -110585,7 +110595,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 95c52ceb0f4ea56478c100c9200a466a,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

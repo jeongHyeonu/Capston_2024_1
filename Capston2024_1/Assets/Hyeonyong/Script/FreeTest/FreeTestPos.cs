@@ -17,6 +17,7 @@ public class FreeTestPos : MonoBehaviour
 
     // Start is called before the first frame update
 
+    public GameObject FreeTestFingerPrint;
     private void Start()
     {
         nearplayer=NP.GetComponent<NearPlayer>();
@@ -34,6 +35,10 @@ public class FreeTestPos : MonoBehaviour
             if (testPos2 != null)
             {
                 testPos2.SetActive(true);
+            }
+            if(FreeTestFingerPrint != null)
+            {
+                FreeTestFingerPrint.SetActive(true);
             }
            // npctext.FindFingerPrint();
             find= true;

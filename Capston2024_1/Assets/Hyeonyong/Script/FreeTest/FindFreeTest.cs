@@ -12,10 +12,15 @@ public class FindFreeTest : MonoBehaviour
     private NearPlayer nearplayer;
     private bool near = false;
     // Start is called before the first frame update
+
+
+    private FingerPrintObject FPT;
     private void Start()
     {
         nearplayer = NP.GetComponent<NearPlayer>();
+        FPT = GetComponent<FingerPrintObject>();
     }
+    /*
     private void OnTriggerEnter(Collider other)
     {
         near = nearplayer.near;
@@ -26,5 +31,17 @@ public class FindFreeTest : MonoBehaviour
                 testPos.SetActive(false);
             }
         }
+    }*/
+
+    private void Update()
+    {
+        if (this.FPT.isVisible == true)
+        {
+            if (testPos != null)
+            {
+                testPos.SetActive(false);
+            }
+        }
+        
     }
 }
