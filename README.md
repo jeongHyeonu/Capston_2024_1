@@ -90,25 +90,7 @@
 
 - 3D MODEL
 
-  -  Crime Scene 맵
-
-    > 
-
-  - Lab Scene 맵
-
-    > 
-
-  - Tutorial Scene 맵
-
-    >  
-
-  - 감식 도구
-
-    > 
-
-  - 증거물
-
-    > 
+  > Unity Asset Store
 
 - 폰트
 
