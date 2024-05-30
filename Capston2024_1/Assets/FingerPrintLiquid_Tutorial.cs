@@ -51,19 +51,16 @@ public class FingerPrintLiquid_Tutorial : MonoBehaviour
     // 페이드 인 효과를 적용하는 코루틴 메서드
     private IEnumerator TriggerEffect()
     {
-        yield return new WaitForSeconds(maxDryCnt);
-        if (dryCnt < maxDryCnt) dryCnt++;
-        else
-        {
-            this.transform.gameObject.GetComponent<MeshRenderer>().materials[0].DOFade(1f, 0.4f); // 페이드 인 효과를 적용
+        yield return new WaitForSeconds(maxDryCnt-1f);
 
-            if (!isTutorialUX)
-            {
-                isTutorialUX = true;
-                t_ux.TutorialStep(4);
-                tutoCam.secondStep_ON();
-                paper.transform.DOMove(paper.transform.position + new Vector3(0, 0, .3f), 2f).SetDelay(0.5f);
-            }
+        this.transform.gameObject.GetComponent<MeshRenderer>().materials[0].DOFade(1f, 0f);
+
+        if (!isTutorialUX)
+        {
+            isTutorialUX = true;
+            t_ux.TutorialStep(4);
+            tutoCam.secondStep_ON();
+            paper.transform.DOMove(paper.transform.position + new Vector3(0, 0, .3f), 2f).SetDelay(1f);
         }
     }
 }
