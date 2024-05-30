@@ -27,7 +27,7 @@ public class TextMove : MonoBehaviour
     IEnumerator SceneFadeCoroutine()
     {
         //OFade.FadeOut();
-        yield return new WaitForSeconds(30f);
+        yield return new WaitForSeconds(50f);
         //yield return new WaitForSeconds(OFade.fadeTime);
 
         SceneManager.LoadScene("Opening");
