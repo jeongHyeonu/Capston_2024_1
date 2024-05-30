@@ -172,7 +172,7 @@ MonoBehaviour:
     m_Value: {x: 1, y: 1, z: 1, w: 0.048598107}
   midtones:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 1, z: 1, w: 0.089719675}
+    m_Value: {x: 1, y: 1, z: 1, w: 0.4934581}
   highlights:
     m_OverrideState: 1
     m_Value: {x: 1, y: 1, z: 1, w: 0.22429964}
@@ -242,8 +242,8 @@ MonoBehaviour:
         - serializedVersion: 3
           time: 0
           value: 0
-          inSlope: 1.4326648
-          outSlope: 1.4326648
+          inSlope: 2.1401553
+          outSlope: 2.1401553
           tangentMode: 0
           weightedMode: 0
           inWeight: 0
