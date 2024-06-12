@@ -54,7 +54,7 @@
 
 ## 수상 내역
 - 2024 한성대학교 컴퓨터공학부 캡스톤디자인 우수상
-- <p align="center"><img src="https://github.com/minalee0628/Capston2024_1/assets/58770233/4e289286-73e7-4e0c-96b6-6b7726a9417c" width ="400" height ="600"></p>
+ <p align="center"><img src="https://github.com/minalee0628/Capston2024_1/assets/58770233/4e289286-73e7-4e0c-96b6-6b7726a9417c" width ="400" height ="600"></p>
 
 ## 기술 구조
 
