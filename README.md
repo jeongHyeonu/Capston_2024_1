@@ -2,9 +2,9 @@
 
 # Project : 지문을 찾아서
 
-### 프로젝트 소개
+## 프로젝트 소개
 
----
+
 
 #### "과학수사요원이 되어 사건을 해결할 단서를 찾아보자!"
 
@@ -28,9 +28,8 @@
 
 
 
----
 
-### 잠재지문이란?
+## 잠재지문이란?
 
 
 
@@ -44,30 +43,33 @@
 
 
 
----
 
-### 소개 영상
+
+## 소개 영상
 
 [![VideoTilteImg](https://github.com/minalee0628/Capston2024_1/assets/58770233/de9824b8-8c97-4ac7-95a2-3509afff3b9d)](https://youtu.be/5Tv8ZVnrYd0)
 
 > 이미지 클릭 시 유튜브 주소로 이동
----
 
 
-### 기술 구조
+## 수상 내역
+
+
+
+## 기술 구조
 
 <img src= "https://github.com/minalee0628/Capston2024_1/assets/58770233/5bf52981-24f5-44ff-b8e1-ac98c6ff5b2b" width="800">
 
----
-### 지원하는 플랫폼
+
+## 지원하는 플랫폼
 
 - VR
 
 > 메타 퀘스트2 사용을 권장합니다.
 
 
----
-### Team 소개
+
+## Contributors
 
 
 
@@ -84,9 +86,9 @@
 
 
 
----
 
-#### 에셋 출처
+
+## 에셋 출처
 
 - 3D MODEL
 
@@ -101,7 +103,6 @@
 - 오디오
 
   - **네이버 클로바 더빙**
-
     > 이 프로젝트에는 클로바더빙(CLOVA Dubbing)의 AI 보이스가 사용되었습니다.
     > 바로 가기 URL: [https://clovadubbing.naver.com]
     
